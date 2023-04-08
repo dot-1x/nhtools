@@ -7,7 +7,7 @@ TECH:
     - React-Bootsrap
     - typescript
 
-Website inspired by: [AK-Toolbox](https://github.com/Aceship/AN-EN-Tags)
+Website inspired by: [AK-Toolbox](https://aceship.github.io/AN-EN-Tags/akhr.html)
 
 ## ToDo:
 
