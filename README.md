@@ -1,5 +1,8 @@
 # NHTools
 
+Project nhtools adalah project website utilitas game [Ninja Heroes: New Era](https://ninjaheroesnewera.com/)  
+kunjungi [Website](https://dot-1x.github.io/nhne_ts/)
+
 Project dibuat menggunakan [Next.js](https://nextjs.org/) dengan [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).  
 TECH:
 
