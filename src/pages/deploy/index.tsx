@@ -1,15 +1,33 @@
 import Content from "@/components/content.component";
 import { useState } from "react";
-import { Container, Dropdown, DropdownButton, Row } from "react-bootstrap";
+import { Container, Dropdown, DropdownButton, Row, Col } from "react-bootstrap";
 import Head from "next/head";
-import { ChooseContainer } from "@/components/ninja/ninja.component";
-import { DeployColumn } from "@/components/deploy/deploy.component";
-import { DndContext } from "@dnd-kit/core";
+import { ChooseContainer, NinjaImage } from "@/components/ninja/ninja.component";
+import DeployColumn from "@/components/deploy/deployCol.component";
+import { DndContext, DragOverlay, MouseSensor, TouchSensor, useSensor, useSensors } from "@dnd-kit/core";
+import { dropData } from "@/types/deploy.types";
+import { stripColName } from "@/utils/ninja/ninja.utils";
 
 export default function Deploy() {
   const [CHOOSED, setChoosed] = useState("SSS")
   const [dragged, setDragged] = useState("")
-  const [dropped, setDropped] = useState([""])
+  const [dropped, setDropped] = useState<dropData>(new Map())
+  const [onbox, setOnBox] = useState(false)
+  const mouseSensor = useSensor(
+    MouseSensor, {
+      activationConstraint: {
+        distance: 25,
+        delay: 2
+      }
+    }
+  )
+  const touchSens = useSensor(
+    TouchSensor, {
+      activationConstraint: {
+        distance: 25
+      }
+    }
+  )
 
   return (
     <>
@@ -32,21 +50,38 @@ export default function Deploy() {
             }
           </DropdownButton>
           <DndContext
-            onDragStart={(ev) => { setDragged(ev.active.id.toString()) }}
+            sensors={ [ touchSens ] }
+            onDragStart={(ev) => { setDragged(stripColName(ev.active.id.toString())) }}
             onDragEnd={
               (ev) => {
                 setDragged("")
-                dropped.push(ev.over?.id as string)
-                setDropped(dropped)
-                console.log(ev.active?.id)
+                if (ev.over && ev.active) {
+                  dropped.set(ev.over.id.toString(), stripColName(ev.active.id.toString()))
+                  setDropped(dropped)
+                  setOnBox(true)
+                }
+                else {
+                  setOnBox(false)
+                }
               }
             }
           >
             {
-              CHOOSED && <ChooseContainer choosed={CHOOSED} dragged={dragged} />
+              CHOOSED && <ChooseContainer choosed={CHOOSED}/>
             }
+
+            <DragOverlay
+              dropAnimation={{
+                duration: !onbox ? 500 : 0
+              }}
+            >
+              {dragged ? <NinjaImage name={dragged.replaceAll("-", " ")}/> : null}
+            </DragOverlay>
+
             <Row>
-              <DeployColumn dropped={dropped} dropstate={setDropped} />
+              <Col >
+                <DeployColumn dropped={dropped} dropstate={setDropped}/>
+              </Col>
             </Row>
           </DndContext>
         </Container>

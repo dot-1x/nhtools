@@ -1,0 +1,1 @@
+export type dropData = Map<string, string>

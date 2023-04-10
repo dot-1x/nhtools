@@ -44,3 +44,8 @@ export function* getAllNinja() {
         yield new Ninja(name, value.kelas, value.attribute.map(v => attrMapping[v]))
     }
 }
+
+export function stripColName(name: string) {
+    const re = /col-\d-row-\d-/i
+    return name.replace(re, "")
+}

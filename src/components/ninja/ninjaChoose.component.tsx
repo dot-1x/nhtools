@@ -3,7 +3,7 @@ import { getAllNinja } from "@/utils/ninja/ninja.utils";
 import { NinjaImage } from "./ninjaImage.component";
 import React, { ReactNode } from "react";
 
-function DragNinja({ children, id }: {children: ReactNode, id: string}) {
+export function DragNinja({ children, id }: {children: ReactNode, id: string}) {
   const {attributes, listeners, setNodeRef, transform} = useDraggable({
     id: id,
   });
@@ -43,13 +43,10 @@ function ChooseNinja({ kelas }: { kelas: string }) {
   )
 }
 
-export function ChooseContainer({ choosed, dragged }: { choosed: string, dragged: string }) {
+export function ChooseContainer({ choosed }: { choosed: string}) {
   return (
     <>
       <ChooseNinja kelas={ choosed } />
-      <DragOverlay>
-        {dragged ? <NinjaImage name={dragged.replaceAll("-", " ")}/> : null}
-      </DragOverlay>
     </>
   )
 }

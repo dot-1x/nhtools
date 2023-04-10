@@ -2,19 +2,26 @@ import { useDroppable } from "@dnd-kit/core";
 import { Col, Row } from "react-bootstrap";
 import { NinjaImage } from "../ninja/ninjaImage.component";
 import { T_deployCol, T_dropNinja } from "./types/deploy.type";
+import { DragNinja } from "../ninja/ninjaChoose.component";
+import { stripColName } from "@/utils/ninja/ninja.utils";
 
-function DropNinja({ id, dropped, lastDrop }: T_dropNinja) {
-  const { setNodeRef, active, isOver, over } = useDroppable(
+function DropNinja({ id, dropped}: T_dropNinja) {
+  const { setNodeRef, active, isOver } = useDroppable(
     {
       id: id
     }
   )
   let elem
   if (active && isOver) {
-    elem = <NinjaImage name={active.id as string} />
+    elem = <NinjaImage name={stripColName(active.id as string)} />
   }
-  else if (dropped.find((v) => v === id)) {
-    elem = <NinjaImage name={lastDrop || "silhouette"} />
+  else if (dropped.get(id)) {
+    // elem = (
+    //   <DragNinja id={`${id}-${dropped.get(id)}`}>
+    //     <NinjaImage name={dropped.get(id) || "silhouette"} />
+    //   </DragNinja>
+    // )
+    elem = <NinjaImage name={dropped.get(id) || "silhouette"} />
   }
   else {
     elem = <NinjaImage name="silhouette" />
@@ -31,7 +38,7 @@ function DropNinja({ id, dropped, lastDrop }: T_dropNinja) {
   )
 }
 
-export function DeployColumn( { dropped, dropstate }: T_deployCol) {
+export default function DeployColumn( { dropped, dropstate }: T_deployCol) {
   return (
     <>
     {
@@ -46,14 +53,13 @@ export function DeployColumn( { dropped, dropstate }: T_deployCol) {
                     <Col key={idCol} className="my-2"
                       onClick={
                         _ => {
-                          dropped = dropped.filter((v) => v !== idCol)
-                          dropstate(dropped)
+                          dropped.delete(idCol)
+                          dropstate(new Map(dropped))
                         }
                       }
                     >
-                      <DropNinja id={idCol} dropped={dropped} />
+                      <DropNinja id={idCol} dropped={dropped}/>
                     </Col>
-                    // </DropNinja>
                   )
                 }
               )
