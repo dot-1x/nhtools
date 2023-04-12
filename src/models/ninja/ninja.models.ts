@@ -1,4 +1,5 @@
 import { NinjaAttrs } from "@/types/ninja.types"
+import { getAllCombo } from "@/utils/combo/combo.utils"
 
 export default class Ninja {
     name: string
@@ -10,7 +11,7 @@ export default class Ninja {
         this.attributes = attributes
     }
 
-    get available_combos() {
-        return 1
+    available_combos() {
+        return [...getAllCombo()].filter(v => v.ninjas.some(ninja => ninja.name === this.name))
     }
 }

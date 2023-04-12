@@ -1,4 +1,4 @@
-import { DragOverlay, useDraggable } from "@dnd-kit/core";
+import { useDraggable } from "@dnd-kit/core";
 import { getAllNinja } from "@/utils/ninja/ninja.utils";
 import { NinjaImage } from "./ninjaImage.component";
 import React, { ReactNode } from "react";
@@ -9,7 +9,8 @@ export function DragNinja({ children, id }: {children: ReactNode, id: string}) {
   });
   const style = transform ? {
     transform: `translate3d(${transform.x}px, ${transform.y}px, 0)`,
-    opacity: "25%"
+    opacity: "25%",
+    touchAction: "none"
   } : undefined;
 
   return (

@@ -1,5 +1,5 @@
-export type NinjaType = {
-    [key: string]: {
+export interface NinjaType {
+    [name: string]: {
         id: number
         attribute: string[]
         kelas: string

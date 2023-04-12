@@ -1,7 +1,7 @@
-import { MenuNav } from '@/components/menu/menu.component'
 import Link from 'next/link'
 import { ReactNode } from 'react'
 import { Container } from 'react-bootstrap'
+import { MenuNav } from './menu.component'
 
 export default function Content({ name, children }: {name?: string, children: ReactNode}) {
   return (

@@ -26,17 +26,10 @@ function matchRegex(name: string) {
 
 export function getNinja(name: string) {
     const ninja = name in NINJAS ? NINJAS[name] : matchRegex(name)
-    if (!ninja) return null;
+    if (!ninja) throw new Error("Ninja not found!");
 
     const [atas, kanan, bawah, kiri] = ninja.attribute.map(v => attrMapping[v])
-    return {
-        name,
-        atas: atas,
-        kanan: kanan,
-        bawah: bawah,
-        kiri: kiri,
-        kelas: ninja.kelas
-    }
+    return new Ninja(name, ninja.kelas, [atas, kanan, bawah, kiri])
 }
 
 export function* getAllNinja() {

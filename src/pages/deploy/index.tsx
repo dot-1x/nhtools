@@ -1,30 +1,31 @@
 import Content from "@/components/content.component";
-import { useState } from "react";
-import { Container, Dropdown, DropdownButton, Row, Col } from "react-bootstrap";
 import Head from "next/head";
-import { ChooseContainer, NinjaImage } from "@/components/ninja/ninja.component";
-import DeployColumn from "@/components/deploy/deployCol.component";
-import { DndContext, DragOverlay, MouseSensor, TouchSensor, useSensor, useSensors } from "@dnd-kit/core";
+import { DeployColumn, DeployTopButton, DeployFooter } from "@/components/deploy.component";
+import { useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import { ChooseContainer, NinjaImage } from "@/components/ninja.component";
+import { DndContext, DragOverlay, TouchSensor, useSensor, MouseSensor } from "@dnd-kit/core";
 import { dropData } from "@/types/deploy.types";
 import { stripColName } from "@/utils/ninja/ninja.utils";
+import { ComboTable } from "@/components/combo.component";
 
 export default function Deploy() {
   const [CHOOSED, setChoosed] = useState("SSS")
   const [dragged, setDragged] = useState("")
   const [dropped, setDropped] = useState<dropData>(new Map())
   const [onbox, setOnBox] = useState(false)
-  const mouseSensor = useSensor(
+  const pointerSens = useSensor(
     MouseSensor, {
       activationConstraint: {
-        distance: 25,
-        delay: 2
+        distance: 0,
       }
     }
   )
   const touchSens = useSensor(
     TouchSensor, {
       activationConstraint: {
-        distance: 25
+        delay: 250,
+        tolerance: 0
       }
     }
   )
@@ -38,26 +39,19 @@ export default function Deploy() {
         <Container className="bg-dark p-2">
           <h3 className="text-center">Deploy tool</h3>
           <p className="text-center">Tools utilitas untuk mengkombinasi deploy</p>
-          <DropdownButton title="Choose Ninja">
-            {
-              ["SSS", "SS", "S", "A", "B", "C", "D"].map(
-                v => (
-                  <Dropdown.Item key={v} onClick={ev => setChoosed(ev.currentTarget.id)} id={v}>
-                    {v}
-                  </Dropdown.Item>
-                )
-              )
-            }
-          </DropdownButton>
+          <p>Click icon ninja dalam deploy untuk menghapus ninja</p>
+          <p>Click tombol choose ninja untuk memilih kelas ninja</p>
+          <p>Click clear deploy untuk menhapus semua ninja dalam deploy</p>
+          <DeployTopButton setChoosed={setChoosed} setDropped={setDropped}/>
           <DndContext
-            sensors={ [ touchSens ] }
+            sensors={ [ touchSens, pointerSens ] }
             onDragStart={(ev) => { setDragged(stripColName(ev.active.id.toString())) }}
             onDragEnd={
               (ev) => {
                 setDragged("")
                 if (ev.over && ev.active) {
                   dropped.set(ev.over.id.toString(), stripColName(ev.active.id.toString()))
-                  setDropped(dropped)
+                  // setDropped(dropped)
                   setOnBox(true)
                 }
                 else {
@@ -71,19 +65,22 @@ export default function Deploy() {
             }
 
             <DragOverlay
-              dropAnimation={{
-                duration: !onbox ? 500 : 0
-              }}
+              dropAnimation={{ duration: !onbox ? 500 : 0 }}
+              style={{ touchAction: "none" }}
             >
               {dragged ? <NinjaImage name={dragged.replaceAll("-", " ")}/> : null}
             </DragOverlay>
 
             <Row>
-              <Col >
+              <Col lg={5}>
                 <DeployColumn dropped={dropped} dropstate={setDropped}/>
+              </Col>
+              <Col lg={7}>
+                <ComboTable dropped={dropped}/>
               </Col>
             </Row>
           </DndContext>
+          <DeployFooter/>
         </Container>
       </Content>
     </>

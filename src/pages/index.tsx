@@ -1,7 +1,7 @@
 import Content from '@/components/content.component'
 import Head from 'next/head'
 import { Container, ListGroup } from 'react-bootstrap'
-import ListItemLink from '@/components/menu/list.component'
+import { ListItemLink } from '@/components/menu.component'
 import { listPage } from '@/data/pages'
 
 export default function Home() {
