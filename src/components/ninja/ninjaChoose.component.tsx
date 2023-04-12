@@ -15,7 +15,7 @@ export function DragNinja({ children, id }: {children: ReactNode, id: string}) {
 
   return (
     <span ref={setNodeRef} style={style} {...listeners} {...attributes}
-      onDrag={ev => { ev.preventDefault() }} // preventing from moving
+      // onDrag={ev => { ev.preventDefault() }} // preventing from moving
       className="mx-2"
     >
       {children}
@@ -23,14 +23,14 @@ export function DragNinja({ children, id }: {children: ReactNode, id: string}) {
   );
 }
 
-function ChooseNinja({ kelas }: { kelas: string }) {
+export function ChooseNinja({ kelas }: { kelas: string }) {
   const found = [...getAllNinja()].filter(v => v.kelas === kelas)
   return (
     <div
-      className="overflow-auto p-2"
-      style={{
-        whiteSpace: "nowrap"
-      }}
+      className="overflow-auto p-1"
+      // style={{
+      //   whiteSpace: "nowrap"
+      // }}
       onScroll={(ev) => { ev.preventDefault() }}
     >
       {
@@ -41,13 +41,5 @@ function ChooseNinja({ kelas }: { kelas: string }) {
         )
       }
     </div>
-  )
-}
-
-export function ChooseContainer({ choosed }: { choosed: string}) {
-  return (
-    <>
-      <ChooseNinja kelas={ choosed } />
-    </>
   )
 }

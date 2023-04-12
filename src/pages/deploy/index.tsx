@@ -3,7 +3,7 @@ import Head from "next/head";
 import { DeployColumn, DeployTopButton, DeployFooter } from "@/components/deploy.component";
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ChooseContainer, NinjaImage } from "@/components/ninja.component";
+import { ChooseNinja, NinjaImage } from "@/components/ninja.component";
 import { DndContext, DragOverlay, TouchSensor, useSensor, MouseSensor } from "@dnd-kit/core";
 import { dropData } from "@/types/deploy.types";
 import { stripColName } from "@/utils/ninja/ninja.utils";
@@ -61,12 +61,12 @@ export default function Deploy() {
             }
           >
             {
-              CHOOSED && <ChooseContainer choosed={CHOOSED}/>
+              CHOOSED && <ChooseNinja kelas={CHOOSED}/>
             }
 
             <DragOverlay
               dropAnimation={{ duration: !onbox ? 500 : 0 }}
-              style={{ touchAction: "none" }}
+              // style={{ touchAction: "none" }}
             >
               {dragged ? <NinjaImage name={dragged.replaceAll("-", " ")}/> : null}
             </DragOverlay>
@@ -80,7 +80,7 @@ export default function Deploy() {
               </Col>
             </Row>
           </DndContext>
-          <DeployFooter/>
+          <DeployFooter dropped={ dropped } />
         </Container>
       </Content>
     </>

@@ -38,9 +38,15 @@ export function* getAllCombo() {
     }
 }
 
+export function* getComboByNinja(ninja: string) {
+    for (const combo of getAllCombo()) {
+        if(combo.ninjas.some(n => n.name === ninja)) yield combo
+    }
+}
+
 /**
- * this will search all available combo by inputted ninja
- * 
+ * this will search all qualified combo by inputted ninja
+ *
  * @param ninja array of string of ninja name
  * @returns Combo[]
  */
@@ -51,7 +57,7 @@ export function getAvailableCombo(ninja: string[]) {
         const foundNinja = getNinja(ninja)
         for (const combo of foundNinja.available_combos()) {
         const founded = combo.ninjas.every(v => ninjas.has(v.name))
-        if (founded && !foundCombo.some(v => v.name === combo.name)) foundCombo.push(combo)
+            if (founded && !foundCombo.some(v => v.name === combo.name)) foundCombo.push(combo)
         }
     }
     return foundCombo

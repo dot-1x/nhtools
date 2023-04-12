@@ -4,6 +4,19 @@ import Ninja from "@/models/ninja/ninja.models"
 
 const NINJAS = ninjas as NinjaType
 
+const DEFAULT = new Ninja(
+    "null",
+    "null",
+    [NinjaAttrs.NULL, NinjaAttrs.NULL, NinjaAttrs.NULL, NinjaAttrs.NULL],
+    {
+        atas: NinjaAttrs.NULL,
+        kanan: NinjaAttrs.NULL,
+        bawah: NinjaAttrs.NULL,
+        kiri: NinjaAttrs.NULL,
+    }
+
+)
+
 const attrMapping: { [key: string]: NinjaAttrs } = {
     "Biru": NinjaAttrs.BLUE,
     "Merah": NinjaAttrs.RED,
@@ -25,16 +38,26 @@ function matchRegex(name: string) {
 }
 
 export function getNinja(name: string) {
+    if (!name) return DEFAULT
     const ninja = name in NINJAS ? NINJAS[name] : matchRegex(name)
-    if (!ninja) throw new Error("Ninja not found!");
+    if (!ninja) return DEFAULT;
 
     const [atas, kanan, bawah, kiri] = ninja.attribute.map(v => attrMapping[v])
-    return new Ninja(name, ninja.kelas, [atas, kanan, bawah, kiri])
+    return new Ninja(name, ninja.kelas, [atas, kanan, bawah, kiri], {
+        atas: atas,
+        kanan: kanan,
+        bawah: bawah,
+        kiri: kiri,
+    })
+}
+
+export function getNinjas(names: string[]) {
+    return names.map(v => getNinja(v))
 }
 
 export function* getAllNinja() {
-    for (const [name, value] of Object.entries(NINJAS)) {
-        yield new Ninja(name, value.kelas, value.attribute.map(v => attrMapping[v]))
+    for (const name of Object.keys(NINJAS)) {
+        yield getNinja(name)
     }
 }
 

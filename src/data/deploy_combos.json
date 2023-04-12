@@ -1490,5 +1490,41 @@
         "agility": 0,
         "trigger": false,
         "ninjas": ["Sage Jiraiya", "Sage Naruto", "Sage Sakura"]
+    },
+    "Momoshiki's Servant": {
+        "id": 0,
+        "attack": 0,
+        "defend": 12,
+        "hp": 0,
+        "agility": 12,
+        "trigger": false,
+        "ninjas": ["Momoshiki Karma Mode", "Otsutsuki Kinshiki"]
+    },
+    "Impales": {
+        "id": 0,
+        "attack": 12,
+        "defend": 0,
+        "hp": 0,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Otsutsuki Urashiki", "Jiraiya"]
+    },
+    "Two Souls": {
+        "id": 0,
+        "attack": 13,
+        "defend": 0,
+        "hp": 13,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Momoshiki Karma Mode", "Boruto Karma Mode"]
+    },
+    "Chakra Pills": {
+        "id": 0,
+        "attack": 13,
+        "defend": 13,
+        "hp": 13,
+        "agility": 13,
+        "trigger": false,
+        "ninjas": ["Otsutsuki Urashiki", "Momoshiki Karma Mode", "Otsutsuki Kinshiki"]
     }
 }

@@ -10,7 +10,7 @@ export default function Content({ name, children }: {name?: string, children: Re
       <Container fluid className="bg-dark text-white">
         { children }
       </Container>
-      <Container className="bg-dark text-white">
+      <Container className="bg-dark text-white border-top border-white">
         <footer className="py-3 my-4">
           <p className="mb-3 mb-md-0 text-muted my-2">© {new Date().getFullYear()} dotcchi1x</p>
           <p className="mb-3 mb-md-0 text-muted my-2">Donate Me: <Link href="https://teer.id/dotcchi1x" target="_blank" className="text-decoration-none">Trakteer</Link></p>

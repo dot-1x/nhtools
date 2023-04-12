@@ -1,4 +1,5 @@
 import Content from "@/components/content.component";
+import { NinjaImage } from "@/components/ninja.component";
 import { DndContext, useDraggable, useDroppable } from "@dnd-kit/core";
 import { ReactNode, useState } from "react";
 import { Container } from "react-bootstrap";
@@ -49,9 +50,15 @@ export default function MyDnD() {
   const [done, setDone] = useState<null | number | string>(null)
   return (
     <Content>
-      <Container>
-        <div className="border-start border-primary" style={{width: 50, height: 50}}>
-
+      <Container className="p-1">
+        <div className="border-start border-primary" style={{height: 68, width: 70}}>
+          <div className="border-end border-danger" style={{height: 68, width: 70}}>
+            <div className="border-top border-info" style={{height: 68, width: 70}}>
+              <div className="border-bottom border-warning text-center" style={{height: 68, width: 70}}>
+                <NinjaImage name="silhouette" />
+              </div>
+            </div>
+          </div>
         </div>
       </Container>
     </Content>
