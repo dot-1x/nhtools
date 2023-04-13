@@ -33,4 +33,6 @@ Website inspired by: [AK-Toolbox](https://aceship.github.io/AN-EN-Tags/akhr.html
 
 ### Bantu dengan donasi
 
+setiap donasi berharga dan membuat saya semakin bersemangat untuk kontribusi
+
 [!["trakteer"](https://img.shields.io/badge/trakteer-ff1212?style=for-the-badge&logoColor=white)](https://teer.id/dotcchi1x)

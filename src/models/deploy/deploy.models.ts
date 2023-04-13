@@ -19,28 +19,28 @@ export class Deploy {
     }
 
     connected_pipe() {
-        let connected = 0
-        const row1 = this.rows[0]
-        const row2 = this.rows[1]
-        const row3 = this.rows[2]
-        for (let index = 0; index < 5; index++) {
-            const upmid = row1[index].attribute.bawah === row2[index].attribute.atas && row1[index].name !== "null"
-            const downmid = row2[index].attribute.bawah === row3[index].attribute.atas && row1[index].name !== "null"
-
-            // const r1 = row1[index] === row1[index + 1]
-            // const r2 = row2[index] === row2[index + 1]
-            // const r3 = row3[index] === row3[index + 1]
-            connected += [upmid, downmid].filter(v => v).length
-        }
-        // using flatmap
-        const checks = this.rows.flatMap(
-            ninjas => ninjas.map(
-                (ninja, idx, arr) =>
-                    ninja.attribute.kanan === arr[idx + 1]?.attribute.kiri && ninja.name !== "null"
+        const topMid = this.rows[0].reduce(
+            (val, ninja, idx) => {
+                if (ninja.name === "null" || this.rows[1][idx].name === "null") return val
+                return val + Number(ninja.attribute.bawah === this.rows[1][idx].attribute.atas)
+            },
+            0
+        )
+        const midBtm = this.rows[1].reduce(
+            (val, ninja, idx) => {
+                if (ninja.name === "null" || this.rows[2][idx].name === "null") return val
+                return val + Number(ninja.attribute.bawah === this.rows[2][idx].attribute.atas)
+            },
+            0
+        )
+        const sides = this.rows.flatMap(
+            ninjas => ninjas.reduce(
+                (prev, cur, idx, arr) =>
+                    prev + Number(cur.attribute.kanan === arr[idx + 1]?.attribute.kiri && cur.name !== "null"),
+                0
             )
-        ).filter(v => v).length
-        connected += checks
-        return connected
+        ).reduce((p, c) => p + c)
+        return topMid + midBtm + sides
     }
 
     combos() {

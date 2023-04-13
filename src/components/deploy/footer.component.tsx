@@ -6,7 +6,7 @@ import { Row, Col, OverlayTrigger, Button, Tooltip, Container } from "react-boot
 export function DeployFooter({ dropped }: { dropped: dropData }) {
   // inefficient
 
-  const rows: Array<string>[] = [
+  const rows: string[][] = [
     Array<string>(5).fill(""),
     Array<string>(5).fill(""),
     Array<string>(5).fill("")
