@@ -33,7 +33,7 @@ export default function Deploy() {
   return (
     <>
       <Head>
-        <title>Deploy Constructor</title>
+        <title>Deploy Construct</title>
       </Head>
       <Content name="Deploy">
         <Container className="bg-dark p-2">

@@ -1,7 +1,7 @@
 import { Deploy } from "@/models/deploy/deploy.models"
 import { dropData } from "@/types/deploy.types"
 import { getNinjas, getNinja } from "@/utils/ninja/ninja.utils"
-import { Row, Col, OverlayTrigger, Button, Tooltip, Container } from "react-bootstrap"
+import { Row, Col, OverlayTrigger, Button, Tooltip } from "react-bootstrap"
 
 export function DeployFooter({ dropped }: { dropped: dropData }) {
   // inefficient
@@ -28,7 +28,7 @@ export function DeployFooter({ dropped }: { dropped: dropData }) {
 
   return (
     <Row>
-      <Col lg={5} sm={4}>
+      <Col lg={5} sm={4} className="my-1">
         <OverlayTrigger
           placement="top"
           trigger={["hover", "focus"]}
@@ -41,7 +41,7 @@ export function DeployFooter({ dropped }: { dropped: dropData }) {
           <Button variant="info">Connected Pipe: { deploy.connected_pipe() }</Button>
         </OverlayTrigger>
       </Col>
-      <Col lg={7} sm={8}>
+      <Col lg={7} sm={8} className="my-1">
         <OverlayTrigger
           placement="top"
           trigger={"focus"}
@@ -53,7 +53,12 @@ export function DeployFooter({ dropped }: { dropped: dropData }) {
         >
           <Button
             variant="info"
-            onClick={(ev) => navigator.clipboard.writeText(ev.currentTarget.textContent || "")}
+            onClick={async (ev) => {
+              const content = ev.currentTarget.textContent || ""
+              const state = await navigator.permissions.query({ name: "clipboard-write" })
+              if (!(state.state === "granted")) return;
+              navigator.clipboard.writeText(content)
+            }}
             >
             Total Attributes: {[...deploy.totalCombo()].map(([attr, num]) => `${attr}: ${num}`).join(", ")}
           </Button>

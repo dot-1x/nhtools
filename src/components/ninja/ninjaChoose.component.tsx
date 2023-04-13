@@ -14,12 +14,12 @@ export function DragNinja({ children, id }: {children: ReactNode, id: string}) {
   } : undefined;
 
   return (
-    <span ref={setNodeRef} style={style} {...listeners} {...attributes}
+    <div ref={setNodeRef} style={style} {...listeners} {...attributes}
       // onDrag={ev => { ev.preventDefault() }} // preventing from moving
-      className="mx-2"
+      className="d-inline m-1"
     >
       {children}
-    </span>
+    </div>
   );
 }
 

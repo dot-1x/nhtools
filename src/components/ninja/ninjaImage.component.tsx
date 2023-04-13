@@ -12,6 +12,7 @@ export function NinjaImage({ name }: { name: string }) {
       width={65}
       height={65}
       title={`${ninja?.available_combos().map(c => c.name).join("\n")}`}
+      // className="m-1"
     />
   )
 }

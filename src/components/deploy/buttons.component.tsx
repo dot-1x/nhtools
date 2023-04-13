@@ -1,6 +1,7 @@
 import { dropData } from "@/types/deploy.types";
-import { SetStateAction, Dispatch } from "react";
+import { SetStateAction, Dispatch, useState } from "react";
 import { Button, Dropdown, DropdownButton, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { PromptSave } from "./modal.component";
 
 export function DeployTopButton({ setDropped, setChoosed }:
   {
@@ -8,9 +9,10 @@ export function DeployTopButton({ setDropped, setChoosed }:
     setChoosed: Dispatch<SetStateAction<string>>
   }
 ) {
+  const [showsave, setShowSave] = useState(false)
   return (
     <>
-      <DropdownButton title="Choose Ninja" className="d-inline mx-1">
+      <DropdownButton title="Choose Ninja" className="d-inline my-1">
         {
         ["SSS", "SS", "S", "A", "B", "C", "D"].map(
             v => (
@@ -23,7 +25,7 @@ export function DeployTopButton({ setDropped, setChoosed }:
       </DropdownButton>
       <Button
         variant="danger"
-        className="mx-1"
+        className="m-1"
         onClick={
           () => setDropped(new Map())
         }
@@ -39,10 +41,12 @@ export function DeployTopButton({ setDropped, setChoosed }:
           </Tooltip>
         }
       >
-        <Button variant="info" className="mx-1">
+        <Button variant="info" className="my-1" onClick={() => setShowSave(true)}>
           Save Deploy
         </Button>
       </OverlayTrigger>
+
+      <PromptSave show={ showsave } setShow={ setShowSave } />
     </>
   )
 }
