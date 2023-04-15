@@ -42,6 +42,7 @@ export default function Deploy() {
           <p>Click icon ninja dalam deploy untuk menghapus ninja</p>
           <p>Click tombol choose ninja untuk memilih kelas ninja</p>
           <p>Click clear deploy untuk menhapus semua ninja dalam deploy</p>
+          <p>Click total Attributes untuk copy total attribute</p>
           <DeployTopButton setChoosed={setChoosed} setDropped={setDropped}/>
           <DndContext
             sensors={ [ touchSens, pointerSens ] }

@@ -51,7 +51,7 @@ export function DeployColumn( { dropped, dropstate }: T_deployCol) {
                       key={idCol}
                       className="p-1"
                       onClick={
-                        _ => {
+                        () => {
                           dropped.delete(idCol)
                           dropstate(new Map(dropped))
                         }

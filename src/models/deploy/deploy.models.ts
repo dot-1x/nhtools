@@ -19,20 +19,18 @@ export class Deploy {
     }
 
     connected_pipe() {
-        const topMid = this.rows[0].reduce(
-            (val, ninja, idx) => {
-                if (ninja.name === "null" || this.rows[1][idx].name === "null") return val
-                return val + Number(ninja.attribute.bawah === this.rows[1][idx].attribute.atas)
-            },
-            0
-        )
-        const midBtm = this.rows[1].reduce(
-            (val, ninja, idx) => {
-                if (ninja.name === "null" || this.rows[2][idx].name === "null") return val
-                return val + Number(ninja.attribute.bawah === this.rows[2][idx].attribute.atas)
-            },
-            0
-        )
+        let counter = 0
+        for (let index = 0; index < this.rows[0].length; index++) {
+            const top = this.rows[0][index]
+            const mid = this.rows[1][index]
+            const bottom = this.rows[2][index]
+            if (top.attribute.bawah === mid.attribute.atas
+                && (top.name !== "null" || mid.name !== "null")
+            ) counter += 1;
+            if (mid.attribute.bawah === bottom.attribute.atas
+                && (mid.name !== "null" || bottom.name !== "null")
+            ) counter += 1;
+        }
         const sides = this.rows.flatMap(
             ninjas => ninjas.reduce(
                 (prev, cur, idx, arr) =>
@@ -40,7 +38,8 @@ export class Deploy {
                 0
             )
         ).reduce((p, c) => p + c)
-        return topMid + midBtm + sides
+        return sides + counter
+        // return topMid + midBtm + sides
     }
 
     combos() {

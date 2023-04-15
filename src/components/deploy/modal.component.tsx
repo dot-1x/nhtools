@@ -16,7 +16,10 @@ export function PromptSave({ setShow, show }: {setShow: Dispatch<SetStateAction<
           Simpan Deploy Saat Ini
         </Modal.Title>
       </Modal.Header>
-      <ModalBody>
+        <ModalBody>
+          <Form.Text>
+            Fitur save deploy masih belum tersedia
+          </Form.Text>
           <Form.Group className="mb-3" controlId="deployName">
             <Form.Label>Nama Deploy</Form.Label>
             <Form.Control
@@ -24,11 +27,12 @@ export function PromptSave({ setShow, show }: {setShow: Dispatch<SetStateAction<
               placeholder="Nama Deploy"
               autoFocus
               name="deployname"
+              required
             />
           </Form.Group>
-      </ModalBody>
+        </ModalBody>
       <Modal.Footer>
-        <Button variant="primary" type="submit" onClick={() => setShow(false)}>Simpan</Button>
+        <Button variant="primary" type="submit" onClick={() => setShow(false)} disabled>Simpan</Button>
       </Modal.Footer>
     </Form>
     </Modal>

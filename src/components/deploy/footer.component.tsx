@@ -34,7 +34,7 @@ export function DeployFooter({ dropped }: { dropped: dropData }) {
           trigger={["hover", "focus"]}
           overlay={
             <Tooltip id="tip-fix-pipe">
-              Click here to fix pipe!
+              Click untuk fix pipa! (Belum tersedia)
             </Tooltip>
           }
         >
@@ -55,9 +55,11 @@ export function DeployFooter({ dropped }: { dropped: dropData }) {
             variant="info"
             onClick={async (ev) => {
               const content = ev.currentTarget.textContent || ""
-              const state = await navigator.permissions.query({ name: "clipboard-write" })
-              if (!(state.state === "granted")) return;
-              navigator.clipboard.writeText(content)
+              try {
+                await navigator.clipboard.writeText(content)
+              } catch (e) {
+                alert("Copy ke clipboard gagal!") 
+              }
             }}
             >
             Total Attributes: {[...deploy.totalCombo()].map(([attr, num]) => `${attr}: ${num}`).join(", ")}
