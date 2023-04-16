@@ -15,12 +15,12 @@ function DropNinja({ id, dropped}: T_dropNinja) {
     elem = <NinjaImage name={stripColName(active.id as string)} />
   }
   else if (dropped.get(id)) {
-    // elem = (
-    //   <DragNinja id={`${id}-${dropped.get(id)}`}>
-    //     <NinjaImage name={dropped.get(id) || "silhouette"} />
-    //   </DragNinja>
-    // )
-    elem = <NinjaImage name={dropped.get(id) || "silhouette"} />
+    elem = (
+      <DragNinja id={`${id}-${dropped.get(id)}`}>
+        <NinjaImage name={dropped.get(id) || "silhouette"} />
+      </DragNinja>
+    )
+    // elem = <NinjaImage name={dropped.get(id) || "silhouette"} />
   }
   else {
     elem = <NinjaImage name="silhouette" />

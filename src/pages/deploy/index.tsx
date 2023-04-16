@@ -45,6 +45,7 @@ export default function Deploy() {
           <p>Click total Attributes untuk copy total attribute</p>
           <DeployTopButton setChoosed={setChoosed} setDropped={setDropped}/>
           <DndContext
+            autoScroll={false}
             sensors={ [ touchSens, pointerSens ] }
             onDragStart={(ev) => { setDragged(stripColName(ev.active.id.toString())) }}
             onDragEnd={
