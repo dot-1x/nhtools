@@ -14,7 +14,7 @@ export default function Deploy() {
   const [dragged, setDragged] = useState("")
   const [dropped, setDropped] = useState<dropData>(new Map())
   const [onbox, setOnBox] = useState(false)
-  const pointerSens = useSensor(
+  const mouseSens = useSensor(
     MouseSensor, {
       activationConstraint: {
         distance: 0,
@@ -46,7 +46,7 @@ export default function Deploy() {
           <DeployTopButton setChoosed={setChoosed} setDropped={setDropped}/>
           <DndContext
             autoScroll={false}
-            sensors={ [ touchSens, pointerSens ] }
+            sensors={ [ touchSens, mouseSens ] }
             onDragStart={(ev) => { setDragged(stripColName(ev.active.id.toString())) }}
             onDragEnd={
               (ev) => {
@@ -78,7 +78,7 @@ export default function Deploy() {
                 <DeployColumn dropped={dropped} dropstate={setDropped}/>
               </Col>
               <Col lg={7}>
-                <ComboTable dropped={dropped}/>
+                <ComboTable ninjas={[...dropped.entries()].map(([_, ninja]) => ninja.replaceAll("-", " "))}/>
               </Col>
             </Row>
           </DndContext>

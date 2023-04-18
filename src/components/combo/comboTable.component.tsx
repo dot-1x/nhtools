@@ -2,8 +2,8 @@ import { dropData } from "@/types/deploy.types";
 import { getAvailableCombo } from "@/utils/combo/combo.utils";
 import { Table } from "react-bootstrap";
 
-export function ComboTable({ dropped }: { dropped: dropData }) {
-  const foundCombo = getAvailableCombo([...dropped.entries()].map(([_, ninja]) => ninja.replaceAll("-", " ")))
+export function ComboTable({ ninjas }: { ninjas: string[] }) {
+  const foundCombo = getAvailableCombo(ninjas)
   return (
     <Table variant="dark" striped>
       <thead>

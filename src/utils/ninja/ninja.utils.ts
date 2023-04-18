@@ -1,6 +1,8 @@
 import { NinjaType, NinjaAttrs } from "@/types/ninja.types"
 import ninjas from "../../data/ninjas.json"
 import Ninja from "@/models/ninja/ninja.models"
+import { Combo } from "@/models/combo/combo.models"
+import { getCombo } from "../combo/combo.utils"
 
 const NINJAS = ninjas as NinjaType
 
@@ -64,4 +66,9 @@ export function* getAllNinja() {
 export function stripColName(name: string) {
     const re = /col-\d-row-\d-/i
     return name.replace(re, "")
+}
+
+export function getNinjaByCombo(combos: string[]) {
+    const combs = combos.map(v => getCombo(v))
+    return new Set(combs.flatMap(v => v.ninjasName))
 }

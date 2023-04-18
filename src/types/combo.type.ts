@@ -15,3 +15,8 @@ export interface comboAttrs {
     "hp": number
     "agility": number
 }
+
+export interface comboMap {
+    combo_select: string[]
+    combo_choosed: string[]
+}
