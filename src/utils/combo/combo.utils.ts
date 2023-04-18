@@ -62,3 +62,25 @@ export function getAvailableCombo(ninja: string[]) {
     }
     return foundCombo
 }
+
+export function getTotalCombo(combos: Combo[]) {
+    return combos.reduce(
+        (prev, cur) => {
+            prev.set("attack", (prev.get("attack") || 0) + cur.attrs.attack)
+            prev.set("defend", (prev.get("defend") || 0) + cur.attrs.defend)
+            prev.set("hp", (prev.get("hp") || 0) + cur.attrs.hp)
+            prev.set("agility", (prev.get("agility") || 0) + cur.attrs.agility)
+            return prev
+        },
+        new Map(
+            [
+                ["attack", 0],
+                ["defend", 0],
+                ["hp", 0],
+                ["agility", 0]
+            ]
+        )
+    )
+}
+export const stripDragID = (name: string) => name.replace(/-choosed|-select/i, "")
+export const getParentKey = (name: string) => name.replace(/sortable-|drop-/i, "").replace("-", "_")
