@@ -14,7 +14,7 @@ export function DeployTopButton({ setDropped, setChoosed }:
     <>
       <DropdownButton title="Choose Ninja" className="d-inline my-1">
         {
-        ["SSS", "SS", "S", "A", "B", "C", "D"].map(
+        ["UR", "SSS", "SS", "S", "A", "B", "C", "D"].map(
             v => (
             <Dropdown.Item key={v} onClick={ev => setChoosed(ev.currentTarget.id)} id={v}>
               {v}

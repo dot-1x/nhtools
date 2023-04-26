@@ -1428,5 +1428,15 @@
             "Hijau"
         ],
         "kelas": "SSS"
+    },
+    "Menma Uzumaki": {
+        "id": 5638,
+        "attribute": [
+            "Biru",
+            "Hijau",
+            "Biru",
+            "Kuning"
+        ],
+        "kelas": "UR"
     }
 }

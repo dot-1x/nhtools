@@ -1,3 +1,7 @@
+import { Dispatch, SetStateAction } from "react"
+
+export type comboKeyData = "combo_select" | "combo_choosed"
+
 export interface comboType {
     [name: string]: {
         "attack": number
@@ -19,4 +23,11 @@ export interface comboAttrs {
 export interface comboMap {
     combo_select: string[]
     combo_choosed: string[]
+}
+
+export interface arrangeData {
+    active: string,
+    combos: comboMap,
+    combosKey: string,
+    ninjaSize: Dispatch<SetStateAction<number>>
 }

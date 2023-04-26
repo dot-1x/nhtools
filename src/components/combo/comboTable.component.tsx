@@ -1,4 +1,3 @@
-import { dropData } from "@/types/deploy.types";
 import { getAvailableCombo } from "@/utils/combo/combo.utils";
 import { Table } from "react-bootstrap";
 

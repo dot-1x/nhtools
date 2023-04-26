@@ -1,6 +1,6 @@
 import Content from "@/components/content.component";
-import { getAllCombo, getCombo, getParentKey, getTotalCombo, stripDragID } from "@/utils/combo/combo.utils";
-import { DndContext, DragOverlay, MouseSensor, TouchSensor, useDraggable, useDroppable, useSensor } from "@dnd-kit/core";
+import { getAllCombo, getCombo, arrangeCombo, getTotalCombo, stripDragID } from "@/utils/combo/combo.utils";
+import { DndContext, DragOverlay, MouseSensor, TouchSensor, useSensor } from "@dnd-kit/core";
 import { Container, Row, Col, ListGroup, Button } from "react-bootstrap";
 import { useState } from "react";
 import { ComboTable } from "@/components/combo.component";
@@ -9,16 +9,23 @@ import { comboMap } from "@/types/combo.type";
 import { ComboButton } from "@/components/combo/comboButtons.component";
 import { DropCombo } from "@/components/combo/comboDrop.component";
 import Head from "next/head";
+import { Combo as CombClass} from "@/models/combo/combo.models";
 
-type comboKeyData = "combo_select" | "combo_choosed"
-
+type sortStratType = "Nama" | "Attack" | "Defend" | "HP" | "Agility"
+const sortStratMap = {
+  Nama: (combs: CombClass[]) => combs.map(v => v.name).sort(),
+  Attack: (combs: CombClass[]) => combs.sort((a, b) => b.attrs.attack - a.attrs.attack).map(v => v.name),
+  Defend: (combs: CombClass[]) => combs.sort((a, b) => b.attrs.defend - a.attrs.defend).map(v => v.name),
+  HP: (combs: CombClass[]) => combs.sort((a, b) => b.attrs.hp - a.attrs.hp).map(v => v.name),
+  Agility: (combs: CombClass[]) => combs.sort((a, b) => b.attrs.agility - a.attrs.agility).map(v => v.name),
+}
 
 export default function Combo() {
-  const sortedCombo = [...getAllCombo()].map(v => v.name).sort()
-  const [totalNinja, setNinjas] = useState(0)
+  const [totalNinja, setNinjaSize] = useState(0)
   const [dragged, setDrag] = useState("")
+  const [sortStrat, setSort] = useState<sortStratType>("Attack")
   const [combos, setCombos] = useState<comboMap>({
-    combo_select: sortedCombo,
+    combo_select: [...getAllCombo()].map(v => v.name).sort(),
     combo_choosed: []
   })
   const mouseSens = useSensor(
@@ -43,7 +50,10 @@ export default function Combo() {
     </Head>
     <Content name="Combo">
       <Container className="p-2">
-        <ComboButton totalNinjas={totalNinja} setCombos={setCombos} setNinjas={setNinjas} />
+        <h3 className="text-center">Combo tool</h3>
+        <p className="text-center">Tools utilitas untuk mengkombinasi combo</p>
+        <p>Jika total ninja &gt; 15, tidak dapat menambah combo lagi</p>
+          <ComboButton totalNinjas={totalNinja} setCombos={setCombos} setNinjas={setNinjaSize} />
         <Row>
           <DndContext
             sensors={[mouseSens, touchSens]}
@@ -56,24 +66,7 @@ export default function Combo() {
             }}
             onDragOver={(ev) => {
               if (!ev.over) return;
-              const activeID = ev.active.id as string
-              if (combos.combo_choosed.includes(activeID))
-                combos.combo_choosed.splice(combos.combo_choosed.indexOf(activeID), 1)
-              if (combos.combo_select.includes(activeID))
-                combos.combo_select.splice(combos.combo_select.indexOf(activeID), 1)
-              const overID = ev.over.id as string
-              const key = getParentKey(overID) as comboKeyData
-              combos[key].push(activeID)
-              combos[key].sort()
-              let ninjas = getNinjaByCombo(combos.combo_choosed)
-              setNinjas(ninjas.size)
-              if (ninjas.size > 15) {
-                if (combos.combo_choosed.includes(activeID))
-                  combos.combo_choosed.splice(combos.combo_choosed.indexOf(activeID), 1)
-                combos.combo_select.push(activeID)
-                combos.combo_select.sort()
-                setTimeout(() => setNinjas(getNinjaByCombo(combos.combo_choosed).size), 500)
-              }
+              arrangeCombo({ active: ev.active.id.toString(), combos: combos, combosKey: ev.over.id.toString(), ninjaSize: setNinjaSize })
             }}
           >
             <Col>
@@ -82,13 +75,13 @@ export default function Combo() {
                 <DragOverlay>
                   {dragged ? <ListGroup.Item variant="info">{ stripDragID(dragged) }</ListGroup.Item> : null}
                 </DragOverlay>
-                <DropCombo name="drop-combo-select" combos={combos.combo_select}/>
+                <DropCombo name="drop-combo-select" combos={combos.combo_select} data={{ninjaSize: setNinjaSize, combosMap: combos}}/>
               </ListGroup>
             </Col>
             <Col>
               <h4 className="text-center">Taruh Sini</h4>
               <ListGroup className="overflow-auto" style={{ maxHeight: 650 }}>
-                <DropCombo name="drop-combo-choosed" combos={combos.combo_choosed}/>
+                <DropCombo name="drop-combo-choosed" combos={combos.combo_choosed} data={{ninjaSize: setNinjaSize, combosMap: combos}}/>
               </ListGroup>
             </Col>
           </DndContext>

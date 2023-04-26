@@ -1,12 +1,12 @@
 import { comboMap } from "@/types/combo.type";
 import { getAllCombo } from "@/utils/combo/combo.utils";
 import { Dispatch, SetStateAction } from "react";
-import { Button } from "react-bootstrap";
+import { Button, DropdownButton, Dropdown } from "react-bootstrap";
 
 export function ComboButton({ totalNinjas, setCombos, setNinjas }: {
-    totalNinjas: number
-    setCombos: Dispatch<SetStateAction<comboMap>>
-    setNinjas: Dispatch<SetStateAction<number>>
+  totalNinjas: number
+  setCombos: Dispatch<SetStateAction<comboMap>>
+  setNinjas: Dispatch<SetStateAction<number>>
 }) {
     return (
         <>
@@ -28,6 +28,17 @@ export function ComboButton({ totalNinjas, setCombos, setNinjas }: {
         <Button variant="info" className="m-1">
           Total Ninja: {totalNinjas}
         </Button>
+        {/* <DropdownButton title="Urut Sesuai" className="d-inline my-1">
+          {
+          ["Nama", "Attack", "Defend", "HP", "Agility"].map(
+              v => (
+              <Dropdown.Item key={v} id={v} onClick={() => setSort(v)}>
+                {v}
+              </Dropdown.Item>
+            )
+          )
+          }
+        </DropdownButton> */}
         </>
     )
 }

@@ -1,10 +1,13 @@
 import combos from "@/data/deploy_combos.json"
 import { Combo } from "@/models/combo/combo.models"
-import { comboType } from "@/types/combo.type"
-import { getNinja } from "../ninja/ninja.utils"
+import { comboType, arrangeData, comboKeyData } from "@/types/combo.type"
+import { getNinja, getNinjaByCombo } from "../ninja/ninja.utils"
 
 
 const COMBOS = combos as comboType
+
+export const stripDragID = (name: string) => name.replace(/-choosed|-select/i, "")
+export const getParentKey = (name: string) => name.replace(/sortable-|drop-/i, "").replace("-", "_")
 
 export function getCombo(name: string) {
     if (!(name in COMBOS)) throw new Error(`Combo "${name}" not found`)
@@ -82,5 +85,23 @@ export function getTotalCombo(combos: Combo[]) {
         )
     )
 }
-export const stripDragID = (name: string) => name.replace(/-choosed|-select/i, "")
-export const getParentKey = (name: string) => name.replace(/sortable-|drop-/i, "").replace("-", "_")
+
+export function arrangeCombo(data: arrangeData) {
+    const {active, combos, combosKey, ninjaSize} = data
+    if (combos.combo_choosed.includes(active))
+      combos.combo_choosed.splice(combos.combo_choosed.indexOf(active), 1)
+    if (combos.combo_select.includes(active))
+      combos.combo_select.splice(combos.combo_select.indexOf(active), 1)
+    const key = getParentKey(combosKey) as comboKeyData
+    combos[key].push(active)
+    combos[key].sort()
+    const ninjas = getNinjaByCombo(combos.combo_choosed)
+    ninjaSize(ninjas.size)
+    if (ninjas.size > 15) {
+      if (combos.combo_choosed.includes(active))
+        combos.combo_choosed.splice(combos.combo_choosed.indexOf(active), 1)
+      combos.combo_select.push(active)
+      combos.combo_select.sort()
+      setTimeout(() => ninjaSize(getNinjaByCombo(combos.combo_choosed).size), 500)
+    }
+  }

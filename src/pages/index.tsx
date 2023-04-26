@@ -15,7 +15,7 @@ export default function Home() {
           <h1>NH: New Era Tools</h1>
           <p>Tools utilitas game Ninja Heroes New Era</p>
           <p>Fitur tersedia:</p>
-          <Container className="border-top border-bottom p-2">
+          <Container className="border-top p-2">
             <ListGroup variant='flush'>
               {
                 listPage.map(
