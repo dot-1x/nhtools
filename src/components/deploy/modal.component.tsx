@@ -1,4 +1,5 @@
 import { Deploy } from "@/models/deploy/deploy.models";
+import Link from "next/link";
 import { Dispatch, SetStateAction } from "react";
 import { Button, Modal, ModalBody, Form } from "react-bootstrap";
 
@@ -60,6 +61,7 @@ export function ModalCopyNinja({ setShow, show, deploy }: {setShow: Dispatch<Set
       <Modal.Dialog>
         deploy = Deploy.from_row({deploy.toString()})
       </Modal.Dialog>
+      <Link href={"https://colab.research.google.com/drive/1B5Tv9P4-fzFmQs92q98cvmkQBrqnQeeK"} target="_blank" id="btnToColab">Click untuk pergi ke gcolab</Link>
       </ModalBody>
     <Modal.Footer>
       <Button variant="primary" type="button" onClick={() => setShow(false)}>Tutup</Button>

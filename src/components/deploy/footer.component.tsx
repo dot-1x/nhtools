@@ -49,7 +49,7 @@ export function DeployFooter({ dropped }: { dropped: dropData }) {
             try {
               const txt = `deploy = Deploy.from_row(${deploy.toString()})`
               await navigator.clipboard.writeText(txt)
-              alert("ninja berhasil dicopy ke clipboard!\nsilahkan paste di gcolab")
+              alert("ninja berhasil dicopy ke clipboard!\nsilahkan paste di gcolab\npopup mungkin diblokir")
               window.open("https://colab.research.google.com/drive/1B5Tv9P4-fzFmQs92q98cvmkQBrqnQeeK", "_blank")
 
             } catch (e) {
