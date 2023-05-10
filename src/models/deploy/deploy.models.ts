@@ -65,4 +65,8 @@ export class Deploy {
             )
         )
     }
+
+    toString() {
+        return `[${this.rows[0].map(v => `"${v.name}"`)}],\n[${this.rows[1].map(v => `"${v.name}"`)}],\n[${this.rows[2].map(v => `"${v.name}"`)}]`
+    }
 }

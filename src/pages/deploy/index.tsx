@@ -74,10 +74,10 @@ export default function Deploy() {
             </DragOverlay>
 
             <Row>
-              <Col lg={5}>
+              <Col md={5}>
                 <DeployColumn dropped={dropped} dropstate={setDropped}/>
               </Col>
-              <Col lg={7}>
+              <Col md={7}>
                 <ComboTable ninjas={[...dropped.entries()].map(([_, ninja]) => ninja.replaceAll("-", " "))}/>
               </Col>
             </Row>

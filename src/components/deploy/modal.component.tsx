@@ -1,3 +1,4 @@
+import { Deploy } from "@/models/deploy/deploy.models";
 import { Dispatch, SetStateAction } from "react";
 import { Button, Modal, ModalBody, Form } from "react-bootstrap";
 
@@ -36,5 +37,33 @@ export function PromptSave({ setShow, show }: {setShow: Dispatch<SetStateAction<
       </Modal.Footer>
     </Form>
     </Modal>
+  )
+}
+
+export function ModalCopyNinja({ setShow, show, deploy }: {setShow: Dispatch<SetStateAction<boolean>>, show: boolean, deploy: Deploy}) {
+  return (<Modal
+      show={ show }
+      onHide={() => setShow(false)}
+      size="lg"
+      aria-labelledby="modal-show-pipe"
+      centered
+    >
+    <Modal.Header closeButton closeVariant="primary">
+      <Modal.Title id="modal-show-pipe">
+        Fix pipa
+      </Modal.Title>
+    </Modal.Header>
+      <ModalBody>
+      <h3>
+        silahkan copy text di bawah lalu paste di gcolab
+      </h3>
+      <Modal.Dialog>
+        deploy = Deploy.from_row({deploy.toString()})
+      </Modal.Dialog>
+      </ModalBody>
+    <Modal.Footer>
+      <Button variant="primary" type="button" onClick={() => setShow(false)}>Tutup</Button>
+    </Modal.Footer>
+  </Modal>
   )
 }

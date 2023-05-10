@@ -1438,5 +1438,15 @@
             "Kuning"
         ],
         "kelas": "UR"
+    },
+    "Hiruzen Sarutobi": {
+        "id": 5638,
+        "attribute": [
+            "Kuning",
+            "Hijau",
+            "Merah",
+            "Merah"
+        ],
+        "kelas": "UR"
     }
 }
