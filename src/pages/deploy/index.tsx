@@ -38,11 +38,12 @@ export default function Deploy() {
       <Content name="Deploy">
         <Container className="bg-dark p-2">
           <h3 className="text-center">Deploy tool</h3>
-          <p className="text-center">Tools utilitas untuk mengkombinasi deploy</p>
-          <p>Click icon ninja dalam deploy untuk menghapus ninja</p>
-          <p>Click tombol choose ninja untuk memilih kelas ninja</p>
-          <p>Click clear deploy untuk menhapus semua ninja dalam deploy</p>
-          <p>Click total Attributes untuk copy total attribute</p>
+          <p className="text-center">In-Game like deploy tools</p>
+          <p>Click ninja icon inside deploy column to remove them</p>
+          <p>Click choose ninja button to choose ninja class</p>
+          <p>Click clear deploy to clear current deploy</p>
+          <p>Click total Attributes to copy total attributes</p>
+          <p><strong>Press and hold</strong> ninja for phone user</p>
           <DeployTopButton setChoosed={setChoosed} setDropped={setDropped}/>
           <DndContext
             autoScroll={false}
@@ -74,10 +75,10 @@ export default function Deploy() {
             </DragOverlay>
 
             <Row>
-              <Col md={5}>
+              <Col lg={5}>
                 <DeployColumn dropped={dropped} dropstate={setDropped}/>
               </Col>
-              <Col md={7}>
+              <Col lg={7}>
                 <ComboTable ninjas={[...dropped.entries()].map(([_, ninja]) => ninja.replaceAll("-", " "))}/>
               </Col>
             </Row>
