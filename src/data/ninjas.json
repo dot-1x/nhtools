@@ -1448,5 +1448,15 @@
             "Merah"
         ],
         "kelas": "UR"
+    },
+    "Hashirama Sage Mode": {
+        "id": 0,
+        "attribute": [
+            "Biru",
+            "Merah",
+            "Merah",
+            "Biru"
+        ],
+        "kelas": "UR"
     }
 }
