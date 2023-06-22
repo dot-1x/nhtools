@@ -72,3 +72,9 @@ export function getNinjaByCombo(combos: string[]) {
     const combs = combos.map(v => getCombo(v))
     return new Set(combs.flatMap(v => v.ninjasName))
 }
+
+export function* getNinjaByClass(kelas: "UR" | "SSS" | "SS" | "S" | "A" | "B" | "C" | "D") {
+    for (const ninja of getAllNinja()) {
+        if (ninja.kelas === kelas) yield ninja
+    }
+}

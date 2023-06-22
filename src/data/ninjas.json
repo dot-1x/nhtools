@@ -1458,5 +1458,25 @@
             "Biru"
         ],
         "kelas": "UR"
+    },
+    "Madara Susanoo": {
+        "id": 0,
+        "attribute": [
+            "Biru",
+            "Hijau",
+            "Merah",
+            "Merah"
+        ],
+        "kelas": "UR"
+    },
+    "Ten Tails Madara": {
+        "id": 0,
+        "attribute": [
+            "Hijau",
+            "Hijau",
+            "Biru",
+            "Kuning"
+        ],
+        "kelas": "UR"
     }
 }
