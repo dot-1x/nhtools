@@ -1478,5 +1478,45 @@
             "Kuning"
         ],
         "kelas": "UR"
+    },
+    "Naruto Kyuubi Mode": {
+        "id": 0,
+        "attribute": [
+            "Kuning",
+            "Biru",
+            "Merah",
+            "Kuning"
+        ],
+        "kelas": "UR"
+    },
+    "Sumire Kakei": {
+        "id": 0,
+        "attribute": [
+            "Biru",
+            "Kuning",
+            "Hijau",
+            "Hijau"
+        ],
+        "kelas": "SS"
+    },
+    "Human Cloning": {
+        "id": 0,
+        "attribute": [
+            "Biru",
+            "Merah",
+            "Hijau",
+            "Biru"
+        ],
+        "kelas": "SS"
+    },
+    "Shinki": {
+        "id": 0,
+        "attribute": [
+            "Merah",
+            "Kuning",
+            "Merah",
+            "Biru"
+        ],
+        "kelas": "SSS"
     }
 }
