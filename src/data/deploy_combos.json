@@ -1583,10 +1583,10 @@
     },
     "Different Destiny": {
         "id": 0,
-        "attack": 13,
+        "attack": 14,
         "defend": 0,
         "hp": 0,
-        "agility": 13,
+        "agility": 14,
         "trigger": false,
         "ninjas": ["Menma Uzumaki", "Naruto Kyuubi Mode"]
     }
