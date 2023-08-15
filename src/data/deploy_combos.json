@@ -1526,5 +1526,68 @@
         "agility": 13,
         "trigger": false,
         "ninjas": ["Otsutsuki Urashiki", "Momoshiki Karma Mode", "Otsutsuki Kinshiki"]
+    },
+    "Moon Eye Arc": {
+        "id": 0,
+        "attack": 10,
+        "defend": 10,
+        "hp": 0,
+        "agility": 10,
+        "trigger": false,
+        "ninjas": ["Six Paths Obito", "Six Paths Madara", "Ten Tails Madara", "Otsutsuki Kaguya"]
+    },
+    "Step Sister": {
+        "id": 0,
+        "attack": 9,
+        "defend": 0,
+        "hp": 0,
+        "agility": 9,
+        "trigger": false,
+        "ninjas": ["Kawaki", "Himawari Uzumaki"]
+    },
+    "Iron Sand": {
+        "id": 0,
+        "attack": 0,
+        "defend": 12,
+        "hp": 0,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Sasori", "Shinki"]
+    },
+    "Shinobi No Kami": {
+        "id": 0,
+        "attack": 12,
+        "defend": 12,
+        "hp": 12,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Hashirama", "Hiruzen Sarutobi", "3rd Hokage", "Hashirama Sage Mode"]
+    },
+    "Byakugo": {
+        "id": 0,
+        "attack": 0,
+        "defend": 0,
+        "hp": 0,
+        "agility": 11,
+        "trigger": false,
+        "ninjas": ["Sage Sakura", "Tsunade"]
+    },
+    "Menma World": {
+        "id": 0,
+        "attack": 0,
+        "defend": 0,
+        "hp": 13,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Menma Uzumaki", "Tobi", "Sakura"]
+    },
+    "Different Destiny": {
+        "id": 0,
+        "attack": 13,
+        "defend": 0,
+        "hp": 0,
+        "agility": 13,
+        "trigger": false,
+        "ninjas": ["Menma Uzumaki", "Naruto Kyuubi Mode"]
     }
 }

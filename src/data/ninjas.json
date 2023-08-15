@@ -1518,5 +1518,15 @@
             "Biru"
         ],
         "kelas": "SSS"
+    },
+    "Sasuke Wanderer": {
+        "id": 0,
+        "attribute": [
+            "Merah",
+            "Biru",
+            "Hijau",
+            "Biru"
+        ],
+        "kelas": "UR"
     }
 }
