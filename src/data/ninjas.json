@@ -1528,5 +1528,15 @@
             "Biru"
         ],
         "kelas": "UR"
+    },
+    "Itachi Edotensei": {
+        "id": 0,
+        "attribute": [
+            "Hijau",
+            "Hijau",
+            "Kuning",
+            "Merah"
+        ],
+        "kelas": "UR"
     }
 }
