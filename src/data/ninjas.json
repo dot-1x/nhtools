@@ -1538,5 +1538,25 @@
             "Merah"
         ],
         "kelas": "UR"
+    },
+    "Uchiha Shisui": {
+        "id": 0,
+        "attribute": [
+            "Hijau",
+            "Kuning",
+            "Merah",
+            "Biru"
+        ],
+        "kelas": "UR"
+    },
+    "Sasuke Akatsuki": {
+        "id": 0,
+        "attribute": [
+            "Hijau",
+            "Hijau",
+            "Kuning",
+            "Biru"
+        ],
+        "kelas": "SS"
     }
 }
