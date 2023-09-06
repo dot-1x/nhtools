@@ -147,11 +147,8 @@ export function PropmtLoad({
       <Form
         onSubmit={async (ev) => {
           ev.preventDefault()
-          const form = new FormData(ev.target as HTMLFormElement)
           const url = new URL(`${window.location.origin}/api/decode`)
-          const deploycode = form.get("deploycode")
-          if (typeof deploycode != "string") return
-          url.searchParams.set("code", deploycode)
+          url.searchParams.set("code", depCode)
           const resp = await fetch(url)
           if (resp.status >= 300 || resp.status < 200)
             return alert("Oops.. code deploy yang anda masukan tidak valid!")
@@ -183,8 +180,9 @@ export function PropmtLoad({
               placeholder="Code Deploy"
               autoFocus
               name="deploycode"
-              required
+              onChange={(ev) => setDepCode(ev.target.value)}
               value={depCode}
+              required
             />
           </Form.Group>
         </ModalBody>
