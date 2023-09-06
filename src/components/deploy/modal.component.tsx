@@ -56,7 +56,7 @@ export function PromptSave({
               body: JSON.stringify(Object.fromEntries(dropdata.entries())),
             })
             const data = await resp.json()
-            await navigator.clipboard.writeText(data.message)
+            // await navigator.clipboard.writeText(data.message)
             if (!window.localStorage.getItem("deploy"))
               window.localStorage.setItem("deploy", "{}")
             const localData = JSON.parse(
@@ -64,7 +64,7 @@ export function PromptSave({
             )
             localData[name] = data.message
             window.localStorage.setItem("deploy", JSON.stringify(localData))
-            alert("Code sudah di copy ke clipboard!")
+            alert("Deploy berhasil tersimpan di browser anda!")
             setShow(false)
           }}
         >
