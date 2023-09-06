@@ -1,4 +1,4 @@
-import { getNinja } from "@/utils/ninja/ninja.utils"
+import { getNinja } from "@/utils/ninja.utils"
 import Image from "next/image"
 
 export function NinjaImage({ name }: { name: string }) {
@@ -11,7 +11,10 @@ export function NinjaImage({ name }: { name: string }) {
       id={`image-${name.replaceAll(" ", "-")}`}
       width={65}
       height={65}
-      title={`${ninja?.available_combos().map(c => c.name).join("\n")}`}
+      title={`${ninja
+        ?.available_combos()
+        .map((c) => c.name)
+        .join("\n")}`}
       // className="m-1"
     />
   )
