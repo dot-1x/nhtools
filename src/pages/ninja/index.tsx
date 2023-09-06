@@ -41,15 +41,9 @@ export default function Ninja() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>
-                      ASWSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
-                    </td>
-                    <td>
-                      ASWSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
-                    </td>
-                    <td>
-                      ASWSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
-                    </td>
+                    <td>TESTING</td>
+                    <td>TESTING</td>
+                    <td>TESTING</td>
                   </tr>
                 </tbody>
               </Table>

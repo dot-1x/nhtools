@@ -129,8 +129,13 @@ export function PropmtLoad({
   show: boolean
 }) {
   const [depCode, setDepCode] = useState("")
-  const localdata = window.localStorage.getItem("deploy")
-  const localStorage: { [key: string]: string } = JSON.parse(localdata || "{}")
+  const [localStorage, setLocalStorage] = useState<{ [key: string]: string }>(
+    {}
+  )
+  useEffect(() => {
+    const localdata = window.localStorage.getItem("deploy")
+    setLocalStorage(JSON.parse(localdata || "{}"))
+  }, [])
   return (
     <Modal
       show={show}
