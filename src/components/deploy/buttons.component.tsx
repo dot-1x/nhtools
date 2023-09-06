@@ -8,7 +8,7 @@ import {
   OverlayTrigger,
   Tooltip,
 } from "react-bootstrap"
-import { PropmtLoad } from "./modal.component"
+import { PromptSave, PropmtLoad } from "./modal.component"
 
 export function DeployTopButton({
   setDropped,
@@ -20,6 +20,7 @@ export function DeployTopButton({
   dropped: dropData
 }) {
   const [showload, setShowLoad] = useState(false)
+  const [showsave, setShowSave] = useState(false)
   return (
     <>
       <DropdownButton title="Choose Ninja" className="d-inline m-1">
@@ -51,15 +52,10 @@ export function DeployTopButton({
           variant="info"
           className="m-1"
           onClick={async () => {
+            if (!window)
+              return alert("Maaf, fitur tidak tersedia di platform anda!")
             if (dropped.size < 1) return alert("Kolom Tidak Boleh Kosong!")
-            const resp = await fetch("/api/encrypt", {
-              method: "POST",
-              body: JSON.stringify(Object.fromEntries(dropped.entries())),
-            })
-            const data = await resp.json()
-
-            await navigator.clipboard.writeText(data.message)
-            alert("Code sudah di copy ke clipboard!")
+            setShowSave(true)
           }}
         >
           Save Deploy
@@ -74,6 +70,7 @@ export function DeployTopButton({
       >
         Load Deploy
       </Button>
+      <PromptSave show={showsave} setShow={setShowSave} dropdata={dropped} />
       <PropmtLoad
         show={showload}
         setShow={setShowLoad}

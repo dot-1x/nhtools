@@ -1,8 +1,15 @@
 import { Deploy } from "@/models/deploy/deploy.models"
 import { dropData } from "@/types/deploy.types"
 import Link from "next/link"
-import { Dispatch, SetStateAction } from "react"
-import { Button, Modal, ModalBody, Form } from "react-bootstrap"
+import { Dispatch, SetStateAction, useEffect, useState } from "react"
+import {
+  Button,
+  Modal,
+  ModalBody,
+  Form,
+  Dropdown,
+  DropdownButton,
+} from "react-bootstrap"
 
 export function PromptSave({
   setShow,
@@ -13,6 +20,7 @@ export function PromptSave({
   show: boolean
   dropdata: dropData
 }) {
+  const [name, setName] = useState("")
   return (
     <Modal
       show={show}
@@ -32,6 +40,7 @@ export function PromptSave({
             placeholder="Nama Deploy"
             autoFocus
             name="deployname"
+            onChange={(ev) => setName(ev.target.value)}
             required
           />
         </Form.Group>
@@ -40,9 +49,23 @@ export function PromptSave({
         <Button
           variant="primary"
           type="submit"
-          onClick={() => {
+          onClick={async () => {
+            if (!name) return alert("Nama tidak boleh kosong")
+            const resp = await fetch("/api/encrypt", {
+              method: "POST",
+              body: JSON.stringify(Object.fromEntries(dropdata.entries())),
+            })
+            const data = await resp.json()
+            await navigator.clipboard.writeText(data.message)
+            if (!window.localStorage.getItem("deploy"))
+              window.localStorage.setItem("deploy", "{}")
+            const localData = JSON.parse(
+              window.localStorage.getItem("deploy") || "{}"
+            )
+            localData[name] = data.message
+            window.localStorage.setItem("deploy", JSON.stringify(localData))
+            alert("Code sudah di copy ke clipboard!")
             setShow(false)
-            console.log(dropdata)
           }}
         >
           Simpan
@@ -105,6 +128,9 @@ export function PropmtLoad({
   setShow: Dispatch<SetStateAction<boolean>>
   show: boolean
 }) {
+  const [depCode, setDepCode] = useState("")
+  const localdata = window.localStorage.getItem("deploy")
+  const localStorage: { [key: string]: string } = JSON.parse(localdata || "{}")
   return (
     <Modal
       show={show}
@@ -135,6 +161,16 @@ export function PropmtLoad({
           </Modal.Title>
         </Modal.Header>
         <ModalBody>
+          <Form.Group>
+            <Form.Label>Pilih dari penyimpanan</Form.Label>
+            <DropdownButton title="Pilih dari penyimpanan" variant="info">
+              {Object.entries(localStorage).map(([key, val]) => (
+                <Dropdown.Item key={key} onClick={() => setDepCode(val)}>
+                  {key}
+                </Dropdown.Item>
+              ))}
+            </DropdownButton>
+          </Form.Group>
           <Form.Group className="mb-3" controlId="deploycode">
             <Form.Label>Code Deploy</Form.Label>
             <Form.Control
@@ -143,6 +179,7 @@ export function PropmtLoad({
               autoFocus
               name="deploycode"
               required
+              value={depCode}
             />
           </Form.Group>
         </ModalBody>
