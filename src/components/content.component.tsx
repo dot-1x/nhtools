@@ -18,10 +18,10 @@ export default function Content({
       </Container>
       <Container className="bg-dark text-white border-top border-white">
         <footer className="py-3 my-4">
-          <p className="mb-3 mb-md-0 text-muted my-2">
+          <p className="mb-3 mb-md-0 text-white my-2">
             © {new Date().getFullYear()} dotcchix
           </p>
-          <p className="mb-3 mb-md-0 text-muted my-2">
+          <p className="mb-3 mb-md-0 text-white my-2">
             Donate Me:{" "}
             <Link
               href="https://teer.id/dotcchi1x"
@@ -31,7 +31,7 @@ export default function Content({
               Trakteer
             </Link>
           </p>
-          <p className="mb-3 mb-md-0 text-muted my-2">My Social</p>
+          <p className="mb-3 mb-md-0 text-white my-2">My Social</p>
           <Link
             href="https://discord.com/users/732842920889286687"
             className="me-2"
