@@ -1558,5 +1558,25 @@
             "Biru"
         ],
         "kelas": "SS"
+    },
+    "Hamura Otsutsuki": {
+        "id": 0,
+        "attribute": [
+            "Hijau",
+            "Biru",
+            "Biru",
+            "Merah"
+        ],
+        "kelas": "UR"
+    },
+    "Urashiki Karma": {
+        "id": 0,
+        "attribute": [
+            "Hijau",
+            "Biru",
+            "Biru",
+            "Merah"
+        ],
+        "kelas": "SSS"
     }
 }

@@ -1589,5 +1589,59 @@
         "agility": 14,
         "trigger": false,
         "ninjas": ["Menma Uzumaki", "Naruto Kyuubi Mode"]
+    },
+    "God Shinobi Rivals": {
+        "id": 0,
+        "attack": 7,
+        "defend": 7,
+        "hp": 7,
+        "agility": 7,
+        "trigger": false,
+        "ninjas": ["Madara Susanoo", "Hashirama Sage Mode"]
+    },
+    "Sharingan Transplant": {
+        "id": 0,
+        "attack": 0,
+        "defend": 0,
+        "hp": 11,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Uchiha Shin", "Orochimaru", "Danzo"]
+    },
+    "Kyuubi Power": {
+        "id": 0,
+        "attack": 9,
+        "defend": 9,
+        "hp": 9,
+        "agility": 9,
+        "trigger": false,
+        "ninjas": ["Menma Uzumaki", "Naruto Kyuubi Mode", "Minato"]
+    },
+    "Foster Child": {
+        "id": 0,
+        "attack": 9,
+        "defend": 9,
+        "hp": 0,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Kabuto Yakushi", "Uchiha Shin", "Human Cloning"]
+    },
+    "Origins Chakra": {
+        "id": 0,
+        "attack": 10,
+        "defend": 0,
+        "hp": 10,
+        "agility": 10,
+        "trigger": false,
+        "ninjas": ["Otsutsuki Kaguya", "Otsutsuki Hagoromo", "Hamura Otsutsuki"]
+    },
+    "Wood Jutsu": {
+        "id": 0,
+        "attack": 0,
+        "defend": 13,
+        "hp": 0,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Hashirama Sage Mode", "Hashirama", "Yamato"]
     }
 }
