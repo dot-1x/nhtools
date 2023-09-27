@@ -1578,5 +1578,15 @@
             "Merah"
         ],
         "kelas": "SSS"
+    },
+    "Uchiha Shin": {
+        "id": 0,
+        "attribute": [
+            "Hijau",
+            "Biru",
+            "Biru",
+            "Merah"
+        ],
+        "kelas": "SS"
     }
 }
