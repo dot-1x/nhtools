@@ -1,6 +1,11 @@
 import combos from "@/data/deploy_combos.json"
 import { Combo } from "@/models/combo/combo.models"
-import { comboType, arrangeData, comboKeyData } from "@/types/combo.type"
+import {
+  comboType,
+  arrangeData,
+  comboKeyData,
+  sortStratMap,
+} from "@/types/combo.type"
 import { getNinja, getNinjaByCombo } from "./ninja.utils"
 
 const COMBOS = combos as comboType
@@ -93,15 +98,24 @@ export function arrangeCombo(data: arrangeData) {
   if (combos.combo_select.includes(active))
     combos.combo_select.splice(combos.combo_select.indexOf(active), 1)
   const key = getParentKey(combosKey) as comboKeyData
+  const sortFunc = sortStratMap[data.sortStrat.current]
   combos[key].push(active)
-  combos[key].sort()
+  combos[key].sort((a, b) => {
+    const combA = getCombo(a)
+    const combB = getCombo(b)
+    return sortFunc(combA, combB)
+  })
   const ninjas = getNinjaByCombo(combos.combo_choosed)
   ninjaSize(ninjas.size)
   if (ninjas.size > 15) {
     if (combos.combo_choosed.includes(active))
       combos.combo_choosed.splice(combos.combo_choosed.indexOf(active), 1)
     combos.combo_select.push(active)
-    combos.combo_select.sort()
+    combos.combo_select.sort((a, b) => {
+      const combA = getCombo(a)
+      const combB = getCombo(b)
+      return sortFunc(combA, combB)
+    })
     setTimeout(() => ninjaSize(getNinjaByCombo(combos.combo_choosed).size), 500)
   }
 }

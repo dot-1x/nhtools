@@ -22,7 +22,7 @@ export function DragCombo({
       }}
     >
       <ListGroup.Item variant="primary">
-        <span className="position-absolute top-1 start-50 translate-middle badge text-info">
+        <span className="position-absolute top-1 start-50 translate-middle badge text-danger">
           {combo.attrValues}
         </span>
         {stripDragID(name)}

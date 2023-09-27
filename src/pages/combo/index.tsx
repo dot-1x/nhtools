@@ -14,36 +14,22 @@ import {
   useSensor,
 } from "@dnd-kit/core"
 import { Container, Row, Col, ListGroup, Button } from "react-bootstrap"
-import { useState } from "react"
+import { useRef, useState } from "react"
 import { ComboTable } from "@/components/combo.component"
 import { getNinjaByCombo } from "@/utils/ninja.utils"
-import { comboMap } from "@/types/combo.type"
+import { comboMap, sortStratType } from "@/types/combo.type"
 import { ComboButton } from "@/components/combo/comboButtons.component"
 import { DropCombo } from "@/components/combo/comboDrop.component"
 import Head from "next/head"
-import { Combo as CombClass } from "@/models/combo/combo.models"
-
-type sortStratType = "Nama" | "Attack" | "Defend" | "HP" | "Agility"
-const sortStratMap = {
-  Nama: (combs: CombClass[]) => combs.map((v) => v.name).sort(),
-  Attack: (combs: CombClass[]) =>
-    combs.sort((a, b) => b.attrs.attack - a.attrs.attack).map((v) => v.name),
-  Defend: (combs: CombClass[]) =>
-    combs.sort((a, b) => b.attrs.defend - a.attrs.defend).map((v) => v.name),
-  HP: (combs: CombClass[]) =>
-    combs.sort((a, b) => b.attrs.hp - a.attrs.hp).map((v) => v.name),
-  Agility: (combs: CombClass[]) =>
-    combs.sort((a, b) => b.attrs.agility - a.attrs.agility).map((v) => v.name),
-}
 
 export default function Combo() {
   const [totalNinja, setNinjaSize] = useState(0)
   const [dragged, setDrag] = useState("")
-  const [sortStrat, setSort] = useState<sortStratType>("Attack")
   const [combos, setCombos] = useState<comboMap>({
     combo_select: [...getAllCombo()].map((v) => v.name).sort(),
     combo_choosed: [],
   })
+  const sortStratRef = useRef<sortStratType>("Nama")
   const mouseSens = useSensor(MouseSensor, {
     activationConstraint: {
       distance: 0,
@@ -55,6 +41,7 @@ export default function Combo() {
       tolerance: 0,
     },
   })
+
   return (
     <>
       <Head>
@@ -71,6 +58,7 @@ export default function Combo() {
             totalNinjas={totalNinja}
             setCombos={setCombos}
             setNinjas={setNinjaSize}
+            stratRef={sortStratRef}
           />
           <Row>
             <DndContext
@@ -89,6 +77,7 @@ export default function Combo() {
                   combos: combos,
                   combosKey: ev.over.id.toString(),
                   ninjaSize: setNinjaSize,
+                  sortStrat: sortStratRef,
                 })
               }}
             >
@@ -105,7 +94,11 @@ export default function Combo() {
                   <DropCombo
                     name="drop-combo-select"
                     combos={combos.combo_select}
-                    data={{ ninjaSize: setNinjaSize, combosMap: combos }}
+                    data={{
+                      ninjaSize: setNinjaSize,
+                      combosMap: combos,
+                      sortStrat: sortStratRef,
+                    }}
                   />
                 </ListGroup>
               </Col>
@@ -115,7 +108,11 @@ export default function Combo() {
                   <DropCombo
                     name="drop-combo-choosed"
                     combos={combos.combo_choosed}
-                    data={{ ninjaSize: setNinjaSize, combosMap: combos }}
+                    data={{
+                      ninjaSize: setNinjaSize,
+                      combosMap: combos,
+                      sortStrat: sortStratRef,
+                    }}
                   />
                 </ListGroup>
               </Col>
