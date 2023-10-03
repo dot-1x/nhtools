@@ -1588,5 +1588,14 @@
             "Merah"
         ],
         "kelas": "SSS"
+    },
+    "Daemon": {
+        "id": 0,
+        "attribute": [
+            "Kuning",
+            "Biru",
+            "Biru",
+            "Hijau"
+        ]
     }
 }

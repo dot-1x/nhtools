@@ -2,8 +2,18 @@ import type { AppProps } from "next/app"
 import Script from "next/script"
 import "bootstrap/dist/css/bootstrap.css"
 import "../style/style.css"
+// import { useEffect, useState } from "react"
 
 export default function App({ Component, pageProps }: AppProps) {
+  // const [loaded, setLoaded] = useState(false)
+  // useEffect(() => {
+  //   if (!loaded) {
+  //     alert(
+  //       "url website akan segera berpindah, jika anda memilki deploy yang tersimpan, harap simpan code deploy agar tidak hilang"
+  //     )
+  //     setLoaded(true)
+  //   }
+  // }, [loaded])
   return (
     <>
       <Component {...pageProps} />
