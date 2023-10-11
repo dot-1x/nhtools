@@ -1643,5 +1643,50 @@
         "agility": 0,
         "trigger": false,
         "ninjas": ["Hashirama Sage Mode", "Hashirama", "Yamato"]
+    },
+    "Naruto Final Chapter": {
+        "id": 0,
+        "attack": 0,
+        "defend": 12,
+        "hp": 12,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Ten Tails Madara", "Otsutsuki Kaguya", "Zetsu", "Six Paths Obito"]
+    },
+    "Izanami": {
+        "id": 0,
+        "attack": 12,
+        "defend": 0,
+        "hp": 0,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Itachi Edotensei", "Mangekyo Sasuke", "Kabuto Yakushi"]
+    },
+    "Seven Hokage": {
+        "id": 0,
+        "attack": 9,
+        "defend": 0,
+        "hp": 9,
+        "agility": 9,
+        "trigger": false,
+        "ninjas": ["Hashirama", "Tobirama", "3rd Hokage", "Minato", "Tsunade", "Kakashi Double Sharingan", "Byron Naruto"]
+    },
+    "Final Battle": {
+        "id": 0,
+        "attack": 0,
+        "defend": 0,
+        "hp": 9,
+        "agility": 9,
+        "trigger": false,
+        "ninjas": ["Kakashi Double Sharingan", "Nine Tails Naruto", "Mangekyo Sasuke", "Sage Sakura", "Otsutsuki Kaguya"]
+    },
+    "Indra Ashura Reincarnation": {
+        "id": 0,
+        "attack": 13,
+        "defend": 13,
+        "hp": 13,
+        "agility": 13,
+        "trigger": false,
+        "ninjas": ["Hashirama Sage Mode", "Madara Susanoo", "Naruto Kyuubi Mode", "Sasuke Wanderer"]
     }
 }
