@@ -27,6 +27,8 @@
     "react-bootstrap": "^2.8.0",
     "react-dom": "18.2.0",
     "short-crypt": "^3.0.5",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "postcss": ">=8.4.31",
+    "zod": ">=3.22.3"
   }
 }
