@@ -1598,5 +1598,15 @@
             "Hijau"
         ],
         "kelas": "UR"
+    },
+    "Eida": {
+        "id": 0,
+        "attribute": [
+            "Kuning",
+            "Biru",
+            "Biru",
+            "Hijau"
+        ],
+        "kelas": "UR"
     }
 }
