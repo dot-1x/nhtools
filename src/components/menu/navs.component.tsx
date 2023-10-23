@@ -10,27 +10,30 @@ export function MenuNav({ name }: { name?: string }) {
           NHTools
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="Navbar-Menu" />
-        <Navbar.Collapse id="Navbar-Menu">
-          <div className="d-flex flex-column justify-content-center align-items-center flex-md-row space">
-            <Nav className="mx-auto">
-              <span className="px-3 teko-font  text-center ">
-                <Link href={'/'} className={`nav-link ${name ? 'text-white' : 'text-primary'}`}>
-                  Home
+        <Navbar.Collapse id="Navbar-Menu" className="flex flex-lg-row justify-content-between">
+          {/* <div className="d-flex flex-column justify-content-center align-items-center flex-md-row space"> */}
+          <Nav className="mx-auto">
+            <span className="px-3 teko-font  text-center ">
+              <Link href={'/'} className={`nav-link ${name ? 'text-white' : 'text-primary'}`}>
+                Home
+              </Link>
+            </span>
+            {listPage.map((v) => (
+              <span className="px-3 teko-font  text-center " key={v.href}>
+                <Link href={v.href} className={`nav-link ${v.name === name ? 'text-white' : 'text-white'}`}>
+                  {v.name}
                 </Link>
               </span>
-              {listPage.map((v) => (
-                <span className="px-3 teko-font  text-center " key={v.href}>
-                  <Link href={v.href} className={`nav-link ${v.name === name ? 'text-white' : 'text-white'}`}>
-                    {v.name}
-                  </Link>
-                </span>
-              ))}
-            </Nav>
-            <Button variant="outline-primary" size="sm" className="border-2 mt-3 mt-lg-0">
+            ))}
+            <Button variant="outline-primary" size="sm" className="border-2 mt-3 mt-lg-0 w-50 mx-auto d-lg-none">
               <span className=" px-4 ">DONATE</span>
             </Button>
-          </div>
+          </Nav>
+          {/* </div> */}
         </Navbar.Collapse>
+        <Button variant="outline-primary" size="sm" className="border-2 mt-3 mt-lg-0 mx-auto d-none d-lg-block">
+          <span className=" px-4 ">DONATE</span>
+        </Button>
       </Container>
     </Navbar>
   );
