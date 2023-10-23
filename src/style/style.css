@@ -1,6 +1,6 @@
 
+@import './_header.css';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Teko:wght@400;600;700&display=swap');
-
 
 h1, h2, h3, h4, h5{
 font-family: 'Teko', sans-serif;
@@ -11,6 +11,7 @@ font-weight: 600 !important;
     font-family: 'Teko', sans-serif;
     font-weight: 400 I !important;
     letter-spacing: 1px;
+    
 }
 
 button{
@@ -18,10 +19,10 @@ button{
     font-weight: 400;
 }
 
+
  p{
     font-family: 'Open Sans', sans-serif;
 }
-
 
 #UR:hover{
     background-color: cyan;
@@ -47,3 +48,37 @@ button{
 #D:hover{
     background-color: grey;
 }
+
+
+
+/**
+ * ==============================================
+ * Scroll bar
+ * ==============================================
+ */
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #050311;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #33293d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #514063;
+}
+
+/* Scroll bar x-card */
+.cardScroll::-webkit-scrollbar {
+  display: none;
+}
+/* scroll bar end*/
