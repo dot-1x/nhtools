@@ -1,84 +1,66 @@
-
-@import './_header.css';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Teko:wght@400;600;700&display=swap');
 
-h1, h2, h3, h4, h5{
-font-family: 'Teko', sans-serif;
-font-weight: 600 !important;
+:root {
+    --primary-color: #C4B0FF; 
+    --soft-dark-primary: #3A2E46; 
+    --dark-primary: #050311; 
+  }
+
+html {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
-.teko-font{
-    font-family: 'Teko', sans-serif;
-    font-weight: 400 I !important;
-    letter-spacing: 1px;
-    
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Teko', sans-serif;
+  font-weight: 600 !important;
 }
 
-button{
-    font-family: 'Teko', sans-serif !important;
-    font-weight: 400;
+.teko-font {
+  font-family: 'Teko', sans-serif;
+  font-weight: 400 I !important;
+  letter-spacing: 1px;
 }
 
-
- p{
-    font-family: 'Open Sans', sans-serif;
+button {
+  font-family: 'Teko', sans-serif !important;
+  font-weight: 400;
 }
 
-#UR:hover{
-    background-color: cyan;
-}
-#SSS:hover{
-    background-color: blueviolet;
-}
-#SS:hover{
-    background-color:gold;
-}
-#S:hover{
-    background-color: darkred;
-}
-#A:hover{
-    background-color: purple;
-}
-#B:hover{
-    background-color: darkblue;
-}
-#C:hover{
-    background-color: darkgreen;
-}
-#D:hover{
-    background-color: grey;
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
-
-
-/**
- * ==============================================
- * Scroll bar
- * ==============================================
- */
-/* width */
-::-webkit-scrollbar {
-  width: 13px;
+#UR:hover {
+  background-color: cyan;
+}
+#SSS:hover {
+  background-color: blueviolet;
+}
+#SS:hover {
+  background-color: gold;
+}
+#S:hover {
+  background-color: darkred;
+}
+#A:hover {
+  background-color: purple;
+}
+#B:hover {
+  background-color: darkblue;
+}
+#C:hover {
+  background-color: darkgreen;
+}
+#D:hover {
+  background-color: grey;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #050311;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background: #33293d;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #514063;
-}
-
-/* Scroll bar x-card */
-.cardScroll::-webkit-scrollbar {
-  display: none;
-}
-/* scroll bar end*/
+/* elements */
+@import './style-elements/__scrollBar.css';
+@import './style-elements/__header.css';
+@import './style-elements/__card.css';

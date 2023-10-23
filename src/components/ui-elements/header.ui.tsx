@@ -4,7 +4,7 @@ import { Image } from 'react-bootstrap';
 
 export default function Header() {
   return (
-    <section className="_header">
+    <section className="__header">
       <Container>
         <Row className="d-flex flex-column flex-lg-row justify-content-lg-between   ">
           <Col className="my-3 align-self-end">

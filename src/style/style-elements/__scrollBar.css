@@ -1,0 +1,32 @@
+
+/**
+ * ==============================================
+ * Scroll bar
+ * ==============================================
+ */
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #050311;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #33293d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #514063;
+}
+
+/* Scroll bar x-card */
+.cardScroll::-webkit-scrollbar {
+  display: none;
+}
+/* scroll bar end*/

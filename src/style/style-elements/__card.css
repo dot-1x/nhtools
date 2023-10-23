@@ -1,0 +1,62 @@
+.__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+  width: 333.313px;
+  height: 240px;
+  min-height: 240px;
+  max-height: 240px;
+  border-radius: 10px;
+  background: linear-gradient(243deg, rgba(0, 0, 0, 0.16) 0%, rgba(18, 3, 63, 0.85) 100%), url('../../../public/assets/bg/w6.png'), lightgray 50% / cover no-repeat;
+  background-position: top;
+  transition: 0.3s ease;
+}
+.__card:hover {
+  justify-content: center;
+  color: var(--dark-primary);
+  background: linear-gradient(0deg, rgba(196, 176, 255, 0.966) 0%, rgba(196, 176, 255, 0.85) 100%), url('../../../public/assets/bg/w6.png'), lightgray 50% / cover no-repeat;
+  background-position: top;
+}
+
+
+
+.__card span {
+  font-size: 16px;
+}
+.__card p {
+  font-size: 16px;
+  display: none;
+}
+.__card:hover p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .__card {
+    width: 25lvw;
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+  }
+
+  .__card:hover p {
+    -webkit-line-clamp: 2;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .__card {
+    width: 333.313px;
+    min-height: 260px;
+    max-height: 260px;
+  }
+  .__card:hover p {
+    -webkit-line-clamp: 3;
+  }
+}
