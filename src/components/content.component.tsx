@@ -12,7 +12,7 @@ export default function Content({
   children: ReactNode
 }) {
   return (
-    <main className="bg-dark">
+    <main className="bg-dark-primary">
       <MenuNav name={name} />
       <Container fluid className="bg-dark text-white">
         {children}

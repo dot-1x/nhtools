@@ -25,7 +25,7 @@ export function MenuNav({ name }: { name?: string }) {
                 </Link>
               </span>
             ))}
-            <Button variant="outline-primary" size="sm" className="border-2 mt-3 mt-lg-0 w-50 mx-auto d-lg-none">
+            <Button variant="outline-primary" size="sm" className="border-2 mt-3 mt-lg-0 w-50 mx-auto d-lg-none mb-5">
               <span className=" px-4 ">DONATE</span>
             </Button>
           </Nav>
