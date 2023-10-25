@@ -5,7 +5,7 @@ import { Image } from 'react-bootstrap';
 export default function Title({ title, desc, bg }: { title?: string; desc?: string; bg?: string }) {
   return (
     <section
-      className="title "
+      className="title"
       style={{
         textDecoration: 'none',
         background: `linear-gradient(180deg, rgba(7, 3, 17, 0.74) 0%, #070311 100%), url(${bg}), lightgray 50% / cover no-repeat `,
