@@ -6,19 +6,19 @@ export function MenuNav({ name }: { name?: string }) {
   return (
     <Navbar bg="black" variant="dark" expand="lg" className=" bg-transparent z-3 ">
       <Container>
-        <Navbar.Brand href="#" className="teko-font fw-semibold text-primary fs-2  ">
+        <Navbar.Brand href="/" className="teko-font fw-semibold text-primary fs-2  ">
           NHTools
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="Navbar-Menu" />
         <Navbar.Collapse id="Navbar-Menu" className="flex flex-lg-row justify-content-between">
           <Nav className="mx-auto pb-5 pb-lg-0">
-            <span className="px-3 teko-font  text-center fs-5">
+            <span className="px-3 teko-font text-uppercase fst-italic  text-center fs-5">
               <Link href={'/'} className={`nav-link ${name ? 'text-white' : 'text-primary'}`}>
                 Home
               </Link>
             </span>
             {listPage.map((v) => (
-              <span className="px-3 teko-font  text-center fs-5" key={v.href}>
+              <span className="px-3 teko-font text-uppercase fst-italic  text-center fs-5" key={v.href}>
                 <Link href={v.href} className={`nav-link ${v.name === name ? 'text-primary' : 'text-white'}`}>
                   {v.name}
                 </Link>

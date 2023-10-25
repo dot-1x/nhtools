@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer className="py-3 bg-black text-white border-top border-dark">
       <Container>
-        <Row className="d-flex flex-column flex-lg-row-reverse justify-content-lg-between">
-          <Col className="my-3 pe-lg-5">
+        <Row className="d-flex flex-column flex-lg-row-reverse justify-content-lg-between py-4">
+          <Col className="my-3 ">
             <h3 className="fs-1">SOCIAL’S</h3>
             <div className="d-flex flex-row  ">
               <Link href="https://discord.com/users/732842920889286687" className="me-3 rounded bg-soft-dark-primary p-2" target="_blank">
@@ -21,18 +21,10 @@ export default function Footer() {
               </Link>
             </div>
           </Col>
-          <Col lg={8} className="my-3 pe-lg-5 ">
+          <Col lg={8} className="my-3  ">
             <h3 className="fs-1">NH TOOL’S - dotcchix</h3>
-            <p>
-              Mempunyai pengertian setiap baris data pada tabel pertama dihubungkan hanya ke satu baris data pada tabel ke dua. Hubungan antara file .{' '}
-              <span className="mb-3 mb-md-0 text-white my-2">
-                Donate Me:{' '}
-                <Link href="https://teer.id/dotcchi1x" target="_blank" className="text-decoration-none">
-                  Trakteer
-                </Link>
-              </span>
-            </p>
-            <p className="mb-3 mb-md-0 text-white my-2">© {new Date().getFullYear()} dotcchix</p>
+            <p>Mempunyai pengertian setiap baris data pada tabel pertama dihubungkan hanya ke satu baris data pada tabel ke dua. Hubungan antara file . </p>
+            <p className="mb-3 mb-md-0 text-white my-4 ">© {new Date().getFullYear()} dotcchix</p>
           </Col>
         </Row>
       </Container>
