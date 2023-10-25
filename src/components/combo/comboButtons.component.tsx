@@ -1,56 +1,63 @@
 import { comboMap, sortStratMap, sortStratType } from "@/types/combo.type"
 import { getAllCombo } from "@/utils/combo.utils"
 import { Dispatch, MutableRefObject, SetStateAction } from "react"
-import { Button, DropdownButton, Dropdown } from "react-bootstrap"
+import { Button, DropdownButton, Dropdown, OverlayTrigger, Tooltip } from 'react-bootstrap';
 
-export function ComboButton({
-  totalNinjas,
-  setCombos,
-  setNinjas,
-  stratRef,
-}: {
-  totalNinjas: number
-  setCombos: Dispatch<SetStateAction<comboMap>>
-  setNinjas: Dispatch<SetStateAction<number>>
-  stratRef: MutableRefObject<sortStratType>
-}) {
+export function TotalNinja({ totalNinjas }: { totalNinjas: number }) {
   return (
     <>
-      <Button
-        variant="danger"
-        className="m-1"
-        onClick={() => {
-          setCombos({
-            combo_choosed: [],
-            combo_select: [...getAllCombo()].map((v) => v.name).sort(),
-          })
-          setNinjas(0)
-        }}
+      <OverlayTrigger
+        placement={'right'}
+        overlay={
+          <Tooltip id={`tooltip-${'right'}`}>
+            Maksimal total ninja <strong>15</strong>.
+          </Tooltip>
+        }
       >
-        Hapus terpilih!
-      </Button>
-      <Button variant="info" className="m-1">
-        Total Ninja: {totalNinjas}
-      </Button>
-      <DropdownButton title="Urut Sesuai" className="d-inline my-1">
-        {["Nama", "Attack", "Defend", "HP", "Agility"].map((v) => (
-          <Dropdown.Item
-            key={v}
-            id={v}
-            onClick={() => {
-              stratRef.current = v as sortStratType
-              setCombos({
-                combo_choosed: [],
-                combo_select: [...getAllCombo()]
-                  .sort(sortStratMap[v as sortStratType])
-                  .map((v) => v.name),
-              })
-            }}
-          >
-            {v}
-          </Dropdown.Item>
-        ))}
-      </DropdownButton>
+        <div className="d-flex flex-row justify-content-start align-items-center mb-4 ">
+          <p className=" bg-transparent border border-2 border-primary text-primary rounded fs-5 py-1 px-4 teko-font">Total Ninja: {totalNinjas}</p>
+        </div>
+      </OverlayTrigger>
     </>
-  )
+  );
+}
+
+export function Filter({ stratRef, setCombos }: { setCombos: Dispatch<SetStateAction<comboMap>>; stratRef: MutableRefObject<sortStratType> }) {
+  return (
+    <DropdownButton title="Urut Sesuai" className="mb-4">
+      {['Nama', 'Attack', 'Defend', 'HP', 'Agility'].map((v) => (
+        <Dropdown.Item
+          key={v}
+          id={v}
+          onClick={() => {
+            stratRef.current = v as sortStratType;
+            setCombos({
+              combo_choosed: [],
+              combo_select: [...getAllCombo()].sort(sortStratMap[v as sortStratType]).map((v) => v.name),
+            });
+          }}
+        >
+          {v}
+        </Dropdown.Item>
+      ))}
+    </DropdownButton>
+  );
+}
+
+export function Clear({ setCombos, setNinjas }: { setCombos: Dispatch<SetStateAction<comboMap>>; setNinjas: Dispatch<SetStateAction<number>> }) {
+  return (
+    <Button
+      variant="danger"
+      className="mb-4"
+      onClick={() => {
+        setCombos({
+          combo_choosed: [],
+          combo_select: [...getAllCombo()].map((v) => v.name).sort(),
+        });
+        setNinjas(0);
+      }}
+    >
+      Hapus terpilih !
+    </Button>
+  );
 }

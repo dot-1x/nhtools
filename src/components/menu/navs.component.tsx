@@ -6,7 +6,7 @@ export function MenuNav({ name }: { name?: string }) {
   return (
     <Navbar bg="black" variant="dark" expand="lg" className=" bg-transparent z-3 ">
       <Container>
-        <Navbar.Brand href="/" className="teko-font fw-semibold text-primary fs-2  ">
+        <Navbar.Brand href="/" className="teko-font  text-primary fs-2  ">
           NHTools
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="Navbar-Menu" />

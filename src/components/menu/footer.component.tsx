@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 export default function Footer() {
   return (
-    <footer className="py-3 bg-black text-white border-top border-dark">
+    <footer className="py-3 bg-black text-white border-top border-dark" style={{ marginTop: '10rem' }}>
       <Container>
         <Row className="d-flex flex-column flex-lg-row-reverse justify-content-lg-between py-4">
           <Col className="my-3 ">
@@ -23,7 +23,7 @@ export default function Footer() {
           </Col>
           <Col lg={8} className="my-3  ">
             <h3 className="fs-1">NH TOOL’S - dotcchix</h3>
-            <p>Mempunyai pengertian setiap baris data pada tabel pertama dihubungkan hanya ke satu baris data pada tabel ke dua. Hubungan antara file . </p>
+            <p style={{ maxWidth: '600px' }}>Mempunyai pengertian setiap baris data pada tabel pertama dihubungkan hanya ke satu baris data pada tabel ke dua. Hubungan antara file . </p>
             <p className="mb-3 mb-md-0 text-white my-4 ">© {new Date().getFullYear()} dotcchix</p>
           </Col>
         </Row>

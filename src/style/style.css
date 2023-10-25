@@ -19,11 +19,15 @@ h5 {
   font-family: 'Teko', sans-serif;
   font-weight: 600 !important;
 }
-
+ 
+p{
+  margin: 0px !important;
+  padding: 0px !important;
+}
 .teko-font {
   font-family: 'Teko', sans-serif;
   font-weight: 400 I !important;
-  letter-spacing: 1px;
+  letter-spacing: 0.4px;
 }
 
 button {
@@ -66,3 +70,4 @@ p {
 @import './style-elements/header.css';
 @import './style-elements/card.css';
 @import './style-elements/donate.css';
+@import './style-elements/title.css';

@@ -2,31 +2,32 @@ import Link from 'next/link';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
 
-export default function Header() {
+export default function Title({ title, desc, bg }: { title?: string; desc?: string; bg?: string }) {
   return (
-    <section className="header">
+    <section
+      className="title"
+      style={{
+        textDecoration: 'none',
+        background: `linear-gradient(180deg, rgba(7, 3, 17, 0.74) 0%, #070311 100%), url(${bg}), lightgray 50% / cover no-repeat `,
+      }}
+    >
       <Container>
         <Row className="d-flex flex-column flex-lg-row justify-content-lg-between   ">
           <Col className="my-3 align-self-end">
-            <h1>
-              NH <span>NEW ERA TOOL’S</span>
-            </h1>
-            <p>Mempunyai pengertian setiap baris data data . </p>
+            <h1 className="text-uppercase">{title}</h1>
+            <p>{desc}</p>
             <div className="w-auto d-flex flex-row mt-5">
               <Link href={'/#tools'} className="text-decoration-none">
                 <Button variant="primary" className="border-2  mb-5 me-3 ">
-                  <span className=" px-4 px-lg-5 text-capitalize fs-5 fw-semibold">GET STARTED</span>
+                  <span className=" px-4 px-lg-5 text-capitalize fs-5 fw-semibold">VIDEO TUTORIAL</span>
                 </Button>
               </Link>
               <Link href={'https://www.ninjaheroesnewera.com/'} className="text-decoration-none" target="_blank">
                 <Button variant="outline-primary" className="border-2  mb-5 me-3 d-none d-md-block">
-                  <span className=" px-4 px-lg-5  fs-5 fw-semibold">INSTALL GAME</span>
+                  <span className=" px-4 px-lg-5  fs-5 fw-semibold">DONATE</span>
                 </Button>
               </Link>
             </div>
-          </Col>
-          <Col className="my-3  d-none d-lg-block align-self-start">
-            <Image src="/assets/sasuke.png" alt="sasuke" width={470} />
           </Col>
         </Row>
       </Container>

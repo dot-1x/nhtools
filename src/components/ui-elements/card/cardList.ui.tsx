@@ -16,7 +16,7 @@ export default function CardList() {
                   href={`${v.href}`}
                   style={{
                     textDecoration: 'none',
-                    background: `linear-gradient(243deg, rgba(0, 0, 0, 0.16) 0%, rgba(18, 3, 63, 0.85) 100%), url(${v.img}), rgb(22, 22, 22) 50% / cover no-repeat `,
+                    background: `linear-gradient(243deg, rgba(0, 0, 0, 0.16) 0%, rgba(18, 3, 63, 0.85) 100%), url(${v.img}), rgb(22, 22, 22) 50% / contain no-repeat `,
                     backgroundPosition: 'center ',
                   }}
                   className={` card card--${i} mb-4 mb-md-3 mx-md-2 mb-lg-4 mx-lg-3`}
@@ -24,7 +24,7 @@ export default function CardList() {
                   <style>
                     {`
                       .card--${i}:hover {
-                        background: linear-gradient(0deg, rgba(196, 176, 255, 0.966) 0%, rgba(196, 176, 255, 0.85) 100%), url(${v.img}), rgb(26, 26, 26) 50% / cover no-repeat !important;
+                        background: linear-gradient(0deg, rgba(196, 176, 255, 0.966) 0%, rgba(196, 176, 255, 0.85) 100%), url(${v.img}), rgb(26, 26, 26) 50% / contain no-repeat !important;
                         background-position: center !important;
                       }
                     `}

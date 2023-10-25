@@ -11,7 +11,7 @@ export const listPage = [
     name: 'Combo',
     shortDesc: 'All available combo',
     desc: 'Calculate your own combo with max ninjas 15',
-    img: '/assets/bg/w6.png',
+    img: '/assets/bg/w8.png',
   },
   {
     href: '/ninja',
