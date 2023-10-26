@@ -5,6 +5,7 @@
   /* background: linear-gradient(180deg, rgba(7, 3, 17, 0.74) 0%, #070311 100%), url('../../../public/assets/bg/w1.png') lightgray 50% / cover no-repeat !important; */
   background: var(--dark-primary);
   background-position: top !important;
+  background-size: cover !important;
 }
 .title h1 {
   width: 319px;

@@ -20,12 +20,10 @@ export function DropCombo({
   const combKey =
     name === "drop-combo-choosed" ? "drop-combo-select" : "drop-combo-choosed"
   return (
-    <div
-      ref={setNodeRef}
-      style={{ height: combos.length > 15 ? "max-content" : 650 }}
-    >
+    <div ref={setNodeRef} style={{ height: combos.length > 15 ? 'max-content' : 650 }}>
       {combos.map((v) => (
         <DragCombo
+          active={name === 'drop-combo-choosed' && true}
           name={v}
           key={v}
           arrangeData={{
@@ -38,5 +36,5 @@ export function DropCombo({
         />
       ))}
     </div>
-  )
+  );
 }

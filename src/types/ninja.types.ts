@@ -16,6 +16,14 @@ export enum NinjaAttrs {
   YELLOW,
 }
 
+export const colorRefs: { [key in NinjaAttrs]: string } = {
+  [NinjaAttrs.NULL]: '#ccc',
+  [NinjaAttrs.BLUE]: '#0082f6',
+  [NinjaAttrs.RED]: '#df0023',
+  [NinjaAttrs.GREEN]: '#00d100',
+  [NinjaAttrs.YELLOW]: '#dec300',
+};
+
 export interface ninjaAttr {
   atas: NinjaAttrs
   kanan: NinjaAttrs

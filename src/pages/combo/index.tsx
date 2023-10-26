@@ -50,11 +50,11 @@ export default function Combo() {
       </Head>
       <Content name="Combo">
         <Title title="Combo Tool" bg="/assets/bg/w4.png" desc="Mempunyai pengertian setiap baris data pada tabel pertama dihubungkan hanya ke satu baris ." />
-        <Container>
+        <Container className="px-4 px-md-0">
           <h2 className="fs-1 text-uppercase" style={{ letterSpacing: '1px' }}>
-            List Combo{' '}
+            List Combo
           </h2>
-          <Row>
+          <Row className="d-flex flex-column flex-md-row ">
             <DndContext
               sensors={[mouseSens, touchSens]}
               autoScroll={false}
@@ -75,11 +75,11 @@ export default function Combo() {
                 });
               }}
             >
-              <Col className="bg-soft-dark-primary-3 p-4 me-2 rounded">
+              <Col className="bg-soft-dark-primary-3 p-4 me-md-2 rounded">
                 {/* btn filter */}
                 <Filter setCombos={setCombos} stratRef={sortStratRef} />
                 {/* card */}
-                <ListGroup className="overflow-auto " style={{ maxHeight: 450 }}>
+                <ListGroup className="overflow-auto " style={{ maxHeight: 600 }}>
                   <DragOverlay>
                     {dragged ? (
                       <div className="bg-primary text-dark-primary rounded">
@@ -100,7 +100,7 @@ export default function Combo() {
                   />
                 </ListGroup>
               </Col>
-              <Col className="bg-soft-dark-primary-3 p-4 ms-3 rounded ">
+              <Col className="bg-soft-dark-primary-3 p-4 my-4 my-md-0 ms-md-3 rounded ">
                 {/* btn clear */}
                 <div className="d-flex flex-row justify-content-between align-items-start">
                   <TotalNinja totalNinjas={totalNinja} />
@@ -108,7 +108,7 @@ export default function Combo() {
                 </div>
                 {/* card list */}
                 <div className="d-flex flex-column justify-content-between "></div>
-                <ListGroup className="overflow-auto" style={{ maxHeight: 400 }}>
+                <ListGroup className="overflow-auto" style={{ maxHeight: 460 }}>
                   <DropCombo
                     name="drop-combo-choosed"
                     combos={combos.combo_choosed}
@@ -120,14 +120,15 @@ export default function Combo() {
                   />
                   {/* total ninja */}
                 </ListGroup>
-                <Button variant="primary" className="fs-5 mt-4 align-self-start">
-                  Total Attrubute: {[...getTotalCombo(combos.combo_choosed.map((v) => getCombo(v))).entries()].map(([attr, num]) => `${attr}: ${num}`).join(', ')}
+                <p className="fs-4 teko-font mt-4 mb-2">Total Attrubute : </p>
+                <Button variant="primary" className="fs-5  align-self-start text-capitalize">
+                  {[...getTotalCombo(combos.combo_choosed.map((v) => getCombo(v))).entries()].map(([attr, num]) => `${attr}: ${num}`).join(', ')}
                 </Button>
               </Col>
             </DndContext>
           </Row>
         </Container>
-        <Container className="my-5 pt-4">
+        <Container className="my-5 pt-2 pt-lg-4 px-4 px-md-0">
           <h2 className="fs-1 text-uppercase" style={{ letterSpacing: '1px' }}>
             DETAIL COMBO NINJA{' '}
           </h2>

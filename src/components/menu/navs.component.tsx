@@ -6,7 +6,7 @@ export function MenuNav({ name }: { name?: string }) {
   return (
     <Navbar bg="black" variant="dark" expand="lg" className=" bg-transparent z-3 ">
       <Container>
-        <Navbar.Brand href="/" className="teko-font  text-primary fs-2  ">
+        <Navbar.Brand href="/" className="teko-font  text-primary fs-2 fw-semibold ">
           NHTools
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="Navbar-Menu" />
@@ -30,7 +30,7 @@ export function MenuNav({ name }: { name?: string }) {
           </Nav>
           {/* </div> */}
         </Navbar.Collapse>
-        <Button variant="outline-primary" size="sm" className="border-2 mt-3 mt-lg-0 mx-auto rounded d-none d-lg-block">
+        <Button variant="outline-primary" className="border-2 mt-3 mt-lg-0 mx-auto rounded d-none d-lg-block">
           <span className=" px-4 fs-6 fw-semibold">DONATE</span>
         </Button>
       </Container>
