@@ -22,10 +22,10 @@ import { ComboTable } from "@/components/combo.component"
 import Title from "@/components/ui-elements/title.ui"
 
 export default function Deploy() {
-  const [CHOOSED, setChoosed] = useState("SSS")
   const [dragged, setDragged] = useState("")
   const [dropped, setDropped] = useState<dropData>(new Map())
   const [onbox, setOnBox] = useState(false)
+
   const mouseSens = useSensor(MouseSensor, {
     activationConstraint: {
       distance: 0,
@@ -47,7 +47,7 @@ export default function Deploy() {
         <Title
           title="Deploy Tool"
           bg="/assets/bg/w1.png"
-          desc="Mempunyai pengertian setiap baris data pada tabel pertama dihubungkan hanya ke satu baris ."
+          desc="Tools utility deploy seperti dalam game, untuk pengguna HP harap tekan dan tahan ninja untuk menariknya"
         />
         <Container className="bg-dark-primary ">
           <DndContext

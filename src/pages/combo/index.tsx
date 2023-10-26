@@ -13,35 +13,39 @@ import {
   TouchSensor,
   useSensor,
 } from "@dnd-kit/core"
-import { Container, Row, Col, ListGroup, Button, DropdownButton, Dropdown } from 'react-bootstrap';
-import { useRef, useState } from 'react';
-import { ComboTable } from '@/components/combo.component';
-import { getNinjaByCombo } from '@/utils/ninja.utils';
-import { comboMap, sortStratMap, sortStratType } from '@/types/combo.type';
-import { Clear, Filter, TotalNinja } from '@/components/combo/comboButtons.component';
-import { DropCombo } from '@/components/combo/comboDrop.component';
-import Head from 'next/head';
-import Title from '@/components/ui-elements/title.ui';
+import { Container, Row, Col, ListGroup, Button } from "react-bootstrap"
+import { useRef, useState } from "react"
+import { ComboTable } from "@/components/combo.component"
+import { getNinjaByCombo } from "@/utils/ninja.utils"
+import { comboMap, sortStratType } from "@/types/combo.type"
+import {
+  Clear,
+  Filter,
+  TotalNinja,
+} from "@/components/combo/comboButtons.component"
+import { DropCombo } from "@/components/combo/comboDrop.component"
+import Head from "next/head"
+import Title from "@/components/ui-elements/title.ui"
 
 export default function Combo() {
-  const [totalNinja, setNinjaSize] = useState(0);
-  const [dragged, setDrag] = useState('');
+  const [totalNinja, setNinjaSize] = useState(0)
+  const [dragged, setDrag] = useState("")
   const [combos, setCombos] = useState<comboMap>({
     combo_select: [...getAllCombo()].map((v) => v.name).sort(),
     combo_choosed: [],
-  });
-  const sortStratRef = useRef<sortStratType>('Nama');
+  })
+  const sortStratRef = useRef<sortStratType>("Nama")
   const mouseSens = useSensor(MouseSensor, {
     activationConstraint: {
       distance: 0,
     },
-  });
+  })
   const touchSens = useSensor(TouchSensor, {
     activationConstraint: {
       delay: 250,
       tolerance: 0,
     },
-  });
+  })
 
   return (
     <>
@@ -49,9 +53,13 @@ export default function Combo() {
         <title>Combo Calculator</title>
       </Head>
       <Content name="Combo">
-        <Title title="Combo Tool" bg="/assets/bg/w4.png" desc="Mempunyai pengertian setiap baris data pada tabel pertama dihubungkan hanya ke satu baris ." />
+        <Title
+          title="Combo Tool"
+          bg="/assets/bg/w4.png"
+          desc="Tools meracik combo sesuai combo yang tersedia, pilih urutan combo yang diinginkan, tarik ke sebelah kanan sampai ninja >=15"
+        />
         <Container className="px-4 px-md-0">
-          <h2 className="fs-1 text-uppercase" style={{ letterSpacing: '1px' }}>
+          <h2 className="fs-1 text-uppercase" style={{ letterSpacing: "1px" }}>
             List Combo
           </h2>
           <Row className="d-flex flex-column flex-md-row ">
@@ -59,31 +67,41 @@ export default function Combo() {
               sensors={[mouseSens, touchSens]}
               autoScroll={false}
               onDragStart={(ev) => {
-                setDrag(ev.active.id.toString());
+                setDrag(ev.active.id.toString())
               }}
               onDragEnd={() => {
-                setDrag('');
+                setDrag("")
               }}
               onDragOver={(ev) => {
-                if (!ev.over) return;
+                if (!ev.over) return
                 arrangeCombo({
                   active: ev.active.id.toString(),
                   combos: combos,
                   combosKey: ev.over.id.toString(),
                   ninjaSize: setNinjaSize,
                   sortStrat: sortStratRef,
-                });
+                })
               }}
             >
               <Col className="bg-soft-dark-primary-3 p-4 me-md-2 rounded">
                 {/* btn filter */}
-                <Filter setCombos={setCombos} stratRef={sortStratRef} />
+                <Filter
+                  setCombos={setCombos}
+                  stratRef={sortStratRef}
+                  combos={combos}
+                />
                 {/* card */}
-                <ListGroup className="overflow-auto " style={{ maxHeight: 600 }}>
+                <ListGroup
+                  className="overflow-auto "
+                  style={{ maxHeight: 600 }}
+                >
                   <DragOverlay>
                     {dragged ? (
                       <div className="bg-primary text-dark-primary rounded">
-                        <p className="teko-font p-3" style={{ fontSize: '27px' }}>
+                        <p
+                          className="teko-font p-3"
+                          style={{ fontSize: "27px" }}
+                        >
                           {stripDragID(dragged)}
                         </p>
                       </div>
@@ -121,24 +139,33 @@ export default function Combo() {
                   {/* total ninja */}
                 </ListGroup>
                 <p className="fs-4 teko-font mt-4 mb-2">Total Attrubute : </p>
-                <Button variant="primary" className="fs-5  align-self-start text-capitalize">
-                  {[...getTotalCombo(combos.combo_choosed.map((v) => getCombo(v))).entries()].map(([attr, num]) => `${attr}: ${num}`).join(', ')}
+                <Button
+                  variant="primary"
+                  className="fs-5  align-self-start text-capitalize"
+                >
+                  {[
+                    ...getTotalCombo(
+                      combos.combo_choosed.map((v) => getCombo(v))
+                    ).entries(),
+                  ]
+                    .map(([attr, num]) => `${attr}: ${num}`)
+                    .join(", ")}
                 </Button>
               </Col>
             </DndContext>
           </Row>
         </Container>
         <Container className="my-5 pt-2 pt-lg-4 px-4 px-md-0">
-          <h2 className="fs-1 text-uppercase" style={{ letterSpacing: '1px' }}>
-            DETAIL COMBO NINJA{' '}
+          <h2 className="fs-1 text-uppercase" style={{ letterSpacing: "1px" }}>
+            DETAIL COMBO NINJA{" "}
           </h2>
           <Row>
-            <Col className={'bg-soft-dark-primary-3 p-4 rounded '}>
+            <Col className={"bg-soft-dark-primary-3 p-4 rounded "}>
               <ComboTable ninjas={[...getNinjaByCombo(combos.combo_choosed)]} />
             </Col>
           </Row>
         </Container>
       </Content>
     </>
-  );
+  )
 }
