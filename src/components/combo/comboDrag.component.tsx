@@ -29,8 +29,8 @@ export function DragCombo({ name, arrangeData, active }: { name: string; arrange
             ))}
           </div>
         </div>
-        <div className="  align-self-end mt-3 mt-lg-0 ">
-          <p className="teko-font fs-5 text-primary bg-soft-dark-primary-3 px-2 py-1 rounded">{combo.attrValues}</p>
+        <div className="  align-self-end mt-3 mt-lg-0 text-center" style={{ minWidth: '150px' }}>
+          <p className="teko-font fs-6 text-primary bg-soft-dark-primary-3 px-2 py-1 rounded">{combo.attrValues}</p>
         </div>
       </div>
     </div>

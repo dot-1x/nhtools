@@ -8,9 +8,9 @@ export default function Donate() {
       <Container>
         <Row className="d-flex flex-column flex-lg-row justify-content-lg-center   ">
           <Col className="my-3 align-self-center donate__image">
-            <Image src="/assets/bg/w1.png" alt="sasuke" width={470} className="align-items-start" />
+            <Image src="/assets/bg/w1.png" alt="sasuke" width={200} className="align-items-start" />
             <div>
-              <Image src="/assets/bg/w9.png" alt="sasuke" width={470} className="align-items-end" />
+              <Image src="/assets/bg/w9.png" alt="sasuke" width={200} className="align-items-end" />
             </div>
           </Col>
           <Col className="my-3   d-lg-block align-self-center">
