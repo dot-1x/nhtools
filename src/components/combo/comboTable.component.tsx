@@ -7,7 +7,7 @@ export function ComboTable({ ninjas }: { ninjas: string[] }) {
     <Table variant="dark" striped>
       <thead>
         <tr>
-          <th className="bg-soft-dark-primary-2">Combo Name</th>
+          <th className="bg-soft-dark-primary-2">Combo</th>
           <th className="bg-soft-dark-primary-2">Ninjas</th>
           <th className="bg-soft-dark-primary-2">Attributes</th>
         </tr>
