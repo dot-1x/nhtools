@@ -18,24 +18,24 @@ import {
 import { dropData } from "@/types/deploy.types"
 import { stripColName } from "@/utils/ninja.utils"
 import { ComboTable } from "@/components/combo.component"
-import Title from '@/components/ui-elements/title.ui';
+import Title from "@/components/ui-elements/title.ui"
 
 export default function Deploy() {
-  const [CHOOSED, setChoosed] = useState('SSS');
-  const [dragged, setDragged] = useState('');
-  const [dropped, setDropped] = useState<dropData>(new Map());
-  const [onbox, setOnBox] = useState(false);
+  const [CHOOSED, setChoosed] = useState("SSS")
+  const [dragged, setDragged] = useState("")
+  const [dropped, setDropped] = useState<dropData>(new Map())
+  const [onbox, setOnBox] = useState(false)
   const mouseSens = useSensor(MouseSensor, {
     activationConstraint: {
       distance: 0,
     },
-  });
+  })
   const touchSens = useSensor(TouchSensor, {
     activationConstraint: {
       delay: 250,
       tolerance: 0,
     },
-  });
+  })
 
   return (
     <>
@@ -43,7 +43,11 @@ export default function Deploy() {
         <title>Deploy Construct</title>
       </Head>
       <Content name="Deploy">
-        <Title title="Deploy Tool" bg="/assets/bg/w1.png" desc="Mempunyai pengertian setiap baris data pada tabel pertama dihubungkan hanya ke satu baris ." />
+        <Title
+          title="Deploy Tool"
+          bg="/assets/bg/w1.png"
+          desc="Mempunyai pengertian setiap baris data pada tabel pertama dihubungkan hanya ke satu baris ."
+        />
 
         <Container className="bg-dark-primary p-2">
           <h3 className="text-center">Deploy tool</h3>
@@ -55,21 +59,28 @@ export default function Deploy() {
           <p>
             <strong>Press and hold</strong> ninja for phone user
           </p>
-          <DeployTopButton setChoosed={setChoosed} setDropped={setDropped} dropped={dropped} />
+          <DeployTopButton
+            setChoosed={setChoosed}
+            setDropped={setDropped}
+            dropped={dropped}
+          />
           <DndContext
             autoScroll={false}
             sensors={[touchSens, mouseSens]}
             onDragStart={(ev) => {
-              setDragged(stripColName(ev.active.id.toString()));
+              setDragged(stripColName(ev.active.id.toString()))
             }}
             onDragEnd={(ev) => {
-              setDragged('');
+              setDragged("")
               if (ev.over && ev.active) {
-                dropped.set(ev.over.id.toString(), stripColName(ev.active.id.toString()));
+                dropped.set(
+                  ev.over.id.toString(),
+                  stripColName(ev.active.id.toString())
+                )
                 // setDropped(dropped)
-                setOnBox(true);
+                setOnBox(true)
               } else {
-                setOnBox(false);
+                setOnBox(false)
               }
             }}
           >
@@ -79,7 +90,9 @@ export default function Deploy() {
               dropAnimation={{ duration: !onbox ? 500 : 0 }}
               // style={{ touchAction: "none" }}
             >
-              {dragged ? <NinjaImage name={dragged.replaceAll('-', ' ')} /> : null}
+              {dragged ? (
+                <NinjaImage name={dragged.replaceAll("-", " ")} />
+              ) : null}
             </DragOverlay>
 
             <Row>
@@ -87,7 +100,11 @@ export default function Deploy() {
                 <DeployColumn dropped={dropped} dropstate={setDropped} />
               </Col>
               <Col xl={7}>
-                <ComboTable ninjas={[...dropped.entries()].map(([_, ninja]) => ninja.replaceAll('-', ' '))} />
+                <ComboTable
+                  ninjas={[...dropped.entries()].map(([_, ninja]) =>
+                    ninja.replaceAll("-", " ")
+                  )}
+                />
               </Col>
             </Row>
           </DndContext>
@@ -95,5 +112,5 @@ export default function Deploy() {
         </Container>
       </Content>
     </>
-  );
+  )
 }
