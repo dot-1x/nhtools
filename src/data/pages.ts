@@ -4,7 +4,7 @@ export const listPage = [
     name: 'Deploy',
     shortDesc: 'Deploy Tools',
     desc: 'In-Game like deploy tools, Can also be used to fix pipes\nCalculate differences between 2 combos',
-    img: '/assets/bg/w4.png',
+    img: '/assets/bg/w12.png',
   },
   {
     href: '/combo',

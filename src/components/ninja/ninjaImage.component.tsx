@@ -11,8 +11,8 @@ export function NinjaImage({ name, tColor, rColor, bColor, lColor }: { name: str
         alt={name}
         src={`/assets/roleHeads/${name}.png`}
         id={`image-${name.replaceAll(' ', '-')}`}
-        width={65}
-        height={65}
+        width={40}
+        height={40}
         title={`${ninja
           ?.available_combos()
           .map((c) => c.name)

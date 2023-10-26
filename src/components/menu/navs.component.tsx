@@ -30,7 +30,7 @@ export function MenuNav({ name }: { name?: string }) {
           </Nav>
           {/* </div> */}
         </Navbar.Collapse>
-        <Button variant="outline-primary" size="sm" className="border-2 mt-3 mt-lg-0 mx-auto rounded d-none d-lg-block">
+        <Button variant="outline-primary" className="border-2 mt-3 mt-lg-0 mx-auto rounded d-none d-lg-block">
           <span className=" px-4 fs-6 fw-semibold">DONATE</span>
         </Button>
       </Container>
