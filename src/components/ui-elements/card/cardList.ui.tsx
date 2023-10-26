@@ -1,6 +1,6 @@
-import { Col, Container, Row } from 'react-bootstrap';
-import { listPage } from '@/data/pages';
-import Link from 'next/link';
+import { Col, Container, Row } from "react-bootstrap"
+import { listPage } from "@/data/pages"
+import Link from "next/link"
 
 export default function CardList() {
   return (
@@ -8,16 +8,18 @@ export default function CardList() {
       <Container>
         <Row>
           <Col>
-            <h2 className="fs-1 text-center pt-3 pt-md-5 pt-lg-3 mt-lg-0 mb-5">GAME TOOL‘S</h2>
+            <h2 className="fs-1 text-center pt-3 pt-md-5 pt-lg-3 mt-lg-0 mb-5">
+              GAME TOOL‘S
+            </h2>
             <div className="d-flex flex-wrap flex-column flex-md-row justify-content-center align-items-center">
               {listPage.map((v, i) => (
                 <Link
                   key={i}
                   href={`${v.href}`}
                   style={{
-                    textDecoration: 'none',
+                    textDecoration: "none",
                     background: `linear-gradient(243deg, rgba(0, 0, 0, 0.16) 0%, rgba(18, 3, 63, 0.85) 100%), url(${v.img}), rgb(22, 22, 22) 50% / contain no-repeat `,
-                    backgroundPosition: 'center ',
+                    backgroundPosition: "center ",
                   }}
                   className={` card card--${i} mb-4 mb-md-3 mx-md-2 mb-lg-4 mx-lg-3`}
                 >
@@ -41,5 +43,5 @@ export default function CardList() {
         </Row>
       </Container>
     </section>
-  );
+  )
 }
