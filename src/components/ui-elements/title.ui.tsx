@@ -13,9 +13,9 @@ export default function Title({
 }) {
   return (
     <section
-      className="title"
+      className="title px-3 px-md-0"
       style={{
-        textDecoration: "none",
+        textDecoration: 'none',
         background: `linear-gradient(180deg, rgba(7, 3, 17, 0.74) 0%, #070311 100%), url(${bg}), lightgray 50% / cover no-repeat `,
       }}
     >
@@ -25,25 +25,14 @@ export default function Title({
             <h1 className="text-uppercase">{title}</h1>
             <p>{desc}</p>
             <div className="w-auto d-flex flex-row mt-5">
-              <Link href={"#"} className="text-decoration-none">
+              <Link href={'#'} className="text-decoration-none">
                 <Button variant="primary" className="border-2  mb-5 me-3 ">
-                  <span className=" px-4 px-lg-5 text-capitalize fs-5 fw-semibold">
-                    VIDEO TUTORIAL
-                  </span>
+                  <span className=" px-4 px-lg-5 text-capitalize fs-5 fw-semibold">VIDEO TUTORIAL</span>
                 </Button>
               </Link>
-              <Link
-                href={"https://teer.id/dotcchi1x"}
-                className="text-decoration-none"
-                target="_blank"
-              >
-                <Button
-                  variant="outline-primary"
-                  className="border-2  mb-5 me-3 d-none d-md-block"
-                >
-                  <span className=" px-4 px-lg-5  fs-5 fw-semibold">
-                    DONATE
-                  </span>
+              <Link href={'https://teer.id/dotcchi1x'} className="text-decoration-none" target="_blank">
+                <Button variant="outline-primary" className="border-2  mb-5 me-3 d-none d-md-block">
+                  <span className=" px-4 px-lg-5  fs-5 fw-semibold">DONATE</span>
                 </Button>
               </Link>
             </div>
@@ -51,5 +40,5 @@ export default function Title({
         </Row>
       </Container>
     </section>
-  )
+  );
 }

@@ -76,12 +76,7 @@ export default function Deploy() {
           >
             {CHOOSED && <ChooseNinja kelas={CHOOSED} />}
 
-            <DragOverlay
-              dropAnimation={{ duration: !onbox ? 500 : 0 }}
-              // style={{ touchAction: "none" }}
-            >
-              {dragged ? <NinjaImage name={dragged.replaceAll('-', ' ')} /> : null}
-            </DragOverlay>
+            <DragOverlay dropAnimation={{ duration: !onbox ? 500 : 0 }}>{dragged ? <NinjaImage name={dragged.replaceAll('-', ' ')} /> : null}</DragOverlay>
 
             <Row>
               <Col xl={5}>

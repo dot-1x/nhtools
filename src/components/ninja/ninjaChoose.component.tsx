@@ -40,9 +40,6 @@ export function ChooseNinja({ kelas }: { kelas: string }) {
   return (
     <div
       className="overflow-x-auto overflow-y-hidden p-1 d-flex flex-row mb-5"
-      // style={{
-      //   whiteSpace: "nowrap"
-      // }}
       onScroll={(ev) => {
         ev.preventDefault();
       }}
