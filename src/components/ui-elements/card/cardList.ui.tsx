@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function CardList() {
   return (
-    <section id="tools" style={{ marginTop: '-4rem' }}>
+    <section id="tools">
       <Container>
         <Row>
           <Col>

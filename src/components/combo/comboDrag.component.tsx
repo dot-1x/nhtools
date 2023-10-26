@@ -1,13 +1,11 @@
 import { arrangeData } from "@/types/combo.type"
 import { arrangeCombo, getCombo, stripDragID } from "@/utils/combo.utils"
-import { useDraggable } from "@dnd-kit/core"
-import { log } from 'console';
+import { useDraggable } from '@dnd-kit/core';
 import { Image, ListGroup } from 'react-bootstrap';
 
 export function DragCombo({ name, arrangeData, active }: { name: string; arrangeData: arrangeData; active?: boolean }) {
   const { attributes, listeners, setNodeRef } = useDraggable({ id: name });
   const combo = getCombo(name);
-  console.log(active);
 
   return (
     <div
