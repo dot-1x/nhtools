@@ -1,0 +1,48 @@
+ .circle, .circle__border{
+        display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+ }
+
+ .circle {
+      width: 60px;
+      height: 60px;
+      /* background: conic-gradient(
+        #df0023 0% 25%,   atas 
+        #0082f6 25% 50%,  kanan 
+        #dec300 50% 75%,   bawah 
+        #00d100 75% 100%   kiri 
+      ); */
+      border-radius: 50%;
+      rotate: -45deg;
+      position: relative;
+    }
+    .circle__border{
+      border: 3px solid #97979750;
+      border-style: ridge;
+      background-color: transparent;
+      width: 95%;
+      height: 95%;
+      border-radius: 50%;
+    }
+  
+    
+    .circle__box {
+      width: 72%;
+      height: 72%;
+      /* background-image: url('../../../public/assets/roleHeads/Orochimaru.png'); */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      rotate: 45deg;
+      /* border: 2px var(--dark-primary) solid; */
+      /* border-style: groove; */
+      border-radius:4px; /* Optional: rounded corners */
+    }
+
+    .circle__box img{
+      width: 100%;
+      height: 100%;
+      
+    }

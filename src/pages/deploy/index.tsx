@@ -16,8 +16,8 @@ import {
   MouseSensor,
 } from "@dnd-kit/core"
 import { dropData } from "@/types/deploy.types"
-import { stripColName } from "@/utils/ninja.utils"
-import { ComboTable } from "@/components/combo.component"
+import { stripColName } from '@/utils/ninja.utils';
+import { ComboTable } from '@/components/combo.component';
 import Title from '@/components/ui-elements/title.ui';
 
 export default function Deploy() {
@@ -44,17 +44,18 @@ export default function Deploy() {
       </Head>
       <Content name="Deploy">
         <Title title="Deploy Tool" bg="/assets/bg/w1.png" desc="Mempunyai pengertian setiap baris data pada tabel pertama dihubungkan hanya ke satu baris ." />
-
         <Container className="bg-dark-primary p-2">
-          <h3 className="text-center">Deploy tool</h3>
-          <p className="text-center">In-Game like deploy tools</p>
+          <h2 className="fs-1 text-uppercase" style={{ letterSpacing: '1px' }}>
+            Deploy tool
+          </h2>
+          {/* <p className="text-center">In-Game like deploy tools</p>
           <p>Click ninja icon inside deploy column to remove them</p>
           <p>Click choose ninja button to choose ninja class</p>
           <p>Click clear deploy to clear current deploy</p>
           <p>Click total Attributes to copy total attributes</p>
           <p>
             <strong>Press and hold</strong> ninja for phone user
-          </p>
+          </p> */}
           <DeployTopButton setChoosed={setChoosed} setDropped={setDropped} dropped={dropped} />
           <DndContext
             autoScroll={false}

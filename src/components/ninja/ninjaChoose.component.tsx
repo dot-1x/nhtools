@@ -39,19 +39,19 @@ export function ChooseNinja({ kelas }: { kelas: string }) {
   const found = [...getAllNinja()].filter((v) => v.kelas === kelas)
   return (
     <div
-      className="overflow-auto p-1"
+      className="overflow-x-auto overflow-y-hidden p-1 d-flex flex-row mb-5"
       // style={{
       //   whiteSpace: "nowrap"
       // }}
       onScroll={(ev) => {
-        ev.preventDefault()
+        ev.preventDefault();
       }}
     >
       {found.map((v) => (
-        <DragNinja id={v.name.replaceAll(" ", "-")} key={v.name}>
-          <NinjaImage name={v.name} key={v.name} />
+        <DragNinja id={v.name.replaceAll(' ', '-')} key={v.name}>
+          <NinjaImage key={v.name} name={v.name} tColor={v.attribute.atas} rColor={v.attribute.kanan} bColor={v.attribute.bawah} lColor={v.attribute.kiri} />
         </DragNinja>
       ))}
     </div>
-  )
+  );
 }
