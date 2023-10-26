@@ -18,6 +18,6 @@ export const listPage = [
     name: 'Ninja',
     shortDesc: 'All Ninjas',
     desc: 'current available ninjas \nCalculate Quality for each ninja',
-    img: '/assets/bg/w2.png',
+    img: '/assets/bg/w6.png',
   },
 ];

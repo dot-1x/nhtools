@@ -72,7 +72,10 @@ export default function Deploy() {
                 <ConectedPipe dropped={dropped} />
               </Col>
 
-              <Col xl={6} className={'bg-soft-dark-primary-3 p-3 p-md-4 rounded d-flex flex-column justify-content-between mt-5 mt-md-5 mt-lg-0'}>
+              <h2 className="fs-1 d-block d-lg-none text-uppercase  mt-5 mt-md-5 mt-lg-0" style={{ letterSpacing: '1px' }}>
+                DETAIL COMBO NINJA{' '}
+              </h2>
+              <Col xl={6} className={'bg-soft-dark-primary-3 p-3 p-md-4 rounded d-flex flex-column justify-content-between '}>
                 {/* table combo */}
                 <ComboTable ninjas={[...dropped.entries()].map(([_, ninja]) => ninja.replaceAll('-', ' '))} />
 
