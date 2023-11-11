@@ -1614,8 +1614,18 @@
         "attribute": [
             "Kuning",
             "Biru",
+            "Kuning",
+            "Merah"
+        ],
+        "kelas": "UR"
+    },
+    "Toneri": {
+        "id": 0,
+        "attribute": [
+            "Kuning",
             "Biru",
-            "Hijau"
+            "Kuning",
+            "Merah"
         ],
         "kelas": "UR"
     }
