@@ -1679,7 +1679,8 @@
         "agility": 9,
         "trigger": false,
         "ninjas": ["Kakashi Double Sharingan", "Nine Tails Naruto", "Mangekyo Sasuke", "Sage Sakura", "Otsutsuki Kaguya"]
-    },
+    }
+    ,
     "Indra Ashura Reincarnation": {
         "id": 0,
         "attack": 13,
@@ -1688,5 +1689,85 @@
         "agility": 13,
         "trigger": false,
         "ninjas": ["Hashirama Sage Mode", "Madara Susanoo", "Naruto Kyuubi Mode", "Sasuke Wanderer"]
+    }
+    ,
+    "Princess Kidnapper": {
+        "id": 0,
+        "attack": 10,
+        "defend": 0,
+        "hp": 0,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Toneri", "Nine Tails Naruto", "Hinata Uzumaki"]
+    }
+    ,
+    "Cyborg Siblings": {
+        "id": 0,
+        "attack": 0,
+        "defend": 9,
+        "hp": 9,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Eida", "Daemon"]
+    }
+    ,
+    "Now and Then": {
+        "id": 0,
+        "attack": 11,
+        "defend": 11,
+        "hp": 0,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Sasuke", "Naruto", "Sasuke Wanderer", "Naruto Kyuubi Mode"]
+    }
+    ,
+    "Uchiha Legacy": {
+        "id": 0,
+        "attack": 12,
+        "defend": 0,
+        "hp": 0,
+        "agility": 12,
+        "trigger": false,
+        "ninjas": ["Madara", "Uchiha Shisui", "Itachi Edotensei", "Mangekyo Sasuke"]
+    }
+    ,
+    "Eight Hokages": {
+        "id": 0,
+        "attack": 18,
+        "defend": 18,
+        "hp": 18,
+        "agility": 18,
+        "trigger": false,
+        "ninjas": ["Hashirama", "Tobirama", "Hiruzen Sarutobi", "Minato", "Tsunade", "Kakashi Double Sharingan", "Byron Naruto", "Shikamaru Hokage"]
+    }
+    ,
+    "Rasengan Masters": {
+        "id": 0,
+        "attack": 0,
+        "defend": 8,
+        "hp": 0,
+        "agility": 8,
+        "trigger": false,
+        "ninjas": ["Minato", "Sage Jiraiya", "Nine Tails Naruto", "Boruto Karma Mode"]
+    }
+    ,
+    "Tempation God of Valour": {
+        "id": 0,
+        "attack": 11,
+        "defend": 0,
+        "hp": 0,
+        "agility": 11,
+        "trigger": false,
+        "ninjas": ["Itachi Edotensei", "Rinegan Sasuke", "Uchiha Shisui"]
+    }
+    ,
+    "Mother and Son 2": {
+        "id": 0,
+        "attack": 0,
+        "defend": 8,
+        "hp": 8,
+        "agility": 8,
+        "trigger": false,
+        "ninjas": ["Otsutsuki Kaguya", "Otsutsuki Hagoromo", "Hamura Otsutsuki"]
     }
 }

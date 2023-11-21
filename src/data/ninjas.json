@@ -1602,10 +1602,10 @@
     "Eida": {
         "id": 0,
         "attribute": [
+            "Merah",
             "Kuning",
-            "Biru",
-            "Biru",
-            "Hijau"
+            "Merah",
+            "Biru"
         ],
         "kelas": "UR"
     },
@@ -1623,9 +1623,19 @@
         "id": 0,
         "attribute": [
             "Kuning",
-            "Biru",
             "Kuning",
-            "Merah"
+            "Hijau",
+            "Biru"
+        ],
+        "kelas": "UR"
+    },
+    "Shikamaru Hokage": {
+        "id": 0,
+        "attribute": [
+            "Merah",
+            "Biru",
+            "Merah",
+            "Kuning"
         ],
         "kelas": "UR"
     }
