@@ -1770,4 +1770,85 @@
         "trigger": false,
         "ninjas": ["Otsutsuki Kaguya", "Otsutsuki Hagoromo", "Hamura Otsutsuki"]
     }
+    ,
+    "Team 7 Reborn": {
+        "id": 0,
+        "attack": 8,
+        "defend": 8,
+        "hp": 0,
+        "agility": 8,
+        "trigger": false,
+        "ninjas": ["Konohamaru Sarutobi", "Boruto", "Uchiha Sarada", "Sage Mitsuki"]
+    }
+    ,
+    "Love Triangle": {
+        "id": 0,
+        "attack": 10,
+        "defend": 0,
+        "hp": 0,
+        "agility": 10,
+        "trigger": false,
+        "ninjas": ["Toneri Tenseigan", "Hinata Uzumaki", "Naruto Kyuubi Mode"]
+    }
+    ,
+    "Sarutobi Clan 2": {
+        "id": 0,
+        "attack": 0,
+        "defend": 0,
+        "hp": 12,
+        "agility": 12,
+        "trigger": false,
+        "ninjas": ["3rd Hokage", "Hiruzen Sarutobi", "Konohamaru Sarutobi", "Asuma"]
+    }
+    ,
+    "The Power of Toneri": {
+        "id": 0,
+        "attack": 8,
+        "defend": 0,
+        "hp": 8,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Toneri", "Toneri Tenseigan"]
+    }
+    ,
+    "Perfect Tenseigan": {
+        "id": 0,
+        "attack": 10,
+        "defend": 0,
+        "hp": 0,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Hanabi Hyuga", "Toneri Tenseigan", "Hinata Uzumaki"]
+    }
+    ,
+    "No Way Home": {
+        "id": 0,
+        "attack": 9,
+        "defend": 0,
+        "hp": 9,
+        "agility": 9,
+        "trigger": false,
+        "ninjas": ["Sasuke Wanderer", "Itachi Edotensei", "Boruto Karma Mode"]
+    }
+    ,
+    "Substitute for Hokage 7": {
+        "id": 0,
+        "attack": 6,
+        "defend": 6,
+        "hp": 6,
+        "agility": 6,
+        "trigger": false,
+        "ninjas": ["Konohamaru Sarutobi", "Naruto Kyuubi Mode"]
+    }
+    ,
+    "Rival Brothers": {
+        "id": 0,
+        "attack": 10,
+        "defend": 0,
+        "hp": 0,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Konohamaru", "Naruto", "Konohamaru Sarutobi", "Nine Tails Naruto"]
+    }
+
 }
