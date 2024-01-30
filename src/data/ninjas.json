@@ -1645,8 +1645,53 @@
             "Merah", "Biru", "Merah", "Biru"
         ],
         "kelas": "UR"
-    },
+    }
+    ,
     "Toneri Tenseigan": {
+        "id": 0,
+        "attribute": [
+            "Hijau",
+            "Merah",
+            "Kuning",
+            "Biru"
+        ],
+        "kelas": "UR"
+    }
+    ,
+    "Kimimaru Cursed": {
+        "id": 0,
+        "attribute": [
+            "Merah",
+            "Biru",
+            "Biru",
+            "Merah"
+        ],
+        "kelas": "UR"
+    }
+    ,
+    "Sage Tsunade": {
+        "id": 0,
+        "attribute": [
+            "Hijau",
+            "Kuning",
+            "Biru",
+            "Hijau"
+        ],
+        "kelas": "UR"
+    }
+    ,
+    "Kisame Shark": {
+        "id": 0,
+        "attribute": [
+            "Kuning",
+            "Biru",
+            "Biru",
+            "Merah"
+        ],
+        "kelas": "SSS"
+    }
+    ,
+    "Ashura Otsusuki": {
         "id": 0,
         "attribute": [
             "Hijau",

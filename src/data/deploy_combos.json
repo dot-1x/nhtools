@@ -1850,5 +1850,85 @@
         "trigger": false,
         "ninjas": ["Konohamaru", "Naruto", "Konohamaru Sarutobi", "Nine Tails Naruto"]
     }
+    ,
+    "Cursed Brother": {
+        "id": 0,
+        "attack": 0,
+        "defend": 0,
+        "hp": 11,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Kimimaro", "Kimimaru Cursed", "Sasuke", "Cursed Seal Sasuke"]
+    }
+    ,
+    "Proud Master": {
+        "id": 0,
+        "attack": 0,
+        "defend": 4,
+        "hp": 4,
+        "agility": 4,
+        "trigger": false,
+        "ninjas": ["Asuma", "Shikamaru", "Shikamaru Hokage"]
+    }
+    ,
+    "Akatsuki Partner":{
+        "id": 0,
+        "attack": 5,
+        "defend": 5,
+        "hp": 0,
+        "agility": 5,
+        "trigger": false,
+        "ninjas": ["Kisame", "Kisame Shark", "Itachi", "Itachi Edotensei"]
+    }
+    ,
+    "Monster Evolution": {
+        "id": 0,
+        "attack": 0,
+        "defend": 6,
+        "hp": 0,
+        "agility": 6,
+        "trigger": false,
+        "ninjas": ["Kisame Shark", "Kisame", "Kabuto", "Kabuto Yakushi"]
+    }
+    ,
+    "Lost the Village": {
+        "id": 0,
+        "attack": 10,
+        "defend": 10,
+        "hp": 10,
+        "agility": 10,
+        "trigger": false,
+        "ninjas": ["Kimimaru Cursed", "Itachi Edotensei", "Six Paths Obito", "Sasuke Wanderer"]
+    }
+    ,
+    "The Power of Sage Mode": {
+        "id": 0,
+        "attack": 10,
+        "defend": 10,
+        "hp": 10,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Sage Naruto", "Sage Mitsuki", "Sage Jiraiya", "Sage Sakura", "Sage Tsunade", "Hashirama Sage Mode"]
+    }
+    ,
+    "Byakugo Masters": {
+        "id": 0,
+        "attack": 6,
+        "defend": 0,
+        "hp": 0,
+        "agility": 6,
+        "trigger": false,
+        "ninjas": ["Tsunade", "Sage Tsunade", "Sage Sakura"]
+    }
+    ,
+    "Senju Power": {
+        "id": 0,
+        "attack": 10,
+        "defend": 10,
+        "hp": 0,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Tsunade", "Sage Tsunade", "Hashirama", "Hashirama Sage Mode"]
+    }
 
 }
