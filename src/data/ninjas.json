@@ -1701,4 +1701,26 @@
         ],
         "kelas": "UR"
     }
+    ,
+    "Minato Kyuubi Mode": {
+        "id": 0,
+        "attribute": [
+            "null",
+            "null",
+            "null",
+            "null"
+        ],
+        "kelas": "UR"
+    }
+    ,
+    "Tayuya Cursed": {
+        "id": 0,
+        "attribute": [
+            "null",
+            "null",
+            "null",
+            "null"
+        ],
+        "kelas": "SSS"
+    }
 }

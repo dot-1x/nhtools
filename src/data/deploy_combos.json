@@ -1930,5 +1930,125 @@
         "trigger": false,
         "ninjas": ["Tsunade", "Sage Tsunade", "Hashirama", "Hashirama Sage Mode"]
     }
+    ,
+    "Byakugo Master": {
+        "id": 0,
+        "attack": 9,
+        "defend": 0,
+        "hp": 9,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Sage Tsunade", "Sage Sakura"]
+    }
+    ,
+    "Monster Duei": {
+        "id": 0,
+        "attack": 8,
+        "defend": 0,
+        "hp": 8,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Guy 8Th Gate", "Kisame Shark"]
+    }
+    ,
+    "Cyborg Family": {
+        "id": 0,
+        "attack": 0,
+        "defend": 0,
+        "hp": 10,
+        "agility": 10,
+        "trigger": false,
+        "ninjas": ["Amado", "Eida", "Daemon"]
+    }
+    ,
+    "Omnipotence Arc": {
+        "id": 0,
+        "attack": 13,
+        "defend": 13,
+        "hp": 0,
+        "agility": 13,
+        "trigger": false,
+        "ninjas": ["Daemon", "Code", "Code No Limiter", "Eida"]
+    }
+    ,
+    "Asumas Death": {
+        "id": 0,
+        "attack": 0,
+        "defend": 6,
+        "hp": 0,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Kakuzu", "Hidan", "Asuma", "Shikamaru"]
+    }
+    ,
+    "Madara Power Rank": {
+        "id": 0,
+        "attack": 12,
+        "defend": 12,
+        "hp": 0,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Madara", "Six Paths Madara", "Madara Susanoo", "Ten Tails Madara"]
+    }
+    ,
+    "Simping for Love": {
+        "id": 0,
+        "attack": 0,
+        "defend": 8,
+        "hp": 8,
+        "agility": 8,
+        "trigger": false,
+        "ninjas": ["Eida", "Code No Limiter", "Kawaki"]
+    }
+    ,
+    "Confidential Communication": {
+        "id": 0,
+        "attack": 0,
+        "defend": 6,
+        "hp": 6,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Shikamaru Hokage", "Ino", "Boruto Karma Mode"]
+    }
+    ,
+    "Return of the Legends": {
+        "id": 0,
+        "attack":10,
+        "defend": 10,
+        "hp": 10,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Ten Tails Madara", "Madara Susanoo", "Hashirama Sage Mode"]
+    }
+    ,
+    "Hokage Edo Tensei": {
+        "id": 0,
+        "attack": 8,
+        "defend": 8,
+        "hp": 8,
+        "agility": 8,
+        "trigger": false,
+        "ninjas": ["Hashirama Sage Mode", "Hiruzen Sarutobi", "Tobirama", "Minato"]
+    }
+    ,
+    "Hamura Descendants": {
+        "id": 0,
+        "attack": 10,
+        "defend": 10,
+        "hp": 0,
+        "agility": 10,
+        "trigger": false,
+        "ninjas": ["Hamura Otsutsuki", "Toneri", "Toneri Tenseigan"]
+    }
+    ,
+    "The Strategic": {
+        "id": 0,
+        "attack": 0,
+        "defend": 0,
+        "hp": 10,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Shikamaru Hokage", "Amado"]
+    }
 
 }
