@@ -1694,10 +1694,10 @@
     "Ashura Otsusuki": {
         "id": 0,
         "attribute": [
-            "Hijau",
             "Merah",
-            "Kuning",
-            "Biru"
+            "Hijau",
+            "Hijau",
+            "Kuning"
         ],
         "kelas": "UR"
     }
@@ -1705,10 +1705,10 @@
     "Minato Kyuubi Mode": {
         "id": 0,
         "attribute": [
-            "null",
-            "null",
-            "null",
-            "null"
+            "Biru",
+            "Kuning",
+            "Merah",
+            "Hijau"
         ],
         "kelas": "UR"
     }
@@ -1716,11 +1716,110 @@
     "Tayuya Cursed": {
         "id": 0,
         "attribute": [
-            "null",
-            "null",
-            "null",
-            "null"
+            "Biru",
+            "Merah",
+            "Kuning",
+            "Kuning"
         ],
         "kelas": "SSS"
+    }
+    ,
+    "Indra Otsusuki": {
+        "id": 0,
+        "attribute": [
+            "Hijau",
+            "Merah",
+            "Biru",
+            "Kuning"
+        ],
+        "kelas": "SSS"
+    }
+    ,
+    "Uzumaki Kushina": {
+        "id": 0,
+        "attribute": [
+            "Hijau",
+            "Merah",
+            "Biru",
+            "Kuning"
+        ],
+        "kelas": "UR"
+    }
+    ,
+    "Kurotsuchi": {
+        "id": 0,
+        "attribute": [
+            "Biru",
+            "Kuning",
+            "Biru",
+            "Hijau"
+        ],
+        "kelas": "UR"
+    }
+    ,
+    "Hidan Jashin": {
+        "id": 0,
+        "attribute": [
+            "Hijau",
+            "Merah",
+            "Merah",
+            "Hijau"
+        ],
+        "kelas": "UR"
+    }
+    ,
+    "Gaara Jinchuriki": {
+        "id": 0,
+        "attribute": [
+            "Hijau",
+            "Biru",
+            "Merah",
+            "Biru"
+        ],
+        "kelas": "SSS"
+    }
+    ,
+    "Sakon Ukon Cursed": {
+        "id": 0,
+        "attribute": [
+            "Hijau",
+            "Biru",
+            "Merah",
+            "Biru"
+        ],
+        "kelas": "SSS"
+    }
+    ,
+    "Kidomaru Cursed": {
+        "id": 0,
+        "attribute": [
+            "Hijau",
+            "Biru",
+            "Merah",
+            "Biru"
+        ],
+        "kelas": "SSS"
+    }
+    ,
+    "Baryon Naruto": {
+        "id": 0,
+        "attribute": [
+            "Merah",
+            "Hijau",
+            "Biru",
+            "Kuning"
+        ],
+        "kelas": "UR"
+    }
+    ,
+    "Jirobo Cursed": {
+        "id": 0,
+        "attribute": [
+            "Kuning",
+            "Hijau",
+            "Hijau",
+            "Merah"
+        ],
+        "kelas": "SS"
     }
 }

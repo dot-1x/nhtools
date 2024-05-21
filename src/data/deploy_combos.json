@@ -2050,5 +2050,104 @@
         "trigger": false,
         "ninjas": ["Shikamaru Hokage", "Amado"]
     }
-
+    ,
+    "Siblings Clash": {
+        "id": 0,
+        "attack": 8,
+        "defend": 0,
+        "hp": 8,
+        "agility": 0,
+        "trigger": false,
+        "ninjas": ["Indra Otsusuki", "Ashura Otsusuki"]
+    }
+    ,
+    "Half Kyuubi": {
+        "id": 0,
+        "attack": 0,
+        "defend": 8,
+        "hp": 0,
+        "agility": 8,
+        "trigger": false,
+        "ninjas": ["Naruto Kyuubi Mode", "Minato Kyuubi Mode"]
+    }
+    ,
+    "Origin Of Uchiha": {
+        "id": 0,
+        "attack": 10,
+        "defend": 10,
+        "hp": 0,
+        "agility": 10,
+        "trigger": false,
+        "ninjas": ["Indra Otsusuki", "Otsutsuki Hagoromo", "Madara Susanoo", "Sasuke Wanderer"]
+    }
+    ,
+    "Origin Of Senju": {
+        "id": 0,
+        "attack": 10,
+        "defend": 0,
+        "hp": 10,
+        "agility": 10,
+        "trigger": false,
+        "ninjas": ["Ashura Otsusuki", "Otsutsuki Hagoromo", "Hashirama Sage Mode", "Sage Tsunade"]
+    }
+    ,
+    "My family From the Moon": {
+        "id": 0,
+        "attack": 10,
+        "defend": 10,
+        "hp": 10,
+        "agility": 10,
+        "trigger": false,
+        "ninjas": ["Otsutsuki Kaguya", "Otsutsuki Hagoromo", "Hamura Otsutsuki", "Indra Otsusuki", "Ashura Otsusuki"]
+    }
+    ,
+    "Happy Family": {
+        "id": 0,
+        "attack": 12,
+        "defend": 0,
+        "hp": 0,
+        "agility": 12,
+        "trigger": false,
+        "ninjas": ["Minato Kyuubi Mode", "Uzumaki Kushina", "Baryon Naruto"]
+    }
+    ,
+    "Cursed Sound Four": {
+        "id": 0,
+        "attack": 0,
+        "defend": 0,
+        "hp": 0,
+        "agility": 0,
+        "trigger": true,
+        "ninjas": ["Sakon Ukon Cursed", "Kidomaru Cursed", "Tayuya Cursed", "Jirobo Cursed"]
+    }
+    ,
+    "Tsuchikage Lineage": {
+        "id": 0,
+        "attack": 10,
+        "defend": 10,
+        "hp": 0,
+        "agility": 10,
+        "trigger": true,
+        "ninjas": ["Mu", "Onoki", "Kurotsuchi"]
+    }
+    ,
+    "Old Rival": {
+        "id": 0,
+        "attack": 6,
+        "defend": 6,
+        "hp": 0,
+        "agility": 0,
+        "trigger": true,
+        "ninjas": ["Gaara Jinchuriki", "Naruto Kyuubi Mode", "Cursed Seal Sasuke"]
+    }
+    ,
+    "Revenge Battle": {
+        "id": 0,
+        "attack": 0,
+        "defend": 9,
+        "hp": 9,
+        "agility": 0,
+        "trigger": true,
+        "ninjas": ["Shikamaru Hokage", "Hidan Jashin", "Asuma"]
+    }
 }
