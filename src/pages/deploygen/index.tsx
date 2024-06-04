@@ -179,7 +179,7 @@ export default function DeployGen() {
                 </Row>
               </div>
               <div className="bg-soft-dark-primary-3 p-3 p-md-4 me-md-2 rounded mb-2 mb-md-5">
-                "{DeployName}":{JSON.stringify(data, undefined, 2)}
+                &quot;{DeployName}&quot;:{JSON.stringify(data, undefined, 2)}
               </div>
             </Col>
           </Row>
