@@ -1,1825 +1,912 @@
 {
-    "Flameplate Brigand": {
-        "id": 4243,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Kuning",
-            "Merah"
-        ],
-        "kelas": "D"
-    },
-    "Yoroi": {
-        "id": 2003,
-        "attribute": [
-            "Biru",
-            "Kuning",
-            "Hijau",
-            "Merah"
-        ],
-        "kelas": "D"
-    },
-    "Konoha Guard": {
-        "id": 5825,
-        "attribute": [
-            "Hijau",
-            "Merah",
-            "Kuning",
-            "Kuning"
-        ],
-        "kelas": "D"
-    },
-    "Tsurugi Misumi": {
-        "id": 5862,
-        "attribute": [
-            "Kuning",
-            "Hijau",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "D"
-    },
-    "Anbu Guard": {
-        "id": 5166,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "D"
-    },
-    "Anbu Sentry": {
-        "id": 5263,
-        "attribute": [
-            "Kuning",
-            "Merah",
-            "Biru",
-            "Biru"
-        ],
-        "kelas": "D"
-    },
-    "Konoha Sentry": {
-        "id": 5777,
-        "attribute": [
-            "Hijau",
-            "Hijau",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "D"
-    },
-    "Karui": {
-        "id": 3027,
-        "attribute": [
-            "Kuning",
-            "Hijau",
-            "Merah",
-            "Hijau"
-        ],
-        "kelas": "D"
-    },
-    "Kimada": {
-        "id": 1312,
-        "attribute": [
-            "Hijau",
-            "Kuning",
-            "Biru",
-            "Biru"
-        ],
-        "kelas": "D"
-    },
-    "Konohamaru": {
-        "id": 2131,
-        "attribute": [
-            "Kuning",
-            "Hijau",
-            "Hijau",
-            "Biru"
-        ],
-        "kelas": "D"
-    },
-    "Misthide Guard": {
-        "id": 1038,
-        "attribute": [
-            "Biru",
-            "Biru",
-            "Kuning",
-            "Merah"
-        ],
-        "kelas": "D"
-    },
-    "Sandhide Sentry": {
-        "id": 1665,
-        "attribute": [
-            "Hijau",
-            "Hijau",
-            "Kuning",
-            "Merah"
-        ],
-        "kelas": "D"
-    },
-    "Omoi": {
-        "id": 4569,
-        "attribute": [
-            "Kuning",
-            "Biru",
-            "Kuning",
-            "Merah"
-        ],
-        "kelas": "D"
-    },
-    "Misthide Sentry": {
-        "id": 4362,
-        "attribute": [
-            "Hijau",
-            "Merah",
-            "Biru",
-            "Hijau"
-        ],
-        "kelas": "D"
-    },
-    "Mizuki": {
-        "id": 5344,
-        "attribute": [
-            "Kuning",
-            "Biru",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "D"
-    },
-    "Sandhide Guard": {
-        "id": 5973,
-        "attribute": [
-            "Hijau",
-            "Merah",
-            "Biru",
-            "Biru"
-        ],
-        "kelas": "D"
-    },
-    "Temari": {
-        "id": 3087,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Hijau",
-            "Kuning"
-        ],
-        "kelas": "C"
-    },
-    "Iruka": {
-        "id": 3979,
-        "attribute": [
-            "Hijau",
-            "Kuning",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "C"
-    },
-    "Kankuro": {
-        "id": 2927,
-        "attribute": [
-            "Biru",
-            "Kuning",
-            "Hijau",
-            "Kuning"
-        ],
-        "kelas": "C"
-    },
-    "Lee": {
-        "id": 2102,
-        "attribute": [
-            "Merah",
-            "Biru",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "C"
-    },
-    "Shikamaru": {
-        "id": 1153,
-        "attribute": [
-            "Merah",
-            "Hijau",
-            "Kuning",
-            "Biru"
-        ],
-        "kelas": "C"
-    },
-    "Nenji": {
-        "id": 2333,
-        "attribute": [
-            "Kuning",
-            "Hijau",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "C"
-    },
-    "Sasuke": {
-        "id": 3553,
-        "attribute": [
-            "Kuning",
-            "Merah",
-            "Biru",
-            "Hijau"
-        ],
-        "kelas": "C"
-    },
-    "Hinata": {
-        "id": 5066,
-        "attribute": [
-            "Kuning",
-            "Biru",
-            "Biru",
-            "Biru"
-        ],
-        "kelas": "C"
-    },
-    "Shizune": {
-        "id": 2196,
-        "attribute": [
-            "Hijau",
-            "Hijau",
-            "Biru",
-            "Kuning"
-        ],
-        "kelas": "C"
-    },
-    "Kiba Inuzuka": {
-        "id": 2511,
-        "attribute": [
-            "Biru",
-            "Biru",
-            "Merah",
-            "Merah"
-        ],
-        "kelas": "C"
-    },
-    "Shino": {
-        "id": 2351,
-        "attribute": [
-            "Hijau",
-            "Hijau",
-            "Biru",
-            "Biru"
-        ],
-        "kelas": "C"
-    },
-    "Tenten": {
-        "id": 5831,
-        "attribute": [
-            "Kuning",
-            "Merah",
-            "Biru",
-            "Biru"
-        ],
-        "kelas": "C"
-    },
-    "Ino": {
-        "id": 1706,
-        "attribute": [
-            "Biru",
-            "Hijau",
-            "Merah",
-            "Hijau"
-        ],
-        "kelas": "C"
-    },
-    "Naruto": {
-        "id": 3008,
-        "attribute": [
-            "Kuning",
-            "Hijau",
-            "Hijau",
-            "Merah"
-        ],
-        "kelas": "C"
-    },
-    "Choji": {
-        "id": 3400,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Hijau",
-            "Hijau"
-        ],
-        "kelas": "C"
-    },
-    "Sakura": {
-        "id": 5190,
-        "attribute": [
-            "Biru",
-            "Biru",
-            "Merah",
-            "Kuning"
-        ],
-        "kelas": "C"
-    },
-    "Kabuto": {
-        "id": 1062,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "B"
-    },
-    "Karin": {
-        "id": 4622,
-        "attribute": [
-            "Merah",
-            "Hijau",
-            "Hijau",
-            "Biru"
-        ],
-        "kelas": "B"
-    },
-    "Jugo": {
-        "id": 4433,
-        "attribute": [
-            "Merah",
-            "Merah",
-            "Biru",
-            "Biru"
-        ],
-        "kelas": "B"
-    },
-    "Kimimaro": {
-        "id": 5476,
-        "attribute": [
-            "Merah",
-            "Biru",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "B"
-    },
-    "Sakon and Ukon": {
-        "id": 3977,
-        "attribute": [
-            "Kuning",
-            "Hijau",
-            "Hijau",
-            "Biru"
-        ],
-        "kelas": "B"
-    },
-    "Sai": {
-        "id": 1593,
-        "attribute": [
-            "Hijau",
-            "Merah",
-            "Kuning",
-            "Biru"
-        ],
-        "kelas": "B"
-    },
-    "Suigetsu": {
-        "id": 4213,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Biru",
-            "Kuning"
-        ],
-        "kelas": "B"
-    },
-    "Jirobo": {
-        "id": 2349,
-        "attribute": [
-            "Biru",
-            "Hijau",
-            "Hijau",
-            "Biru"
-        ],
-        "kelas": "B"
-    },
-    "Tayuya": {
-        "id": 3573,
-        "attribute": [
-            "Hijau",
-            "Merah",
-            "Hijau",
-            "Merah"
-        ],
-        "kelas": "B"
-    },
-    "Zabuza": {
-        "id": 1715,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Kuning",
-            "Biru"
-        ],
-        "kelas": "B"
-    },
-    "Gaara": {
-        "id": 4718,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Biru",
-            "Kuning"
-        ],
-        "kelas": "B"
-    },
-    "Haku": {
-        "id": 1109,
-        "attribute": [
-            "Kuning",
-            "Kuning",
-            "Merah",
-            "Merah"
-        ],
-        "kelas": "B"
-    },
-    "Kidomaru": {
-        "id": 1095,
-        "attribute": [
-            "Hijau",
-            "Kuning",
-            "Hijau",
-            "Biru"
-        ],
-        "kelas": "B"
-    },
-    "Raido Ashinami": {
-        "id": 4115,
-        "attribute": [
-            "Kuning",
-            "Hijau",
-            "Biru",
-            "Hijau"
-        ],
-        "kelas": "B"
-    },
-    "Gekkou Hayate": {
-        "id": 5229,
-        "attribute": [
-            "Kuning",
-            "Merah",
-            "Biru",
-            "Kuning"
-        ],
-        "kelas": "B"
-    },
-    "Genma Shiranui": {
-        "id": 3462,
-        "attribute": [
-            "Merah",
-            "Hijau",
-            "Kuning",
-            "Merah"
-        ],
-        "kelas": "B"
-    },
-    "Anko Mitarashi": {
-        "id": 3277,
-        "attribute": [
-            "Hijau",
-            "Merah",
-            "Merah",
-            "Kuning"
-        ],
-        "kelas": "B"
-    },
-    "Aoba Yamashiro": {
-        "id": 2300,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Biru",
-            "Biru"
-        ],
-        "kelas": "B"
-    },
-    "Ebisu": {
-        "id": 1733,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "B"
-    },
-    "Ibiki": {
-        "id": 3639,
-        "attribute": [
-            "Hijau",
-            "Hijau",
-            "Merah",
-            "Kuning"
-        ],
-        "kelas": "B"
-    },
-    "Darui": {
-        "id": 5683,
-        "attribute": [
-            "Kuning",
-            "Merah",
-            "Biru",
-            "Biru"
-        ],
-        "kelas": "A"
-    },
-    "Danzo": {
-        "id": 2653,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Hijau",
-            "Merah"
-        ],
-        "kelas": "A"
-    },
-    "Hanzo": {
-        "id": 1983,
-        "attribute": [
-            "Merah",
-            "Hijau",
-            "Biru",
-            "Biru"
-        ],
-        "kelas": "A"
-    },
-    "Ao": {
-        "id": 2337,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Kuning",
-            "Hijau"
-        ],
-        "kelas": "A"
-    },
-    "Chojuro": {
-        "id": 3693,
-        "attribute": [
-            "Merah",
-            "Merah",
-            "Hijau",
-            "Hijau"
-        ],
-        "kelas": "A"
-    },
-    "Kisame": {
-        "id": 2089,
-        "attribute": [
-            "Kuning",
-            "Biru",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "A"
-    },
-    "Zetsu": {
-        "id": 4808,
-        "attribute": [
-            "Kuning",
-            "Hijau",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "A"
-    },
-    "Deidara": {
-        "id": 1529,
-        "attribute": [
-            "Kuning",
-            "Merah",
-            "Merah",
-            "Kuning"
-        ],
-        "kelas": "A"
-    },
-    "Konan": {
-        "id": 2217,
-        "attribute": [
-            "Biru",
-            "Kuning",
-            "Kuning",
-            "Kuning"
-        ],
-        "kelas": "A"
-    },
-    "Sasori": {
-        "id": 1218,
-        "attribute": [
-            "Hijau",
-            "Merah",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "A"
-    },
-    "Hidan": {
-        "id": 2546,
-        "attribute": [
-            "Biru",
-            "Biru",
-            "Biru",
-            "Hijau"
-        ],
-        "kelas": "A"
-    },
-    "Kakuzu": {
-        "id": 3678,
-        "attribute": [
-            "Hijau",
-            "Hijau",
-            "Biru",
-            "Hijau"
-        ],
-        "kelas": "A"
-    },
-    "Seven Tails Jinchuriki": {
-        "id": 1985,
-        "attribute": [
-            "Biru",
-            "Hijau",
-            "Hijau",
-            "Biru"
-        ],
-        "kelas": "A"
-    },
-    "Four Tails Jinchuriki": {
-        "id": 5492,
-        "attribute": [
-            "Kuning",
-            "Merah",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "A"
-    },
-    "Six Tails Jinchuriki": {
-        "id": 4320,
-        "attribute": [
-            "Kuning",
-            "Biru",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "A"
-    },
-    "Five Tails Jinchuriki": {
-        "id": 4529,
-        "attribute": [
-            "Hijau",
-            "Kuning",
-            "Hijau",
-            "Hijau"
-        ],
-        "kelas": "A"
-    },
-    "Granny Chiyo": {
-        "id": 3261,
-        "attribute": [
-            "Kuning",
-            "Merah",
-            "Biru",
-            "Hijau"
-        ],
-        "kelas": "A"
-    },
-    "Three Tails Jinchuriki": {
-        "id": 2694,
-        "attribute": [
-            "Merah",
-            "Biru",
-            "Hijau",
-            "Merah"
-        ],
-        "kelas": "A"
-    },
-    "Two Tails Jinchuriki": {
-        "id": 3646,
-        "attribute": [
-            "Merah",
-            "Merah",
-            "Kuning",
-            "Hijau"
-        ],
-        "kelas": "A"
-    },
-    "Yamato": {
-        "id": 5938,
-        "attribute": [
-            "Biru",
-            "Biru",
-            "Hijau",
-            "Biru"
-        ],
-        "kelas": "A"
-    },
-    "Yuuhi Kurenai": {
-        "id": 4925,
-        "attribute": [
-            "Kuning",
-            "Merah",
-            "Biru",
-            "Kuning"
-        ],
-        "kelas": "A"
-    },
-    "Asuma": {
-        "id": 2781,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Hijau",
-            "Kuning"
-        ],
-        "kelas": "A"
-    },
-    "Baki": {
-        "id": 1099,
-        "attribute": [
-            "Merah",
-            "Hijau",
-            "Merah",
-            "Merah"
-        ],
-        "kelas": "A"
-    },
-    "Cursed Seal Sasuke": {
-        "id": 3868,
-        "attribute": [
-            "Merah",
-            "Biru",
-            "Kuning",
-            "Merah"
-        ],
-        "kelas": "A"
-    },
-    "Kazekage Gaara": {
-        "id": 4736,
-        "attribute": [
-            "Kuning",
-            "Hijau",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "S"
-    },
-    "Obito": {
-        "id": 2687,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Hijau",
-            "Hijau"
-        ],
-        "kelas": "S"
-    },
-    "2nd Mizukage": {
-        "id": 2015,
-        "attribute": [
-            "Hijau",
-            "Kuning",
-            "Hijau",
-            "Biru"
-        ],
-        "kelas": "S"
-    },
-    "Onoki": {
-        "id": 4078,
-        "attribute": [
-            "Biru",
-            "Biru",
-            "Biru",
-            "Biru"
-        ],
-        "kelas": "S"
-    },
-    "A": {
-        "id": 1317,
-        "attribute": [
-            "Merah",
-            "Merah",
-            "Merah",
-            "Merah"
-        ],
-        "kelas": "S"
-    },
-    "Mu": {
-        "id": 3761,
-        "attribute": [
-            "Hijau",
-            "Hijau",
-            "Kuning",
-            "Hijau"
-        ],
-        "kelas": "S"
-    },
-    "Orochimaru": {
-        "id": 2585,
-        "attribute": [
-            "Merah",
-            "Kuning",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "S"
-    },
-    "Jiraiya": {
-        "id": 1109,
-        "attribute": [
-            "Biru",
-            "Kuning",
-            "Merah",
-            "Hijau"
-        ],
-        "kelas": "S"
-    },
-    "Mei Terumi": {
-        "id": 2536,
-        "attribute": [
-            "Kuning",
-            "Hijau",
-            "Hijau",
-            "Kuning"
-        ],
-        "kelas": "S"
-    },
-    "Tsunade": {
-        "id": 5124,
-        "attribute": [
-            "Hijau",
-            "Hijau",
-            "Hijau",
-            "Hijau"
-        ],
-        "kelas": "S"
-    },
-    "4th Kazekage": {
-        "id": 1683,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Biru",
-            "Hijau"
-        ],
-        "kelas": "S"
-    },
-    "Kinkaku": {
-        "id": 5046,
-        "attribute": [
-            "Merah",
-            "Merah",
-            "Kuning",
-            "Kuning"
-        ],
-        "kelas": "S"
-    },
-    "3rd Raikage": {
-        "id": 2828,
-        "attribute": [
-            "Biru",
-            "Hijau",
-            "Merah",
-            "Merah"
-        ],
-        "kelas": "S"
-    },
-    "Guy": {
-        "id": 2815,
-        "attribute": [
-            "Merah",
-            "Kuning",
-            "Merah",
-            "Kuning"
-        ],
-        "kelas": "S"
-    },
-    "Itachi": {
-        "id": 3579,
-        "attribute": [
-            "Kuning",
-            "Merah",
-            "Merah",
-            "Merah"
-        ],
-        "kelas": "S"
-    },
-    "Kakashi": {
-        "id": 4979,
-        "attribute": [
-            "Kuning",
-            "Biru",
-            "Merah",
-            "Merah"
-        ],
-        "kelas": "S"
-    },
-    "Ginkaku": {
-        "id": 4112,
-        "attribute": [
-            "Hijau",
-            "Kuning",
-            "Hijau",
-            "Merah"
-        ],
-        "kelas": "S"
-    },
-    "Tobi": {
-        "id": 3295,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Kuning",
-            "Merah"
-        ],
-        "kelas": "S"
-    },
-    "Kabuto Yakushi": {
-        "id": 1437,
-        "attribute": [
-            "Hijau",
-            "Merah",
-            "Hijau",
-            "Merah"
-        ],
-        "kelas": "S"
-    },
-    "Pain": {
-        "id": 5381,
-        "attribute": [
-            "Kuning",
-            "Hijau",
-            "Merah",
-            "Hijau"
-        ],
-        "kelas": "S"
-    },
-    "Sage Naruto": {
-        "id": 4488,
-        "attribute": [
-            "Merah",
-            "Biru",
-            "Merah",
-            "Kuning"
-        ],
-        "kelas": "S"
-    },
-    "Killer Bee": {
-        "id": 2277,
-        "attribute": [
-            "Hijau",
-            "Kuning",
-            "Kuning",
-            "Merah"
-        ],
-        "kelas": "S"
-    },
-    "Boruto": {
-        "id": 5093,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Kuning",
-            "Merah"
-        ],
-        "kelas": "S"
-    },
-    "Six Paths Madara": {
-        "id": 5842,
-        "attribute": [
-            "Merah",
-            "Merah",
-            "Merah",
-            "Merah"
-        ],
-        "kelas": "SS"
-    },
-    "Mangekyo Sasuke": {
-        "id": 2342,
-        "attribute": [
-            "Merah",
-            "Merah",
-            "Merah",
-            "Kuning"
-        ],
-        "kelas": "SS"
-    },
-    "Nine Tails Naruto": {
-        "id": 4115,
-        "attribute": [
-            "Hijau",
-            "Merah",
-            "Merah",
-            "Merah"
-        ],
-        "kelas": "SS"
-    },
-    "Six Paths Obito": {
-        "id": 2340,
-        "attribute": [
-            "Merah",
-            "Merah",
-            "Kuning",
-            "Hijau"
-        ],
-        "kelas": "SS"
-    },
-    "Hashirama": {
-        "id": 2543,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "SS"
-    },
-    "Madara": {
-        "id": 3809,
-        "attribute": [
-            "Biru",
-            "Hijau",
-            "Merah",
-            "Merah"
-        ],
-        "kelas": "SS"
-    },
-    "Gaara Shinobi Commander": {
-        "id": 1572,
-        "attribute": [
-            "Kuning",
-            "Merah",
-            "Hijau",
-            "Kuning"
-        ],
-        "kelas": "SS"
-    },
-    "Jigen": {
-        "id": 1794,
-        "attribute": [
-            "Kuning",
-            "Merah",
-            "Biru",
-            "Hijau"
-        ],
-        "kelas": "SS"
-    },
-    "Tobirama": {
-        "id": 1915,
-        "attribute": [
-            "Kuning",
-            "Merah",
-            "Kuning",
-            "Biru"
-        ],
-        "kelas": "SS"
-    },
-    "3rd Hokage": {
-        "id": 1061,
-        "attribute": [
-            "Kuning",
-            "Hijau",
-            "Merah",
-            "Merah"
-        ],
-        "kelas": "SS"
-    },
-    "Minato": {
-        "id": 4797,
-        "attribute": [
-            "Kuning",
-            "Kuning",
-            "Kuning",
-            "Kuning"
-        ],
-        "kelas": "SS"
-    },
-    "Garo": {
-        "id": 1422,
-        "attribute": [
-            "Merah",
-            "Kuning",
-            "Hijau",
-            "Merah"
-        ],
-        "kelas": "SS"
-    },
-    "Amado": {
-        "id": 1577,
-        "attribute": [
-            "Biru",
-            "Hijau",
-            "Merah",
-            "Kuning"
-        ],
-        "kelas": "SS"
-    },
-    "Denki": {
-        "id": 4611,
-        "attribute": [
-            "Biru",
-            "Hijau",
-            "Hijau",
-            "Merah"
-        ],
-        "kelas": "SS"
-    },
-    "Victor": {
-        "id": 3746,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Kuning",
-            "Biru"
-        ],
-        "kelas": "SS"
-    },
-    "Metal Lee": {
-        "id": 4704,
-        "attribute": [
-            "Merah",
-            "Biru",
-            "Merah",
-            "Kuning"
-        ],
-        "kelas": "SS"
-    },
-    "Chocho Akimichi": {
-        "id": 1512,
-        "attribute": [
-            "Kuning",
-            "Kuning",
-            "Hijau",
-            "Biru"
-        ],
-        "kelas": "SS"
-    },
-    "Himawari Uzumaki": {
-        "id": 1571,
-        "attribute": [
-            "Hijau",
-            "Merah",
-            "Kuning",
-            "Hijau"
-        ],
-        "kelas": "SS"
-    },
-    "Hanabi Hyuga": {
-        "id": 3007,
-        "attribute": [
-            "Biru",
-            "Hijau",
-            "Hijau",
-            "Hijau"
-        ],
-        "kelas": "SS"
-    },
-    "Ao Cyborg Mode": {
-        "id": 5578,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Kuning",
-            "Hijau"
-        ],
-        "kelas": "SS"
-    },
-    "Guy 8Th Gate": {
-        "id": 5210,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Merah",
-            "Merah"
-        ],
-        "kelas": "SSS"
-    },
-    "Sage Jiraiya": {
-        "id": 4821,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Hijau",
-            "Biru"
-        ],
-        "kelas": "SSS"
-    },
-    "Code": {
-        "id": 1701,
-        "attribute": [
-            "Kuning",
-            "Hijau",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "SSS"
-    },
-    "Sage Sakura": {
-        "id": 1174,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Kuning",
-            "Kuning"
-        ],
-        "kelas": "SSS"
-    },
-    "Shikadai Nara": {
-        "id": 4494,
-        "attribute": [
-            "Biru",
-            "Hijau",
-            "Kuning",
-            "Biru"
-        ],
-        "kelas": "SSS"
-    },
-    "Otsutsuki Urashiki": {
-        "id": 4657,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Hijau",
-            "Kuning"
-        ],
-        "kelas": "SSS"
-    },
-    "Otsutsuki Kinshiki": {
-        "id": 5088,
-        "attribute": [
-            "Biru",
-            "Kuning",
-            "Hijau",
-            "Merah"
-        ],
-        "kelas": "SSS"
-    },
-    "Momoshiki Karma Mode": {
-        "id": 1126,
-        "attribute": [
-            "Kuning",
-            "Hijau",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "SSS"
-    },
-    "Uchiha Sarada": {
-        "id": 4688,
-        "attribute": [
-            "Merah",
-            "Hijau",
-            "Hijau",
-            "Biru"
-        ],
-        "kelas": "SSS"
-    },
-    "Deruta": {
-        "id": 1948,
-        "attribute": [
-            "Hijau",
-            "Kuning",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "SSS"
-    },
-    "Boro": {
-        "id": 4896,
-        "attribute": [
-            "Merah",
-            "Hijau",
-            "Biru",
-            "Kuning"
-        ],
-        "kelas": "SSS"
-    },
-    "Sage Mitsuki": {
-        "id": 3807,
-        "attribute": [
-            "Biru",
-            "Biru",
-            "Kuning",
-            "Merah"
-        ],
-        "kelas": "SSS"
-    },
-    "Kashin Koji": {
-        "id": 4747,
-        "attribute": [
-            "Hijau",
-            "Merah",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "SSS"
-    },
-    "Otsutsuki Momoshiki": {
-        "id": 5616,
-        "attribute": [
-            "Kuning",
-            "Biru",
-            "Hijau",
-            "Merah"
-        ],
-        "kelas": "SSS"
-    },
-    "Kawaki": {
-        "id": 3358,
-        "attribute": [
-            "Biru",
-            "Kuning",
-            "Merah",
-            "Kuning"
-        ],
-        "kelas": "SSS"
-    },
-    "Boruto Karma Mode": {
-        "id": 4834,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "SSS"
-    },
-    "Rinegan Sasuke": {
-        "id": 5075,
-        "attribute": [
-            "Kuning",
-            "Merah",
-            "Hijau",
-            "Kuning"
-        ],
-        "kelas": "SSS"
-    },
-    "Otsutsuki Kaguya": {
-        "id": 3045,
-        "attribute": [
-            "Merah",
-            "Kuning",
-            "Hijau",
-            "Kuning"
-        ],
-        "kelas": "SSS"
-    },
-    "Jigen Karma Mode": {
-        "id": 2269,
-        "attribute": [
-            "Kuning",
-            "Biru",
-            "Merah",
-            "Kuning"
-        ],
-        "kelas": "SSS"
-    },
-    "Byron Naruto": {
-        "id": 5638,
-        "attribute": [
-            "Biru",
-            "Hijau",
-            "Biru",
-            "Kuning"
-        ],
-        "kelas": "SSS"
-    },
-    "Otsutsuki Isshiki": {
-        "id": 2773,
-        "attribute": [
-            "Hijau",
-            "Merah",
-            "Kuning",
-            "Hijau"
-        ],
-        "kelas": "SSS"
-    },
-    "Kakashi Double Sharingan": {
-        "id": 2774,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Hijau",
-            "Hijau"
-        ],
-        "kelas": "SSS"
-    },
-    "Hinata Uzumaki": {
-        "id": 1221,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Merah",
-            "Kuning"
-        ],
-        "kelas": "SS"
-    },
-    "Otsutsuki Hagoromo": {
-        "id": 1222,
-        "attribute": [
-            "Biru",
-            "Kuning",
-            "Merah",
-            "Hijau"
-        ],
-        "kelas": "SSS"
-    },
-    "Menma Uzumaki": {
-        "id": 5638,
-        "attribute": [
-            "Biru",
-            "Hijau",
-            "Biru",
-            "Kuning"
-        ],
-        "kelas": "UR"
-    },
-    "Hiruzen Sarutobi": {
-        "id": 5638,
-        "attribute": [
-            "Kuning",
-            "Hijau",
-            "Merah",
-            "Merah"
-        ],
-        "kelas": "UR"
-    },
-    "Hashirama Sage Mode": {
-        "id": 0,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "UR"
-    },
-    "Madara Susanoo": {
-        "id": 0,
-        "attribute": [
-            "Biru",
-            "Hijau",
-            "Merah",
-            "Merah"
-        ],
-        "kelas": "UR"
-    },
-    "Ten Tails Madara": {
-        "id": 0,
-        "attribute": [
-            "Hijau",
-            "Hijau",
-            "Biru",
-            "Kuning"
-        ],
-        "kelas": "UR"
-    },
-    "Naruto Kyuubi Mode": {
-        "id": 0,
-        "attribute": [
-            "Kuning",
-            "Biru",
-            "Merah",
-            "Kuning"
-        ],
-        "kelas": "UR"
-    },
-    "Sumire Kakei": {
-        "id": 0,
-        "attribute": [
-            "Biru",
-            "Kuning",
-            "Hijau",
-            "Hijau"
-        ],
-        "kelas": "SS"
-    },
-    "Human Cloning": {
-        "id": 0,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Hijau",
-            "Biru"
-        ],
-        "kelas": "SS"
-    },
-    "Shinki": {
-        "id": 0,
-        "attribute": [
-            "Merah",
-            "Kuning",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "SSS"
-    },
-    "Sasuke Wanderer": {
-        "id": 0,
-        "attribute": [
-            "Merah",
-            "Biru",
-            "Hijau",
-            "Biru"
-        ],
-        "kelas": "UR"
-    },
-    "Itachi Edotensei": {
-        "id": 0,
-        "attribute": [
-            "Hijau",
-            "Hijau",
-            "Kuning",
-            "Merah"
-        ],
-        "kelas": "UR"
-    },
-    "Uchiha Shisui": {
-        "id": 0,
-        "attribute": [
-            "Hijau",
-            "Kuning",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "UR"
-    },
-    "Sasuke Akatsuki": {
-        "id": 0,
-        "attribute": [
-            "Hijau",
-            "Hijau",
-            "Kuning",
-            "Biru"
-        ],
-        "kelas": "SS"
-    },
-    "Hamura Otsutsuki": {
-        "id": 0,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "UR"
-    },
-    "Urashiki Karma": {
-        "id": 0,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "SSS"
-    },
-    "Uchiha Shin": {
-        "id": 0,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "SSS"
-    },
-    "Daemon": {
-        "id": 0,
-        "attribute": [
-            "Kuning",
-            "Biru",
-            "Biru",
-            "Hijau"
-        ],
-        "kelas": "UR"
-    },
-    "Eida": {
-        "id": 0,
-        "attribute": [
-            "Merah",
-            "Kuning",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "UR"
-    },
-    "Code No Limiter": {
-        "id": 0,
-        "attribute": [
-            "Kuning",
-            "Biru",
-            "Kuning",
-            "Merah"
-        ],
-        "kelas": "UR"
-    },
-    "Toneri": {
-        "id": 0,
-        "attribute": [
-            "Kuning",
-            "Kuning",
-            "Hijau",
-            "Biru"
-        ],
-        "kelas": "UR"
-    },
-    "Shikamaru Hokage": {
-        "id": 0,
-        "attribute": [
-            "Merah",
-            "Biru",
-            "Merah",
-            "Kuning"
-        ],
-        "kelas": "UR"
-    },
-    "Konohamaru Sarutobi": {
-        "id": 0,
-        "attribute": [
-            "Merah", "Biru", "Merah", "Biru"
-        ],
-        "kelas": "UR"
-    }
-    ,
-    "Toneri Tenseigan": {
-        "id": 0,
-        "attribute": [
-            "Hijau",
-            "Merah",
-            "Kuning",
-            "Biru"
-        ],
-        "kelas": "UR"
-    }
-    ,
-    "Kimimaru Cursed": {
-        "id": 0,
-        "attribute": [
-            "Merah",
-            "Biru",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "UR"
-    }
-    ,
-    "Sage Tsunade": {
-        "id": 0,
-        "attribute": [
-            "Hijau",
-            "Kuning",
-            "Biru",
-            "Hijau"
-        ],
-        "kelas": "UR"
-    }
-    ,
-    "Kisame Shark": {
-        "id": 0,
-        "attribute": [
-            "Kuning",
-            "Biru",
-            "Biru",
-            "Merah"
-        ],
-        "kelas": "SSS"
-    }
-    ,
-    "Ashura Otsusuki": {
-        "id": 0,
-        "attribute": [
-            "Merah",
-            "Hijau",
-            "Hijau",
-            "Kuning"
-        ],
-        "kelas": "UR"
-    }
-    ,
-    "Minato Kyuubi Mode": {
-        "id": 0,
-        "attribute": [
-            "Biru",
-            "Kuning",
-            "Merah",
-            "Hijau"
-        ],
-        "kelas": "UR"
-    }
-    ,
-    "Tayuya Cursed": {
-        "id": 0,
-        "attribute": [
-            "Biru",
-            "Merah",
-            "Kuning",
-            "Kuning"
-        ],
-        "kelas": "SSS"
-    }
-    ,
-    "Indra Otsusuki": {
-        "id": 0,
-        "attribute": [
-            "Hijau",
-            "Merah",
-            "Biru",
-            "Kuning"
-        ],
-        "kelas": "UR"
-    }
-    ,
-    "Uzumaki Kushina": {
-        "id": 0,
-        "attribute": [
-            "Hijau",
-            "Merah",
-            "Biru",
-            "Kuning"
-        ],
-        "kelas": "UR"
-    }
-    ,
-    "Kurotsuchi": {
-        "id": 0,
-        "attribute": [
-            "Biru",
-            "Kuning",
-            "Biru",
-            "Hijau"
-        ],
-        "kelas": "UR"
-    }
-    ,
-    "Hidan Jashin": {
-        "id": 0,
-        "attribute": [
-            "Hijau",
-            "Merah",
-            "Merah",
-            "Hijau"
-        ],
-        "kelas": "UR"
-    }
-    ,
-    "Gaara Jinchuriki": {
-        "id": 0,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "SSS"
-    }
-    ,
-    "Sakon Ukon Cursed": {
-        "id": 0,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "SSS"
-    }
-    ,
-    "Kidomaru Cursed": {
-        "id": 0,
-        "attribute": [
-            "Hijau",
-            "Biru",
-            "Merah",
-            "Biru"
-        ],
-        "kelas": "SSS"
-    }
-    ,
-    "Baryon Naruto": {
-        "id": 0,
-        "attribute": [
-            "Merah",
-            "Hijau",
-            "Biru",
-            "Kuning"
-        ],
-        "kelas": "UR"
-    }
-    ,
-    "Jirobo Cursed": {
-        "id": 0,
-        "attribute": [
-            "Kuning",
-            "Hijau",
-            "Hijau",
-            "Merah"
-        ],
-        "kelas": "SS"
-    }
+  "Flameplate Brigand": {
+    "id": 4243,
+    "attribute": ["Hijau", "Biru", "Kuning", "Merah"],
+    "kelas": "D"
+  },
+  "Yoroi": {
+    "id": 2003,
+    "attribute": ["Biru", "Kuning", "Hijau", "Merah"],
+    "kelas": "D"
+  },
+  "Konoha Guard": {
+    "id": 5825,
+    "attribute": ["Hijau", "Merah", "Kuning", "Kuning"],
+    "kelas": "D"
+  },
+  "Tsurugi Misumi": {
+    "id": 5862,
+    "attribute": ["Kuning", "Hijau", "Merah", "Biru"],
+    "kelas": "D"
+  },
+  "Anbu Guard": {
+    "id": 5166,
+    "attribute": ["Hijau", "Biru", "Merah", "Biru"],
+    "kelas": "D"
+  },
+  "Anbu Sentry": {
+    "id": 5263,
+    "attribute": ["Kuning", "Merah", "Biru", "Biru"],
+    "kelas": "D"
+  },
+  "Konoha Sentry": {
+    "id": 5777,
+    "attribute": ["Hijau", "Hijau", "Biru", "Merah"],
+    "kelas": "D"
+  },
+  "Karui": {
+    "id": 3027,
+    "attribute": ["Kuning", "Hijau", "Merah", "Hijau"],
+    "kelas": "D"
+  },
+  "Kimada": {
+    "id": 1312,
+    "attribute": ["Hijau", "Kuning", "Biru", "Biru"],
+    "kelas": "D"
+  },
+  "Konohamaru": {
+    "id": 2131,
+    "attribute": ["Kuning", "Hijau", "Hijau", "Biru"],
+    "kelas": "D"
+  },
+  "Misthide Guard": {
+    "id": 1038,
+    "attribute": ["Biru", "Biru", "Kuning", "Merah"],
+    "kelas": "D"
+  },
+  "Sandhide Sentry": {
+    "id": 1665,
+    "attribute": ["Hijau", "Hijau", "Kuning", "Merah"],
+    "kelas": "D"
+  },
+  "Omoi": {
+    "id": 4569,
+    "attribute": ["Kuning", "Biru", "Kuning", "Merah"],
+    "kelas": "D"
+  },
+  "Misthide Sentry": {
+    "id": 4362,
+    "attribute": ["Hijau", "Merah", "Biru", "Hijau"],
+    "kelas": "D"
+  },
+  "Mizuki": {
+    "id": 5344,
+    "attribute": ["Kuning", "Biru", "Merah", "Biru"],
+    "kelas": "D"
+  },
+  "Sandhide Guard": {
+    "id": 5973,
+    "attribute": ["Hijau", "Merah", "Biru", "Biru"],
+    "kelas": "D"
+  },
+  "Temari": {
+    "id": 3087,
+    "attribute": ["Hijau", "Biru", "Hijau", "Kuning"],
+    "kelas": "C"
+  },
+  "Iruka": {
+    "id": 3979,
+    "attribute": ["Hijau", "Kuning", "Merah", "Biru"],
+    "kelas": "C"
+  },
+  "Kankuro": {
+    "id": 2927,
+    "attribute": ["Biru", "Kuning", "Hijau", "Kuning"],
+    "kelas": "C"
+  },
+  "Lee": {
+    "id": 2102,
+    "attribute": ["Merah", "Biru", "Biru", "Merah"],
+    "kelas": "C"
+  },
+  "Shikamaru": {
+    "id": 1153,
+    "attribute": ["Merah", "Hijau", "Kuning", "Biru"],
+    "kelas": "C"
+  },
+  "Nenji": {
+    "id": 2333,
+    "attribute": ["Kuning", "Hijau", "Biru", "Merah"],
+    "kelas": "C"
+  },
+  "Sasuke": {
+    "id": 3553,
+    "attribute": ["Kuning", "Merah", "Biru", "Hijau"],
+    "kelas": "C"
+  },
+  "Hinata": {
+    "id": 5066,
+    "attribute": ["Kuning", "Biru", "Biru", "Biru"],
+    "kelas": "C"
+  },
+  "Shizune": {
+    "id": 2196,
+    "attribute": ["Hijau", "Hijau", "Biru", "Kuning"],
+    "kelas": "C"
+  },
+  "Kiba Inuzuka": {
+    "id": 2511,
+    "attribute": ["Biru", "Biru", "Merah", "Merah"],
+    "kelas": "C"
+  },
+  "Shino": {
+    "id": 2351,
+    "attribute": ["Hijau", "Hijau", "Biru", "Biru"],
+    "kelas": "C"
+  },
+  "Tenten": {
+    "id": 5831,
+    "attribute": ["Kuning", "Merah", "Biru", "Biru"],
+    "kelas": "C"
+  },
+  "Ino": {
+    "id": 1706,
+    "attribute": ["Biru", "Hijau", "Merah", "Hijau"],
+    "kelas": "C"
+  },
+  "Naruto": {
+    "id": 3008,
+    "attribute": ["Kuning", "Hijau", "Hijau", "Merah"],
+    "kelas": "C"
+  },
+  "Choji": {
+    "id": 3400,
+    "attribute": ["Hijau", "Biru", "Hijau", "Hijau"],
+    "kelas": "C"
+  },
+  "Sakura": {
+    "id": 5190,
+    "attribute": ["Biru", "Biru", "Merah", "Kuning"],
+    "kelas": "C"
+  },
+  "Kabuto": {
+    "id": 1062,
+    "attribute": ["Hijau", "Biru", "Biru", "Merah"],
+    "kelas": "B"
+  },
+  "Karin": {
+    "id": 4622,
+    "attribute": ["Merah", "Hijau", "Hijau", "Biru"],
+    "kelas": "B"
+  },
+  "Jugo": {
+    "id": 4433,
+    "attribute": ["Merah", "Merah", "Biru", "Biru"],
+    "kelas": "B"
+  },
+  "Kimimaro": {
+    "id": 5476,
+    "attribute": ["Merah", "Biru", "Biru", "Merah"],
+    "kelas": "B"
+  },
+  "Sakon and Ukon": {
+    "id": 3977,
+    "attribute": ["Kuning", "Hijau", "Hijau", "Biru"],
+    "kelas": "B"
+  },
+  "Sai": {
+    "id": 1593,
+    "attribute": ["Hijau", "Merah", "Kuning", "Biru"],
+    "kelas": "B"
+  },
+  "Suigetsu": {
+    "id": 4213,
+    "attribute": ["Biru", "Merah", "Biru", "Kuning"],
+    "kelas": "B"
+  },
+  "Jirobo": {
+    "id": 2349,
+    "attribute": ["Biru", "Hijau", "Hijau", "Biru"],
+    "kelas": "B"
+  },
+  "Tayuya": {
+    "id": 3573,
+    "attribute": ["Hijau", "Merah", "Hijau", "Merah"],
+    "kelas": "B"
+  },
+  "Zabuza": {
+    "id": 1715,
+    "attribute": ["Biru", "Merah", "Kuning", "Biru"],
+    "kelas": "B"
+  },
+  "Gaara": {
+    "id": 4718,
+    "attribute": ["Biru", "Merah", "Biru", "Kuning"],
+    "kelas": "B"
+  },
+  "Haku": {
+    "id": 1109,
+    "attribute": ["Kuning", "Kuning", "Merah", "Merah"],
+    "kelas": "B"
+  },
+  "Kidomaru": {
+    "id": 1095,
+    "attribute": ["Hijau", "Kuning", "Hijau", "Biru"],
+    "kelas": "B"
+  },
+  "Raido Ashinami": {
+    "id": 4115,
+    "attribute": ["Kuning", "Hijau", "Biru", "Hijau"],
+    "kelas": "B"
+  },
+  "Gekkou Hayate": {
+    "id": 5229,
+    "attribute": ["Kuning", "Merah", "Biru", "Kuning"],
+    "kelas": "B"
+  },
+  "Genma Shiranui": {
+    "id": 3462,
+    "attribute": ["Merah", "Hijau", "Kuning", "Merah"],
+    "kelas": "B"
+  },
+  "Anko Mitarashi": {
+    "id": 3277,
+    "attribute": ["Hijau", "Merah", "Merah", "Kuning"],
+    "kelas": "B"
+  },
+  "Aoba Yamashiro": {
+    "id": 2300,
+    "attribute": ["Biru", "Merah", "Biru", "Biru"],
+    "kelas": "B"
+  },
+  "Ebisu": {
+    "id": 1733,
+    "attribute": ["Biru", "Merah", "Merah", "Biru"],
+    "kelas": "B"
+  },
+  "Ibiki": {
+    "id": 3639,
+    "attribute": ["Hijau", "Hijau", "Merah", "Kuning"],
+    "kelas": "B"
+  },
+  "Darui": {
+    "id": 5683,
+    "attribute": ["Kuning", "Merah", "Biru", "Biru"],
+    "kelas": "A"
+  },
+  "Danzo": {
+    "id": 2653,
+    "attribute": ["Hijau", "Biru", "Hijau", "Merah"],
+    "kelas": "A"
+  },
+  "Hanzo": {
+    "id": 1983,
+    "attribute": ["Merah", "Hijau", "Biru", "Biru"],
+    "kelas": "A"
+  },
+  "Ao": {
+    "id": 2337,
+    "attribute": ["Biru", "Merah", "Kuning", "Hijau"],
+    "kelas": "A"
+  },
+  "Chojuro": {
+    "id": 3693,
+    "attribute": ["Merah", "Merah", "Hijau", "Hijau"],
+    "kelas": "A"
+  },
+  "Kisame": {
+    "id": 2089,
+    "attribute": ["Kuning", "Biru", "Biru", "Merah"],
+    "kelas": "A"
+  },
+  "Zetsu": {
+    "id": 4808,
+    "attribute": ["Kuning", "Hijau", "Biru", "Merah"],
+    "kelas": "A"
+  },
+  "Deidara": {
+    "id": 1529,
+    "attribute": ["Kuning", "Merah", "Merah", "Kuning"],
+    "kelas": "A"
+  },
+  "Konan": {
+    "id": 2217,
+    "attribute": ["Biru", "Kuning", "Kuning", "Kuning"],
+    "kelas": "A"
+  },
+  "Sasori": {
+    "id": 1218,
+    "attribute": ["Hijau", "Merah", "Biru", "Merah"],
+    "kelas": "A"
+  },
+  "Hidan": {
+    "id": 2546,
+    "attribute": ["Biru", "Biru", "Biru", "Hijau"],
+    "kelas": "A"
+  },
+  "Kakuzu": {
+    "id": 3678,
+    "attribute": ["Hijau", "Hijau", "Biru", "Hijau"],
+    "kelas": "A"
+  },
+  "Seven Tails Jinchuriki": {
+    "id": 1985,
+    "attribute": ["Biru", "Hijau", "Hijau", "Biru"],
+    "kelas": "A"
+  },
+  "Four Tails Jinchuriki": {
+    "id": 5492,
+    "attribute": ["Kuning", "Merah", "Merah", "Biru"],
+    "kelas": "A"
+  },
+  "Six Tails Jinchuriki": {
+    "id": 4320,
+    "attribute": ["Kuning", "Biru", "Biru", "Merah"],
+    "kelas": "A"
+  },
+  "Five Tails Jinchuriki": {
+    "id": 4529,
+    "attribute": ["Hijau", "Kuning", "Hijau", "Hijau"],
+    "kelas": "A"
+  },
+  "Granny Chiyo": {
+    "id": 3261,
+    "attribute": ["Kuning", "Merah", "Biru", "Hijau"],
+    "kelas": "A"
+  },
+  "Three Tails Jinchuriki": {
+    "id": 2694,
+    "attribute": ["Merah", "Biru", "Hijau", "Merah"],
+    "kelas": "A"
+  },
+  "Two Tails Jinchuriki": {
+    "id": 3646,
+    "attribute": ["Merah", "Merah", "Kuning", "Hijau"],
+    "kelas": "A"
+  },
+  "Yamato": {
+    "id": 5938,
+    "attribute": ["Biru", "Biru", "Hijau", "Biru"],
+    "kelas": "A"
+  },
+  "Yuuhi Kurenai": {
+    "id": 4925,
+    "attribute": ["Kuning", "Merah", "Biru", "Kuning"],
+    "kelas": "A"
+  },
+  "Asuma": {
+    "id": 2781,
+    "attribute": ["Biru", "Merah", "Hijau", "Kuning"],
+    "kelas": "A"
+  },
+  "Baki": {
+    "id": 1099,
+    "attribute": ["Merah", "Hijau", "Merah", "Merah"],
+    "kelas": "A"
+  },
+  "Cursed Seal Sasuke": {
+    "id": 3868,
+    "attribute": ["Merah", "Biru", "Kuning", "Merah"],
+    "kelas": "A"
+  },
+  "Kazekage Gaara": {
+    "id": 4736,
+    "attribute": ["Kuning", "Hijau", "Biru", "Merah"],
+    "kelas": "S"
+  },
+  "Obito": {
+    "id": 2687,
+    "attribute": ["Hijau", "Biru", "Hijau", "Hijau"],
+    "kelas": "S"
+  },
+  "2nd Mizukage": {
+    "id": 2015,
+    "attribute": ["Hijau", "Kuning", "Hijau", "Biru"],
+    "kelas": "S"
+  },
+  "Onoki": {
+    "id": 4078,
+    "attribute": ["Biru", "Biru", "Biru", "Biru"],
+    "kelas": "S"
+  },
+  "A": {
+    "id": 1317,
+    "attribute": ["Merah", "Merah", "Merah", "Merah"],
+    "kelas": "S"
+  },
+  "Mu": {
+    "id": 3761,
+    "attribute": ["Hijau", "Hijau", "Kuning", "Hijau"],
+    "kelas": "S"
+  },
+  "Orochimaru": {
+    "id": 2585,
+    "attribute": ["Merah", "Kuning", "Merah", "Biru"],
+    "kelas": "S"
+  },
+  "Jiraiya": {
+    "id": 1109,
+    "attribute": ["Biru", "Kuning", "Merah", "Hijau"],
+    "kelas": "S"
+  },
+  "Mei Terumi": {
+    "id": 2536,
+    "attribute": ["Kuning", "Hijau", "Hijau", "Kuning"],
+    "kelas": "S"
+  },
+  "Tsunade": {
+    "id": 5124,
+    "attribute": ["Hijau", "Hijau", "Hijau", "Hijau"],
+    "kelas": "S"
+  },
+  "4th Kazekage": {
+    "id": 1683,
+    "attribute": ["Biru", "Merah", "Biru", "Hijau"],
+    "kelas": "S"
+  },
+  "Kinkaku": {
+    "id": 5046,
+    "attribute": ["Merah", "Merah", "Kuning", "Kuning"],
+    "kelas": "S"
+  },
+  "3rd Raikage": {
+    "id": 2828,
+    "attribute": ["Biru", "Hijau", "Merah", "Merah"],
+    "kelas": "S"
+  },
+  "Guy": {
+    "id": 2815,
+    "attribute": ["Merah", "Kuning", "Merah", "Kuning"],
+    "kelas": "S"
+  },
+  "Itachi": {
+    "id": 3579,
+    "attribute": ["Kuning", "Merah", "Merah", "Merah"],
+    "kelas": "S"
+  },
+  "Kakashi": {
+    "id": 4979,
+    "attribute": ["Kuning", "Biru", "Merah", "Merah"],
+    "kelas": "S"
+  },
+  "Ginkaku": {
+    "id": 4112,
+    "attribute": ["Hijau", "Kuning", "Hijau", "Merah"],
+    "kelas": "S"
+  },
+  "Tobi": {
+    "id": 3295,
+    "attribute": ["Hijau", "Biru", "Kuning", "Merah"],
+    "kelas": "S"
+  },
+  "Kabuto Yakushi": {
+    "id": 1437,
+    "attribute": ["Hijau", "Merah", "Hijau", "Merah"],
+    "kelas": "S"
+  },
+  "Pain": {
+    "id": 5381,
+    "attribute": ["Kuning", "Hijau", "Merah", "Hijau"],
+    "kelas": "S"
+  },
+  "Sage Naruto": {
+    "id": 4488,
+    "attribute": ["Merah", "Biru", "Merah", "Kuning"],
+    "kelas": "S"
+  },
+  "Killer Bee": {
+    "id": 2277,
+    "attribute": ["Hijau", "Kuning", "Kuning", "Merah"],
+    "kelas": "S"
+  },
+  "Boruto": {
+    "id": 5093,
+    "attribute": ["Hijau", "Biru", "Kuning", "Merah"],
+    "kelas": "S"
+  },
+  "Six Paths Madara": {
+    "id": 5842,
+    "attribute": ["Merah", "Merah", "Merah", "Merah"],
+    "kelas": "SS"
+  },
+  "Mangekyo Sasuke": {
+    "id": 2342,
+    "attribute": ["Merah", "Merah", "Merah", "Kuning"],
+    "kelas": "SS"
+  },
+  "Nine Tails Naruto": {
+    "id": 4115,
+    "attribute": ["Hijau", "Merah", "Merah", "Merah"],
+    "kelas": "SS"
+  },
+  "Six Paths Obito": {
+    "id": 2340,
+    "attribute": ["Merah", "Merah", "Kuning", "Hijau"],
+    "kelas": "SS"
+  },
+  "Hashirama": {
+    "id": 2543,
+    "attribute": ["Biru", "Merah", "Merah", "Biru"],
+    "kelas": "SS"
+  },
+  "Madara": {
+    "id": 3809,
+    "attribute": ["Biru", "Hijau", "Merah", "Merah"],
+    "kelas": "SS"
+  },
+  "Gaara Shinobi Commander": {
+    "id": 1572,
+    "attribute": ["Kuning", "Merah", "Hijau", "Kuning"],
+    "kelas": "SS"
+  },
+  "Jigen": {
+    "id": 1794,
+    "attribute": ["Kuning", "Merah", "Biru", "Hijau"],
+    "kelas": "SS"
+  },
+  "Tobirama": {
+    "id": 1915,
+    "attribute": ["Kuning", "Merah", "Kuning", "Biru"],
+    "kelas": "SS"
+  },
+  "3rd Hokage": {
+    "id": 1061,
+    "attribute": ["Kuning", "Hijau", "Merah", "Merah"],
+    "kelas": "SS"
+  },
+  "Minato": {
+    "id": 4797,
+    "attribute": ["Kuning", "Kuning", "Kuning", "Kuning"],
+    "kelas": "SS"
+  },
+  "Garo": {
+    "id": 1422,
+    "attribute": ["Merah", "Kuning", "Hijau", "Merah"],
+    "kelas": "SS"
+  },
+  "Amado": {
+    "id": 1577,
+    "attribute": ["Biru", "Hijau", "Merah", "Kuning"],
+    "kelas": "SS"
+  },
+  "Denki": {
+    "id": 4611,
+    "attribute": ["Biru", "Hijau", "Hijau", "Merah"],
+    "kelas": "SS"
+  },
+  "Victor": {
+    "id": 3746,
+    "attribute": ["Biru", "Merah", "Kuning", "Biru"],
+    "kelas": "SS"
+  },
+  "Metal Lee": {
+    "id": 4704,
+    "attribute": ["Merah", "Biru", "Merah", "Kuning"],
+    "kelas": "SS"
+  },
+  "Chocho Akimichi": {
+    "id": 1512,
+    "attribute": ["Kuning", "Kuning", "Hijau", "Biru"],
+    "kelas": "SS"
+  },
+  "Himawari Uzumaki": {
+    "id": 1571,
+    "attribute": ["Hijau", "Merah", "Kuning", "Hijau"],
+    "kelas": "SS"
+  },
+  "Hanabi Hyuga": {
+    "id": 3007,
+    "attribute": ["Biru", "Hijau", "Hijau", "Hijau"],
+    "kelas": "SS"
+  },
+  "Ao Cyborg Mode": {
+    "id": 5578,
+    "attribute": ["Biru", "Merah", "Kuning", "Hijau"],
+    "kelas": "SS"
+  },
+  "Guy 8Th Gate": {
+    "id": 5210,
+    "attribute": ["Hijau", "Biru", "Merah", "Merah"],
+    "kelas": "SSS"
+  },
+  "Sage Jiraiya": {
+    "id": 4821,
+    "attribute": ["Biru", "Merah", "Hijau", "Biru"],
+    "kelas": "SSS"
+  },
+  "Code": {
+    "id": 1701,
+    "attribute": ["Kuning", "Hijau", "Biru", "Merah"],
+    "kelas": "SSS"
+  },
+  "Sage Sakura": {
+    "id": 1174,
+    "attribute": ["Biru", "Merah", "Kuning", "Kuning"],
+    "kelas": "SSS"
+  },
+  "Shikadai Nara": {
+    "id": 4494,
+    "attribute": ["Biru", "Hijau", "Kuning", "Biru"],
+    "kelas": "SSS"
+  },
+  "Otsutsuki Urashiki": {
+    "id": 4657,
+    "attribute": ["Biru", "Merah", "Hijau", "Kuning"],
+    "kelas": "SSS"
+  },
+  "Otsutsuki Kinshiki": {
+    "id": 5088,
+    "attribute": ["Biru", "Kuning", "Hijau", "Merah"],
+    "kelas": "SSS"
+  },
+  "Momoshiki Karma Mode": {
+    "id": 1126,
+    "attribute": ["Kuning", "Hijau", "Merah", "Biru"],
+    "kelas": "SSS"
+  },
+  "Uchiha Sarada": {
+    "id": 4688,
+    "attribute": ["Merah", "Hijau", "Hijau", "Biru"],
+    "kelas": "SSS"
+  },
+  "Deruta": {
+    "id": 1948,
+    "attribute": ["Hijau", "Kuning", "Merah", "Biru"],
+    "kelas": "SSS"
+  },
+  "Boro": {
+    "id": 4896,
+    "attribute": ["Merah", "Hijau", "Biru", "Kuning"],
+    "kelas": "SSS"
+  },
+  "Sage Mitsuki": {
+    "id": 3807,
+    "attribute": ["Biru", "Biru", "Kuning", "Merah"],
+    "kelas": "SSS"
+  },
+  "Kashin Koji": {
+    "id": 4747,
+    "attribute": ["Hijau", "Merah", "Merah", "Biru"],
+    "kelas": "SSS"
+  },
+  "Otsutsuki Momoshiki": {
+    "id": 5616,
+    "attribute": ["Kuning", "Biru", "Hijau", "Merah"],
+    "kelas": "SSS"
+  },
+  "Kawaki": {
+    "id": 3358,
+    "attribute": ["Biru", "Kuning", "Merah", "Kuning"],
+    "kelas": "SSS"
+  },
+  "Boruto Karma Mode": {
+    "id": 4834,
+    "attribute": ["Hijau", "Biru", "Biru", "Merah"],
+    "kelas": "SSS"
+  },
+  "Rinegan Sasuke": {
+    "id": 5075,
+    "attribute": ["Kuning", "Merah", "Hijau", "Kuning"],
+    "kelas": "SSS"
+  },
+  "Otsutsuki Kaguya": {
+    "id": 3045,
+    "attribute": ["Merah", "Kuning", "Hijau", "Kuning"],
+    "kelas": "SSS"
+  },
+  "Jigen Karma Mode": {
+    "id": 2269,
+    "attribute": ["Kuning", "Biru", "Merah", "Kuning"],
+    "kelas": "SSS"
+  },
+  "Byron Naruto": {
+    "id": 5638,
+    "attribute": ["Biru", "Hijau", "Biru", "Kuning"],
+    "kelas": "SSS"
+  },
+  "Otsutsuki Isshiki": {
+    "id": 2773,
+    "attribute": ["Hijau", "Merah", "Kuning", "Hijau"],
+    "kelas": "SSS"
+  },
+  "Kakashi Double Sharingan": {
+    "id": 2774,
+    "attribute": ["Biru", "Merah", "Hijau", "Hijau"],
+    "kelas": "SSS"
+  },
+  "Hinata Uzumaki": {
+    "id": 1221,
+    "attribute": ["Hijau", "Biru", "Merah", "Kuning"],
+    "kelas": "SS"
+  },
+  "Otsutsuki Hagoromo": {
+    "id": 1222,
+    "attribute": ["Biru", "Kuning", "Merah", "Hijau"],
+    "kelas": "SSS"
+  },
+  "Menma Uzumaki": {
+    "id": 5638,
+    "attribute": ["Biru", "Hijau", "Biru", "Kuning"],
+    "kelas": "UR"
+  },
+  "Hiruzen Sarutobi": {
+    "id": 5638,
+    "attribute": ["Kuning", "Hijau", "Merah", "Merah"],
+    "kelas": "UR"
+  },
+  "Hashirama Sage Mode": {
+    "id": 0,
+    "attribute": ["Biru", "Merah", "Merah", "Biru"],
+    "kelas": "UR"
+  },
+  "Madara Susanoo": {
+    "id": 0,
+    "attribute": ["Biru", "Hijau", "Merah", "Merah"],
+    "kelas": "UR"
+  },
+  "Ten Tails Madara": {
+    "id": 0,
+    "attribute": ["Hijau", "Hijau", "Biru", "Kuning"],
+    "kelas": "UR"
+  },
+  "Naruto Kyuubi Mode": {
+    "id": 0,
+    "attribute": ["Kuning", "Biru", "Merah", "Kuning"],
+    "kelas": "UR"
+  },
+  "Sumire Kakei": {
+    "id": 0,
+    "attribute": ["Biru", "Kuning", "Hijau", "Hijau"],
+    "kelas": "SS"
+  },
+  "Human Cloning": {
+    "id": 0,
+    "attribute": ["Biru", "Merah", "Hijau", "Biru"],
+    "kelas": "SS"
+  },
+  "Shinki": {
+    "id": 0,
+    "attribute": ["Merah", "Kuning", "Merah", "Biru"],
+    "kelas": "SSS"
+  },
+  "Sasuke Wanderer": {
+    "id": 0,
+    "attribute": ["Merah", "Biru", "Hijau", "Biru"],
+    "kelas": "UR"
+  },
+  "Itachi Edotensei": {
+    "id": 0,
+    "attribute": ["Hijau", "Hijau", "Kuning", "Merah"],
+    "kelas": "UR"
+  },
+  "Uchiha Shisui": {
+    "id": 0,
+    "attribute": ["Hijau", "Kuning", "Merah", "Biru"],
+    "kelas": "UR"
+  },
+  "Sasuke Akatsuki": {
+    "id": 0,
+    "attribute": ["Hijau", "Hijau", "Kuning", "Biru"],
+    "kelas": "SS"
+  },
+  "Hamura Otsutsuki": {
+    "id": 0,
+    "attribute": ["Hijau", "Biru", "Biru", "Merah"],
+    "kelas": "UR"
+  },
+  "Urashiki Karma": {
+    "id": 0,
+    "attribute": ["Hijau", "Biru", "Biru", "Merah"],
+    "kelas": "SSS"
+  },
+  "Uchiha Shin": {
+    "id": 0,
+    "attribute": ["Hijau", "Biru", "Biru", "Merah"],
+    "kelas": "SSS"
+  },
+  "Daemon": {
+    "id": 0,
+    "attribute": ["Kuning", "Biru", "Biru", "Hijau"],
+    "kelas": "UR"
+  },
+  "Eida": {
+    "id": 0,
+    "attribute": ["Merah", "Kuning", "Merah", "Biru"],
+    "kelas": "UR"
+  },
+  "Code No Limiter": {
+    "id": 0,
+    "attribute": ["Kuning", "Biru", "Kuning", "Merah"],
+    "kelas": "UR"
+  },
+  "Toneri": {
+    "id": 0,
+    "attribute": ["Kuning", "Kuning", "Hijau", "Biru"],
+    "kelas": "UR"
+  },
+  "Shikamaru Hokage": {
+    "id": 0,
+    "attribute": ["Merah", "Biru", "Merah", "Kuning"],
+    "kelas": "UR"
+  },
+  "Konohamaru Sarutobi": {
+    "id": 0,
+    "attribute": ["Merah", "Biru", "Merah", "Biru"],
+    "kelas": "UR"
+  },
+  "Toneri Tenseigan": {
+    "id": 0,
+    "attribute": ["Hijau", "Merah", "Kuning", "Biru"],
+    "kelas": "UR"
+  },
+  "Kimimaru Cursed": {
+    "id": 0,
+    "attribute": ["Merah", "Biru", "Biru", "Merah"],
+    "kelas": "UR"
+  },
+  "Sage Tsunade": {
+    "id": 0,
+    "attribute": ["Hijau", "Kuning", "Biru", "Hijau"],
+    "kelas": "UR"
+  },
+  "Kisame Shark": {
+    "id": 0,
+    "attribute": ["Kuning", "Biru", "Biru", "Merah"],
+    "kelas": "SSS"
+  },
+  "Ashura Otsusuki": {
+    "id": 0,
+    "attribute": ["Merah", "Hijau", "Hijau", "Kuning"],
+    "kelas": "UR"
+  },
+  "Minato Kyuubi Mode": {
+    "id": 0,
+    "attribute": ["Biru", "Kuning", "Merah", "Hijau"],
+    "kelas": "UR"
+  },
+  "Tayuya Cursed": {
+    "id": 0,
+    "attribute": ["Biru", "Merah", "Kuning", "Kuning"],
+    "kelas": "SSS"
+  },
+  "Indra Otsusuki": {
+    "id": 0,
+    "attribute": ["Hijau", "Merah", "Biru", "Kuning"],
+    "kelas": "UR"
+  },
+  "Uzumaki Kushina": {
+    "id": 0,
+    "attribute": ["Hijau", "Merah", "Biru", "Kuning"],
+    "kelas": "UR"
+  },
+  "Kurotsuchi": {
+    "id": 0,
+    "attribute": ["Biru", "Kuning", "Biru", "Hijau"],
+    "kelas": "UR"
+  },
+  "Hidan Jashin": {
+    "id": 0,
+    "attribute": ["Hijau", "Merah", "Merah", "Hijau"],
+    "kelas": "UR"
+  },
+  "Gaara Jinchuriki": {
+    "id": 0,
+    "attribute": ["Hijau", "Biru", "Merah", "Biru"],
+    "kelas": "SSS"
+  },
+  "Sakon Ukon Cursed": {
+    "id": 0,
+    "attribute": ["Hijau", "Biru", "Merah", "Biru"],
+    "kelas": "SSS"
+  },
+  "Kidomaru Cursed": {
+    "id": 0,
+    "attribute": ["Hijau", "Biru", "Merah", "Biru"],
+    "kelas": "SSS"
+  },
+  "Baryon Naruto": {
+    "id": 0,
+    "attribute": ["Merah", "Hijau", "Biru", "Kuning"],
+    "kelas": "UR"
+  },
+  "Jirobo Cursed": {
+    "id": 0,
+    "attribute": ["Kuning", "Hijau", "Hijau", "Merah"],
+    "kelas": "SS"
+  },
+  "Kakashi Hokage": {
+    "id": 0,
+    "attribute": ["Hijau", "Kuning", "Biru", "Hijau"],
+    "kelas": "UR"
+  }
 }
