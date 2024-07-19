@@ -2050,6 +2050,6 @@
     "hp": 8,
     "agility": 8,
     "trigger": false,
-    "ninjas": ["Naruto Kyuubi Mode", "Ten Tails Obito", "Kakashi Hokage"]
+    "ninjas": ["Minato Kyuubi Mode", "Ten Tails Obito", "Kakashi Hokage"]
   }
 }
