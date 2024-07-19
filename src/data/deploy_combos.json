@@ -1951,5 +1951,105 @@
     "agility": 5,
     "trigger": false,
     "ninjas": ["Uzumaki Kushina", "Minato", "Tobi", "3rd Hokage"]
+  },
+  "Brother in Crime": {
+    "id": 0,
+    "attack": 12,
+    "defend": 0,
+    "hp": 12,
+    "agility": 0,
+    "trigger": false,
+    "ninjas": [
+      "Ten Tails Obito",
+      "Ten Tails Madara",
+      "Six Paths Obito",
+      "Six Paths Madara"
+    ]
+  },
+  "Jigen Evolution": {
+    "id": 0,
+    "attack": 0,
+    "defend": 8,
+    "hp": 8,
+    "agility": 0,
+    "trigger": false,
+    "ninjas": [
+      "Jigen",
+      "Jigen Karma Mode",
+      "Otsutsuki Isshiki",
+      "Prime Isshiki"
+    ]
+  },
+  "Reincarnation": {
+    "id": 0,
+    "attack": 12,
+    "defend": 0,
+    "hp": 0,
+    "agility": 12,
+    "trigger": false,
+    "ninjas": ["Prime Isshiki", "Code No Limiter", "Kawaki", "Jigen Karma Mode"]
+  },
+  "Five kage Boruto": {
+    "id": 0,
+    "attack": 10,
+    "defend": 10,
+    "hp": 10,
+    "agility": 0,
+    "trigger": false,
+    "ninjas": [
+      "Chojuro Mizukage",
+      "Kurotsuchi",
+      "Baryon Naruto",
+      "Gaara Shinobi Commander",
+      "Darui"
+    ]
+  },
+  "Mizukage Lineage": {
+    "id": 0,
+    "attack": 10,
+    "defend": 10,
+    "hp": 0,
+    "agility": 0,
+    "trigger": false,
+    "ninjas": [
+      "Three Tails Jinchuriki",
+      "2nd Mizukage",
+      "Mei Terumi",
+      "Chojuro Mizukage"
+    ]
+  },
+  "Ten Tails Power": {
+    "id": 0,
+    "attack": 7,
+    "defend": 7,
+    "hp": 7,
+    "agility": 0,
+    "trigger": false,
+    "ninjas": ["Otsutsuki Kaguya", "Ten Tails Madara", "Ten Tails Obito"]
+  },
+  "Final Evolution": {
+    "id": 0,
+    "attack": 12,
+    "defend": 12,
+    "hp": 12,
+    "agility": 12,
+    "trigger": false,
+    "ninjas": [
+      "Ten Tails Obito",
+      "Prime Isshiki",
+      "Toneri Tenseigan",
+      "Baryon Naruto",
+      "Ten Tails Madara",
+      "Code No Limiter"
+    ]
+  },
+  "Club Minato": {
+    "id": 0,
+    "attack": 0,
+    "defend": 8,
+    "hp": 8,
+    "agility": 8,
+    "trigger": false,
+    "ninjas": ["Naruto Kyuubi Mode", "Ten Tails Obito", "Kakashi Hokage"]
   }
 }

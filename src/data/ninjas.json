@@ -908,5 +908,20 @@
     "id": 0,
     "attribute": ["Hijau", "Kuning", "Biru", "Hijau"],
     "kelas": "UR"
+  },
+  "Prime Isshiki": {
+    "id": 0,
+    "attribute": ["Merah", "Merah", "Kuning", "Biru"],
+    "kelas": "UR"
+  },
+  "Ten Tails Obito": {
+    "id": 0,
+    "attribute": ["Kuning", "Hijau", "Biru", "Biru"],
+    "kelas": "UR"
+  },
+  "Chojuro Mizukage": {
+    "id": 0,
+    "attribute": ["Kuning", "Hijau", "Merah", "Biru"],
+    "kelas": "UR"
   }
 }
